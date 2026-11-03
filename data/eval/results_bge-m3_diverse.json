@@ -1,0 +1,1888 @@
+[
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "q01",
+    "type": "scenario",
+    "expected": [
+      "anxIII-4-a"
+    ],
+    "found": [
+      "en-anxIII-4-a",
+      "en-anxIII-3-a",
+      "en-art6-suite",
+      "en-art80-p1",
+      "en-art14-p1",
+      "en-art25-p4",
+      "en-art9-p8",
+      "en-art9-p6",
+      "en-art14-p4-b",
+      "en-art6-p1-a"
+    ],
+    "top_cosine": 0.659,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "q02",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-f"
+    ],
+    "found": [
+      "en-art50-p2",
+      "en-art56-p5",
+      "en-art60-p6",
+      "en-art12-p1",
+      "en-art75-p2a-suite",
+      "en-anxIII-4-b",
+      "en-art50-p1",
+      "en-art60-p2",
+      "en-anxIII-5-d",
+      "en-art92-p7"
+    ],
+    "top_cosine": 0.517,
+    "hit": false,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "q03",
+    "type": "scenario",
+    "expected": [
+      "anxIII-5-b"
+    ],
+    "found": [
+      "fr-art52-p5",
+      "fr-anxIII-5-b",
+      "fr-anxXIII-i5",
+      "fr-anxXIII-i1",
+      "fr-anxIII-4-b",
+      "fr-art52-p4",
+      "fr-art7-p2-h",
+      "fr-art51-p1-b",
+      "fr-art80-p1",
+      "fr-art25-p4"
+    ],
+    "top_cosine": 0.515,
+    "hit": true,
+    "rank_in_50": 2
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "q04",
+    "type": "scenario",
+    "expected": [
+      "anxIII-3-d"
+    ],
+    "found": [
+      "en-art5-p1-d",
+      "en-art60a-p1",
+      "en-art60-p6",
+      "en-art5-p1-h",
+      "en-art60-p1",
+      "en-art74-p11",
+      "en-art10-p2-f",
+      "en-anxIII-3-d",
+      "en-art14-p1",
+      "en-art75a-suite"
+    ],
+    "top_cosine": 0.581,
+    "hit": true,
+    "rank_in_50": 10
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "q05",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-c"
+    ],
+    "found": [
+      "en-art5-p1-c",
+      "en-art5-p1-g",
+      "en-art10-p2-f",
+      "en-art75a-p3",
+      "en-art46-p1",
+      "en-art75a-suite",
+      "en-art95-p2-e",
+      "en-art60-p6",
+      "en-art50-p7",
+      "en-art46-p2"
+    ],
+    "top_cosine": 0.549,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "q06",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-e"
+    ],
+    "found": [
+      "en-art5-p1-e",
+      "en-art5-p2-suite",
+      "en-art71-p1",
+      "en-art59-p1-a",
+      "en-art59-p1-j",
+      "en-art3-35",
+      "en-art3-41",
+      "en-art10-p3",
+      "en-art26-p10-part2",
+      "en-anxIII-1-a"
+    ],
+    "top_cosine": 0.52,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "q07",
+    "type": "definition",
+    "expected": [
+      "art3-1"
+    ],
+    "found": [
+      "en-art3-1",
+      "en-art3-55",
+      "en-art75-p1-a",
+      "en-art74-p6",
+      "en-art1-p2-a",
+      "en-art17-p1-a",
+      "en-art1-p2-c",
+      "en-anxXIV-text1",
+      "en-art79-p1",
+      "en-art17-p1-f"
+    ],
+    "top_cosine": 0.716,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "q08",
+    "type": "definition",
+    "expected": [
+      "art3-3",
+      "art3-4"
+    ],
+    "found": [
+      "en-art3-4",
+      "en-art75-p1-suite",
+      "en-art3-3",
+      "en-art4-p1",
+      "en-art25-p1-a",
+      "en-art50-p2",
+      "en-art25-p1-c",
+      "en-art91-p5",
+      "en-art26-p5",
+      "en-art92-p5"
+    ],
+    "top_cosine": 0.623,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "q09",
+    "type": "definition",
+    "expected": [
+      "art3-60"
+    ],
+    "found": [
+      "en-art3-60",
+      "en-art50-p4",
+      "en-art5-p1-ba",
+      "en-art5-p1-a",
+      "en-art23-p2",
+      "en-art50-p2",
+      "en-anxIII-6-d",
+      "en-art25-p1-a",
+      "en-art25-p1-b",
+      "en-anxIII-6-c"
+    ],
+    "top_cosine": 0.653,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "q10",
+    "type": "obligation",
+    "expected": [
+      "art50-p1"
+    ],
+    "found": [
+      "en-art50-p1",
+      "en-art50-p2",
+      "en-art26-p7",
+      "en-art91-p2",
+      "en-art25-b",
+      "en-art6-p4",
+      "en-art53-p1-b",
+      "en-art92-p7",
+      "en-art31-p5",
+      "en-art25-p4"
+    ],
+    "top_cosine": 0.609,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "q11",
+    "type": "obligation",
+    "expected": [
+      "art53-p1-a",
+      "art53-p1-b"
+    ],
+    "found": [
+      "en-art53-p1-b",
+      "en-art53-p1-a",
+      "en-anxXI-1-c",
+      "en-anxXI-1-e",
+      "en-anxXII-1-h",
+      "en-anxXII-1-e",
+      "en-art11-p1",
+      "en-art91-p5",
+      "en-art91-p2",
+      "en-art92-p7"
+    ],
+    "top_cosine": 0.654,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "q12",
+    "type": "obligation",
+    "expected": [
+      "art26-p7"
+    ],
+    "found": [
+      "en-art26-p7",
+      "en-art27-p1-b",
+      "en-art27-p1-e",
+      "en-art16-f",
+      "en-art13-p3-b",
+      "en-art26-p5",
+      "en-art9-p8",
+      "en-art20-p2",
+      "en-anxVIII-6",
+      "en-art16-b"
+    ],
+    "top_cosine": 0.769,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "q13",
+    "type": "date",
+    "expected": [
+      "art113-a"
+    ],
+    "found": [
+      "en-art5-p1-h",
+      "en-art5-p1-ba",
+      "en-art99-p3",
+      "en-art79-p8",
+      "en-art111-p2",
+      "en-art100-p2",
+      "en-art1-p2-b",
+      "en-art113-a",
+      "en-art113-b",
+      "en-art111-p1"
+    ],
+    "top_cosine": 0.631,
+    "hit": true,
+    "rank_in_50": 19
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "q14",
+    "type": "date",
+    "expected": [
+      "art113-c"
+    ],
+    "found": [
+      "en-art113-c",
+      "en-art7-p3-a",
+      "en-art7-p1-b",
+      "en-art73-p9",
+      "en-art111-p2",
+      "en-art6-p4",
+      "fr-art6-p3",
+      "en-art25-p3-b",
+      "en-art49-p3",
+      "en-art26-p11"
+    ],
+    "top_cosine": 0.654,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "q15",
+    "type": "obligation",
+    "expected": [
+      "art99-p3"
+    ],
+    "found": [
+      "en-art99-p3",
+      "en-art100-p2",
+      "en-art5-p1-d",
+      "en-art5-p1-h",
+      "en-art101-p1-c",
+      "en-art100-p3",
+      "en-art101-p1-a",
+      "en-art80-p7",
+      "en-art50-p4",
+      "en-anxIII-6-d"
+    ],
+    "top_cosine": 0.702,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "q16",
+    "type": "date",
+    "expected": [
+      "art113-a"
+    ],
+    "found": [
+      "en-art5-p1-ba",
+      "en-art5-p1-h",
+      "en-art50-p4",
+      "en-art3-60",
+      "en-art26-p10-part1",
+      "en-art50-p1",
+      "en-anxIII-1-a",
+      "en-art59-p1-f",
+      "en-art59-p1-c",
+      "en-art14-p5"
+    ],
+    "top_cosine": 0.671,
+    "hit": false,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "n01",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art19-p1",
+      "en-art18-p1-d",
+      "en-art18-p1-c",
+      "fr-art23-p5",
+      "fr-art36-p9-a",
+      "en-art26-p6",
+      "en-art44-p2",
+      "fr-art36-p9-b",
+      "en-art47-p1",
+      "en-art78-p1-a"
+    ],
+    "top_cosine": 0.554,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "n02",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art99-p3",
+      "en-art100-p3",
+      "en-art101-p1-c",
+      "en-art101-p1-d",
+      "en-art100-p2",
+      "en-art58-p2-d",
+      "en-art58-p3",
+      "en-art62-p1-a",
+      "en-art111-p1",
+      "en-art50-p1"
+    ],
+    "top_cosine": 0.507,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "n03",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art99-p5",
+      "fr-art99-p4-e",
+      "en-art101-p1-b",
+      "en-art101-p1-d",
+      "en-art63-p1",
+      "fr-art100-p3",
+      "en-art62-p2",
+      "en-art11-p1",
+      "fr-art62-p1-a",
+      "en-art74-p12"
+    ],
+    "top_cosine": 0.425,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "n04",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art25-p4",
+      "fr-art53-p4",
+      "en-anxVII-i7",
+      "en-anxVII-i8",
+      "en-anxXI-2-c",
+      "en-art53-p2",
+      "fr-anxXI-2-a",
+      "en-anxXII-2-b",
+      "fr-art91-p5",
+      "fr-art55-p2"
+    ],
+    "top_cosine": 0.445,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "n05",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art75-p1-a",
+      "en-art74-p8",
+      "en-art57-p3a",
+      "en-art59-p3",
+      "en-art5-p1-ba",
+      "en-anxIII-6-a",
+      "en-art50-p1",
+      "en-anxIII-7-b",
+      "en-art5-p1-h",
+      "en-art74-p6"
+    ],
+    "top_cosine": 0.563,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "n06",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art48-p4",
+      "fr-art45-p1-a",
+      "en-art31-p9",
+      "en-anxVII-text2",
+      "fr-art36-p3",
+      "en-art30-p4",
+      "fr-art45-p2-b",
+      "en-art44-p3",
+      "en-art36-p9-suite",
+      "fr-art34-p2"
+    ],
+    "top_cosine": 0.596,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "n07",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art50-p1",
+      "en-art5-p1a-a",
+      "en-art5-p1-ba",
+      "en-art50-p4",
+      "en-art52-p6",
+      "en-art26-p10-part1",
+      "en-art53-p1-c",
+      "en-art49-p5",
+      "en-art59-p1-a",
+      "en-art14-p1"
+    ],
+    "top_cosine": 0.565,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "n08",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art71-p6",
+      "en-art57-p3",
+      "fr-art100-p4",
+      "en-art70-p9",
+      "en-art71-p5",
+      "en-art57-p14",
+      "en-art18-p1-e",
+      "en-art100-p5",
+      "en-art47-p1",
+      "en-anxV-5"
+    ],
+    "top_cosine": 0.472,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "n09",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art99-p4-d",
+      "en-art99-p4-f",
+      "en-art100-p3",
+      "fr-art100-p2",
+      "en-art101-p1-a",
+      "en-art101-p1-b",
+      "en-art75c-p5-e",
+      "en-art75c-b"
+    ],
+    "top_cosine": 0.488,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "en",
+    "id": "n10",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art5-p1-h",
+      "en-art50-p1",
+      "en-art59-p3",
+      "en-art26-p10-part1",
+      "en-art5-p1-ba",
+      "en-art102",
+      "en-art104",
+      "en-art74-p8",
+      "en-anxIII-6-d",
+      "en-anxIII-6-e"
+    ],
+    "top_cosine": 0.523,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "q01",
+    "type": "scenario",
+    "expected": [
+      "anxIII-4-a"
+    ],
+    "found": [
+      "fr-anxIII-4-a",
+      "fr-anxIII-8-b",
+      "fr-art6-suite",
+      "fr-art80-p1",
+      "fr-art15-p5",
+      "fr-art9-suite",
+      "fr-art6-p1-a",
+      "fr-art25-p4",
+      "fr-art14-p4-b",
+      "fr-art14-p4-d"
+    ],
+    "top_cosine": 0.693,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "q02",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-f"
+    ],
+    "found": [
+      "fr-art50-p2",
+      "fr-anxIII-4-b",
+      "fr-art50-p4",
+      "fr-art25-p4",
+      "fr-anxIII-8-b",
+      "fr-art15-p5",
+      "fr-art14-p1",
+      "fr-art6-c",
+      "fr-art46-p2",
+      "fr-art60-p7"
+    ],
+    "top_cosine": 0.558,
+    "hit": false,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "q03",
+    "type": "scenario",
+    "expected": [
+      "anxIII-5-b"
+    ],
+    "found": [
+      "fr-anxIII-5-b",
+      "fr-art25-p4",
+      "fr-art92-p5",
+      "fr-art52-p5",
+      "fr-art43-suite",
+      "fr-art62-p3-a",
+      "fr-art72-p4",
+      "fr-art43-p1-a",
+      "fr-anxXIII-i6",
+      "fr-art80-p1"
+    ],
+    "top_cosine": 0.519,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "q04",
+    "type": "scenario",
+    "expected": [
+      "anxIII-3-d"
+    ],
+    "found": [
+      "fr-art60-p6",
+      "fr-anxIII-3-d",
+      "fr-art5-p1-h",
+      "fr-art60a-p1",
+      "fr-art5-p1-d",
+      "fr-art76-p2",
+      "fr-art60-p3",
+      "fr-art74-p11",
+      "fr-art15-p5",
+      "fr-art75-p1-a"
+    ],
+    "top_cosine": 0.611,
+    "hit": true,
+    "rank_in_50": 2
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "q05",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-c"
+    ],
+    "found": [
+      "en-art75a-p3",
+      "en-art5-p1-c",
+      "en-art99-p7-i",
+      "fr-art101-p1-suite",
+      "en-art99-p7-c",
+      "en-art5-p3",
+      "en-art75c-suite",
+      "en-art95-p1",
+      "en-art95-p2-e",
+      "fr-art75c-p5-f"
+    ],
+    "top_cosine": 0.507,
+    "hit": true,
+    "rank_in_50": 2
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "q06",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-e"
+    ],
+    "found": [
+      "en-art5-p1-e",
+      "en-art5-p2-suite",
+      "fr-anxXIII-i7",
+      "fr-art26-p10-part1",
+      "fr-art3-35",
+      "en-anxXIII-i6",
+      "fr-art27-p5",
+      "en-anxIII-1-a",
+      "en-art52-p5",
+      "en-art3-41"
+    ],
+    "top_cosine": 0.505,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "q07",
+    "type": "definition",
+    "expected": [
+      "art3-1"
+    ],
+    "found": [
+      "fr-art3-1",
+      "fr-art3-55",
+      "fr-art1-p2-a",
+      "fr-art79-p2",
+      "fr-art75-p1-a",
+      "fr-art74-p8",
+      "fr-anxXIV-text1",
+      "fr-art1-p2-c",
+      "fr-art111-p1",
+      "fr-art74-p1-b"
+    ],
+    "top_cosine": 0.729,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "q08",
+    "type": "definition",
+    "expected": [
+      "art3-3",
+      "art3-4"
+    ],
+    "found": [
+      "fr-art3-4",
+      "fr-art3-3",
+      "fr-art25-p1-a",
+      "fr-art25-p1-b",
+      "fr-art4-p1",
+      "fr-art92-p5",
+      "fr-art91-p5",
+      "fr-art50-p2",
+      "fr-art75-p1-suite",
+      "fr-art26-p5"
+    ],
+    "top_cosine": 0.656,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "q09",
+    "type": "definition",
+    "expected": [
+      "art3-60"
+    ],
+    "found": [
+      "fr-art3-60",
+      "fr-art50-p4",
+      "en-art5-p1-a",
+      "en-art5-p1-ba",
+      "en-art15-p5",
+      "en-art23-p2",
+      "en-anxIII-1-a",
+      "en-anxIII-6-b",
+      "en-art15-p1",
+      "en-art50-p2"
+    ],
+    "top_cosine": 0.647,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "q10",
+    "type": "obligation",
+    "expected": [
+      "art50-p1"
+    ],
+    "found": [
+      "fr-art50-p1",
+      "fr-art50-p2",
+      "fr-art25-p4",
+      "fr-art92-p7",
+      "fr-art26-p7",
+      "fr-art91-p2",
+      "fr-art13-p1",
+      "fr-art5-p1-a",
+      "fr-art4-p1",
+      "fr-art6-p1-b"
+    ],
+    "top_cosine": 0.613,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "q11",
+    "type": "obligation",
+    "expected": [
+      "art53-p1-a",
+      "art53-p1-b"
+    ],
+    "found": [
+      "fr-anxXI-2-a",
+      "fr-anxXI-1-a",
+      "fr-art53-p1-b",
+      "fr-art53-p1-a",
+      "fr-art91-p5",
+      "fr-anxXII-2-a",
+      "fr-anxXII-1-e",
+      "fr-art91-p1",
+      "en-art11-p1",
+      "fr-art92-p5"
+    ],
+    "top_cosine": 0.664,
+    "hit": true,
+    "rank_in_50": 4
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "q12",
+    "type": "obligation",
+    "expected": [
+      "art26-p7"
+    ],
+    "found": [
+      "fr-art26-p7",
+      "fr-art26-p5",
+      "fr-art16-b",
+      "fr-anxVIII-12",
+      "fr-art20-p2",
+      "fr-art16-f",
+      "fr-anxIII-4-a",
+      "fr-anxVIII-i19",
+      "fr-art27-p1-a",
+      "fr-art27-p1-b"
+    ],
+    "top_cosine": 0.767,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "q13",
+    "type": "date",
+    "expected": [
+      "art113-a"
+    ],
+    "found": [
+      "fr-art5-p1-h",
+      "fr-art5-p1-d",
+      "fr-art99-p3",
+      "fr-art111-p2",
+      "fr-art1-p2-b",
+      "fr-art79-p8",
+      "fr-art100-p2",
+      "fr-art57-p11",
+      "fr-art81-p1",
+      "fr-art26-p10-part1"
+    ],
+    "top_cosine": 0.67,
+    "hit": false,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "q14",
+    "type": "date",
+    "expected": [
+      "art113-c"
+    ],
+    "found": [
+      "fr-art113-c",
+      "fr-art6-p3",
+      "fr-art7-p3-a",
+      "fr-art7-p1-b",
+      "fr-art73-p9",
+      "fr-art111-p2",
+      "fr-art25-p3-b",
+      "en-art113-b",
+      "fr-art6-p2",
+      "fr-art80-p1"
+    ],
+    "top_cosine": 0.644,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "q15",
+    "type": "obligation",
+    "expected": [
+      "art99-p3"
+    ],
+    "found": [
+      "fr-art99-p3",
+      "fr-art100-p2",
+      "fr-art5-p1-d",
+      "fr-art101-p1-d",
+      "fr-art5-p1-h",
+      "fr-art100-p3",
+      "fr-art101-p1-c",
+      "fr-art26-p10-part1",
+      "fr-art80-p7",
+      "fr-anxIII-6-e"
+    ],
+    "top_cosine": 0.74,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "q16",
+    "type": "date",
+    "expected": [
+      "art113-a"
+    ],
+    "found": [
+      "fr-art5-p1-ba",
+      "fr-art5-p1-h",
+      "fr-art50-p4",
+      "fr-art26-p10-part1",
+      "fr-art59-p1-c",
+      "fr-art59-p1-f",
+      "fr-art50-p3"
+    ],
+    "top_cosine": 0.633,
+    "hit": false,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "n01",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art18-p1-b",
+      "en-art19-p1",
+      "en-art18-p1-d",
+      "fr-art36-p9-a",
+      "fr-art23-p5",
+      "fr-art36-p9-b",
+      "en-art26-p6",
+      "fr-art44-p2",
+      "fr-art100-p5",
+      "fr-art79-p8"
+    ],
+    "top_cosine": 0.547,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "n02",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art62-p1-a",
+      "fr-art11-p1",
+      "fr-art57-p3a",
+      "fr-art58-p3",
+      "fr-anxXIV-text2",
+      "fr-art57-p9-e",
+      "fr-art25-p4",
+      "fr-art6-p1-b",
+      "fr-art50-p1",
+      "fr-art50-p6"
+    ],
+    "top_cosine": 0.483,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "n03",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art101-p1-b",
+      "fr-art99-p4-e",
+      "en-art101-p1-d",
+      "fr-art99-p4-d",
+      "fr-art3-4",
+      "fr-art3-3",
+      "en-art62-p2",
+      "fr-art100-p3",
+      "fr-art62-p1-a",
+      "fr-art11-p1"
+    ],
+    "top_cosine": 0.406,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "n04",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art25-p4",
+      "fr-art53-p4",
+      "fr-anxXI-2-a",
+      "fr-art55-p2",
+      "fr-art91-p5",
+      "fr-anxXI-2-c",
+      "fr-art56-p3",
+      "fr-art56-p7",
+      "fr-anxVII-i1",
+      "fr-anxXII-2-b"
+    ],
+    "top_cosine": 0.449,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "n05",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art75-p1-a",
+      "en-art57-p3a",
+      "en-art74-p8",
+      "en-art5-p1-ba",
+      "en-art59-p3",
+      "en-art50-p1",
+      "en-art74-p6",
+      "en-art49-p5",
+      "en-anxIII-6-a",
+      "en-art57-p1"
+    ],
+    "top_cosine": 0.559,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "n06",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art48-p4",
+      "fr-anxVII-text2",
+      "fr-art36-p3",
+      "fr-art31-p9",
+      "fr-art24-p1",
+      "fr-art45-p1-a",
+      "fr-art44-p3",
+      "fr-art16-h",
+      "fr-art34-p2",
+      "en-art30-p4"
+    ],
+    "top_cosine": 0.617,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "n07",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art50-p4",
+      "fr-art26-p10-part1",
+      "fr-art5-p1a-a",
+      "fr-art57-p3a",
+      "fr-art60-p2",
+      "en-art52-p6",
+      "fr-art60a-p1",
+      "fr-art5-p1-ba",
+      "fr-art59-p1-a",
+      "fr-art60-p1"
+    ],
+    "top_cosine": 0.567,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "n08",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art71-p6",
+      "en-art57-p3",
+      "en-art71-p5",
+      "en-anxVIII-i23",
+      "en-art49-p2",
+      "en-art53-p1-c",
+      "en-art18-p1-e",
+      "en-art49-p1",
+      "fr-art47-p1",
+      "fr-art100-p4"
+    ],
+    "top_cosine": 0.482,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "n09",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art99-p4-f",
+      "fr-art99-p4-d",
+      "fr-art100-p2",
+      "fr-art100-p3",
+      "fr-art101-p1-b",
+      "fr-art101-p1-d",
+      "fr-art3-61"
+    ],
+    "top_cosine": 0.506,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "fr",
+    "id": "n10",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art5-p1-h",
+      "en-art26-p10-part1",
+      "en-anxIII-6-d",
+      "en-anxIII-6-e",
+      "en-art50-p1",
+      "en-art59-p3",
+      "en-art111-p1",
+      "en-art79-p2",
+      "en-art104",
+      "en-art108-4"
+    ],
+    "top_cosine": 0.539,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "q01",
+    "type": "scenario",
+    "expected": [
+      "anxIII-4-a"
+    ],
+    "found": [
+      "en-anxIII-4-a",
+      "en-anxIII-8-b",
+      "en-art6-suite",
+      "en-art14-p1",
+      "en-art13-p3-b",
+      "en-art14-p4-b",
+      "en-art26-p10-part1",
+      "en-art9-suite",
+      "en-art9-p2-a",
+      "en-art6-p3"
+    ],
+    "top_cosine": 0.627,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "q02",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-f"
+    ],
+    "found": [
+      "en-art92-p7",
+      "en-anxVII-text2",
+      "en-anxVII-text3",
+      "en-art75a-p7",
+      "en-art15-p4",
+      "en-art75-p3",
+      "en-art50-p2",
+      "en-art75-p2a-suite",
+      "en-art60-p6",
+      "en-art60-p7"
+    ],
+    "top_cosine": 0.516,
+    "hit": false,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "q03",
+    "type": "scenario",
+    "expected": [
+      "anxIII-5-b"
+    ],
+    "found": [
+      "fr-anxIII-5-b",
+      "fr-anxXIII-i5",
+      "fr-anxXIII-i6",
+      "fr-art4a-p1-b",
+      "fr-art4a-p1-c",
+      "fr-art80-p7",
+      "fr-art52-p5",
+      "fr-art80-p1",
+      "fr-anxIII-3-a",
+      "fr-art43-p1-a"
+    ],
+    "top_cosine": 0.481,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "q04",
+    "type": "scenario",
+    "expected": [
+      "anxIII-3-d"
+    ],
+    "found": [
+      "en-art60-p6",
+      "en-art50-p7",
+      "en-art60-p3",
+      "en-art10-p2-f",
+      "en-art5-p1-h",
+      "en-art60a-p1",
+      "fr-art1-p1",
+      "en-art50-p4",
+      "en-art15-p5",
+      "en-art74-p11"
+    ],
+    "top_cosine": 0.554,
+    "hit": false,
+    "rank_in_50": 27
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "q05",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-c"
+    ],
+    "found": [
+      "en-art5-p1-c",
+      "en-art5-p3",
+      "en-art75a-p3",
+      "en-art92-p1-a",
+      "en-art85",
+      "fr-art77-p3",
+      "en-art46-p1",
+      "en-art75a-suite",
+      "en-art92-p5",
+      "en-art10-p2-f"
+    ],
+    "top_cosine": 0.546,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "q06",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-e"
+    ],
+    "found": [
+      "en-art75a-c",
+      "en-art5-p1-e",
+      "en-art59-p1-e",
+      "fr-art71-p1",
+      "en-art59-p1-h",
+      "en-art71-p5",
+      "en-art5-p2-suite",
+      "en-art56-p3",
+      "en-art19-p1",
+      "en-art27-p5"
+    ],
+    "top_cosine": 0.438,
+    "hit": true,
+    "rank_in_50": 2
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "q07",
+    "type": "definition",
+    "expected": [
+      "art3-1"
+    ],
+    "found": [
+      "en-art9-p2-a",
+      "en-art74-p6",
+      "fr-art3-1",
+      "en-anxIII-6-a",
+      "en-anxIII-6-d",
+      "en-art9-p2-b",
+      "en-art60-p6",
+      "en-art65-p5",
+      "en-anxVII-text3",
+      "en-art79-p2"
+    ],
+    "top_cosine": 0.547,
+    "hit": true,
+    "rank_in_50": 3
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "q08",
+    "type": "definition",
+    "expected": [
+      "art3-3",
+      "art3-4"
+    ],
+    "found": [
+      "en-art3-3",
+      "en-art3-6",
+      "fr-art75-p1-suite",
+      "fr-art92-p5",
+      "fr-art50-p2",
+      "fr-art91-p5",
+      "fr-art25-p2",
+      "en-art25-p4",
+      "fr-art4-p1",
+      "fr-art50-p4"
+    ],
+    "top_cosine": 0.535,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "q09",
+    "type": "definition",
+    "expected": [
+      "art3-60"
+    ],
+    "found": [
+      "en-art3-60",
+      "en-art50-p4",
+      "en-art5-p1-h",
+      "en-art101-p1-b",
+      "en-art23-p2",
+      "en-art5-p1-ba",
+      "en-art26-p10-part1",
+      "en-anxIII-6-e",
+      "en-art101-p1-a",
+      "en-anxIII-6-d"
+    ],
+    "top_cosine": 0.585,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "q10",
+    "type": "obligation",
+    "expected": [
+      "art50-p1"
+    ],
+    "found": [
+      "en-art26-p7",
+      "en-art50-p1",
+      "en-art91-p2",
+      "en-art50-p2",
+      "en-art22-p1",
+      "en-art92-p7",
+      "en-art22-p3-d",
+      "en-art13-p1",
+      "en-art25-p4",
+      "en-art21-p1"
+    ],
+    "top_cosine": 0.573,
+    "hit": true,
+    "rank_in_50": 2
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "q11",
+    "type": "obligation",
+    "expected": [
+      "art53-p1-a",
+      "art53-p1-b"
+    ],
+    "found": [
+      "fr-art53-p1-b",
+      "fr-anxXI-2-a",
+      "fr-anxXI-1-b",
+      "fr-art91-p5",
+      "en-art53-p1-d",
+      "fr-art92-p5",
+      "fr-art91-p1",
+      "en-anxXII-1-h",
+      "fr-anxXII-1-e",
+      "en-art54-p3-b"
+    ],
+    "top_cosine": 0.607,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "q12",
+    "type": "obligation",
+    "expected": [
+      "art26-p7"
+    ],
+    "found": [
+      "en-art26-p7",
+      "en-art26-p5",
+      "en-art20-p2",
+      "en-art16-f",
+      "en-art27-p1-b",
+      "en-art27-p1-a",
+      "en-art9-p8",
+      "en-art16-b",
+      "en-art13-p2",
+      "en-art13-p3-b"
+    ],
+    "top_cosine": 0.688,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "q13",
+    "type": "date",
+    "expected": [
+      "art113-a"
+    ],
+    "found": [
+      "en-art5-p1-h",
+      "en-art5-p1-ba",
+      "en-art113-b",
+      "en-art79-p8",
+      "en-art26-p10-part1",
+      "en-art113-a",
+      "en-art111-p2",
+      "fr-art110-«68",
+      "en-art57-p11",
+      "en-art110-‘68"
+    ],
+    "top_cosine": 0.573,
+    "hit": true,
+    "rank_in_50": 13
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "q14",
+    "type": "date",
+    "expected": [
+      "art113-c"
+    ],
+    "found": [
+      "en-art113-c",
+      "fr-art111-p2",
+      "en-art113-b",
+      "fr-art42-p3",
+      "en-art112-p7",
+      "fr-art43-p3-part1",
+      "fr-art73-p9",
+      "en-art26-p11",
+      "en-art26-p5",
+      "fr-art80-p1"
+    ],
+    "top_cosine": 0.672,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "q15",
+    "type": "obligation",
+    "expected": [
+      "art99-p3"
+    ],
+    "found": [
+      "en-art99-p3",
+      "en-art100-p2",
+      "en-art5-p1-h",
+      "en-art5-p1-d",
+      "en-art101-p1-c",
+      "en-art101-p1-a",
+      "en-art100-p3",
+      "en-art26-p10-part1",
+      "fr-art99-p4-f",
+      "en-art46-p2"
+    ],
+    "top_cosine": 0.621,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "q16",
+    "type": "date",
+    "expected": [
+      "art113-a"
+    ],
+    "found": [
+      "en-art5-p1-ba",
+      "en-art5-p1-h",
+      "en-art50-p4",
+      "en-art26-p10-part1",
+      "en-art3-60",
+      "en-art14-p5",
+      "en-art4a-p1-b",
+      "en-art4a-p1-e",
+      "en-art60-p5",
+      "en-art50-p3"
+    ],
+    "top_cosine": 0.604,
+    "hit": false,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "n01",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art18-p1-d",
+      "en-art19-p1",
+      "en-art18-p1-c",
+      "fr-art23-p5",
+      "fr-art36-p9-a",
+      "en-art26-p6",
+      "fr-art36-p9-b",
+      "fr-art44-p2",
+      "fr-art79-p8",
+      "fr-art33-p4"
+    ],
+    "top_cosine": 0.548,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "n02",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art101-p1-a",
+      "en-art101-p1-b",
+      "en-art99-p3",
+      "en-art100-p3",
+      "en-art99-p6",
+      "en-art100-p2",
+      "en-art108-4",
+      "en-art108-3",
+      "en-art113-c",
+      "en-art17-p2"
+    ],
+    "top_cosine": 0.492,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "n03",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art99-p4-e",
+      "fr-art99-p4-f",
+      "en-art101-p1-b",
+      "en-art101-p1-d",
+      "fr-art100-p3",
+      "fr-art100-p2",
+      "en-art63-p1",
+      "fr-art3-3",
+      "en-art50-p2",
+      "en-art53-p4"
+    ],
+    "top_cosine": 0.46,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "n04",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art53-p4",
+      "en-art25-p4",
+      "fr-art53-p2",
+      "fr-art91-p5",
+      "en-anxXII-2-b",
+      "fr-anxXIV-text2",
+      "fr-art56-p3",
+      "fr-art55-p2",
+      "fr-art92-p5",
+      "fr-art92-p7"
+    ],
+    "top_cosine": 0.455,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "n05",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art74-p8",
+      "en-art74-p10",
+      "en-art110-‘68",
+      "en-art57-p3a",
+      "fr-art110-«68",
+      "en-art30-p2",
+      "en-art75-p1-a",
+      "en-art57-p3",
+      "en-art101-p5",
+      "en-art60a-p1"
+    ],
+    "top_cosine": 0.531,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "n06",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art48-p4",
+      "fr-art24-p1",
+      "fr-art16-h",
+      "fr-art3-24",
+      "fr-art48-p3",
+      "fr-art23-p1-c",
+      "fr-anxVII-text2",
+      "fr-art83-p1-a",
+      "en-art99-p5",
+      "en-art44-p1"
+    ],
+    "top_cosine": 0.531,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "n07",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art49-p5",
+      "en-art26-p10-part1",
+      "en-art16-b",
+      "en-art49-p1",
+      "en-anxIX-1",
+      "en-art53-p1-c",
+      "en-anxVIII-i17",
+      "en-art23-p3",
+      "en-art12-p1",
+      "en-anxVIII-9"
+    ],
+    "top_cosine": 0.535,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "n08",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art57-p3",
+      "en-art71-p6",
+      "en-art58-p3",
+      "en-art71-p2",
+      "en-art49-p2",
+      "en-art47-p1",
+      "en-art49-p1",
+      "en-anxVIII-i23",
+      "en-art57-p14",
+      "en-art53-p1-c"
+    ],
+    "top_cosine": 0.461,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "n09",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art99-p4-d",
+      "fr-art99-p4-f",
+      "fr-art100-p2",
+      "fr-art100-p3",
+      "en-art101-p1-b",
+      "en-art101-p1-a",
+      "en-art75c-p5-e",
+      "en-art75c-p5-f"
+    ],
+    "top_cosine": 0.534,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "diverse",
+    "lang": "ar",
+    "id": "n10",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art49-p5",
+      "en-art110-‘68",
+      "en-art108-6",
+      "en-art108-4",
+      "en-art107-p‘4",
+      "en-art104",
+      "en-anxIII-6-d",
+      "en-art102",
+      "en-art50-p4",
+      "en-anxIII-6-a"
+    ],
+    "top_cosine": 0.508,
+    "hit": null,
+    "rank_in_50": null
+  }
+]

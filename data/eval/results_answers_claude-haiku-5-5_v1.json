@@ -1,0 +1,2654 @@
+[
+  {
+    "id": "q01",
+    "type": "scenario",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [
+      "anxIII-4-a"
+    ],
+    "rewritten": "Is an AI system used to screen CVs and shortlist candidates for recruitment or selection of natural persons classified as a high-risk AI system under the EU AI Act?",
+    "sources": [
+      "anxIII-6-d",
+      "anxIII-4-a",
+      "art6-suite",
+      "art26-p11",
+      "art14-p5",
+      "art71-p1",
+      "art74-p8",
+      "art5-p1-d",
+      "art49-p1",
+      "art49-p3"
+    ],
+    "refused": false,
+    "answer": "Yes. Annex III, point 4(a) lists AI systems intended to be used for the recruitment or selection of natural persons, including to analyse and filter job applications and to evaluate candidates, as high-risk [S2]. Article 6 also states that an Annex III system is always considered high-risk where it performs profiling of natural persons [S3]. Deployers that use such a system to make or assist decisions related to natural persons must inform those persons that they are subject to the high-risk system [S4].",
+    "cited": [
+      "anxIII-4-a",
+      "art6-suite",
+      "art26-p11"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q02",
+    "type": "scenario",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [
+      "art5-p1-f"
+    ],
+    "rewritten": "Can an AI system be used to infer the emotional state of employees, such as stress or unhappiness, from their behaviour or facial expressions during video calls in the workplace?",
+    "sources": [
+      "anxIII-4-b",
+      "art50-p3",
+      "art50-p2",
+      "anxIII-8-b",
+      "art3-39",
+      "art26-p7",
+      "art5-p1-f",
+      "art92-p7",
+      "art15-p4",
+      "art12-p1"
+    ],
+    "refused": false,
+    "answer": "Using AI to infer employees' emotions in the workplace is prohibited unless the system is intended for medical or safety reasons. Article 5(1)(f) prohibits the use of AI systems to infer emotions of a natural person in the areas of workplace and education institutions, except where the use is intended for medical or safety reasons [S7]. A system that identifies or infers emotions on the basis of biometric data is an emotion recognition system [S5]. The sources do not establish that stress or unhappiness detection during video calls serves medical or safety reasons [S7]. If such a system were permitted, deployers would have to inform the exposed persons of its operation [S2]. Systems intended to monitor and evaluate the performance and behaviour of persons in work relationships are listed as high-risk in Annex III, point 4(b) [S1], and employers must inform workers' representatives and affected workers before using a high-risk system at the workplace [S6].",
+    "cited": [
+      "anxIII-4-b",
+      "art50-p3",
+      "art3-39",
+      "art26-p7",
+      "art5-p1-f"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [
+      "Using AI to infer employees' emotions in the workplace is prohibited unless the system is intended for medical or safety reasons."
+    ],
+    "format_error": false
+  },
+  {
+    "id": "q03",
+    "type": "scenario",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [
+      "anxIII-5-b"
+    ],
+    "rewritten": "Under the AI Act, is an AI system used by a bank to evaluate the creditworthiness of natural persons and determine their eligibility for loans classified as a high-risk AI system?",
+    "sources": [
+      "anxIII-5-b",
+      "anxIII-6-d",
+      "art14-p5",
+      "art6-suite",
+      "art9-p6",
+      "art6-p1-b",
+      "art26-p11",
+      "art80-p1",
+      "art5-p1-d",
+      "art8-p1"
+    ],
+    "refused": false,
+    "answer": "A model that evaluates creditworthiness or establishes a credit score of natural persons is a high-risk AI system listed in Annex III, point 5(b) [S1]. The exception for AI systems used to detect financial fraud does not apply to a loan-decision model [S1]. Under Article 6, an Annex III system that performs profiling of natural persons is always considered high-risk [S4]. Deployers of Annex III high-risk systems that make or assist in making decisions related to natural persons must inform those persons that they are subject to the system [S7].",
+    "cited": [
+      "anxIII-5-b",
+      "art6-suite",
+      "art26-p11"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q04",
+    "type": "scenario",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [
+      "anxIII-3-d"
+    ],
+    "rewritten": "Is an AI system used by an educational institution to monitor students during online examinations in order to detect cheating permitted, and under which requirements of the regulation?",
+    "sources": [
+      "art76-p2",
+      "art60-p1",
+      "anxIII-3-d",
+      "art60a-p1",
+      "art60-p3",
+      "art10-p2-f",
+      "art50-p1",
+      "art74-p11",
+      "art50-p4",
+      "art79-p2"
+    ],
+    "refused": false,
+    "answer": "The sources classify AI systems intended for monitoring and detecting prohibited behaviour of students during tests in educational institutions as high-risk under Annex III, point 3(d) [S3]. Such a system must therefore meet the high-risk requirements, including examining training, validation and testing data for biases that could lead to discrimination or negative impacts on fundamental rights [S6]. Authorities give particular attention to AI systems that present risks to vulnerable groups, and risks to fundamental rights must be reported to the relevant national authorities [S10]. The sources do not say whether this use is permitted overall or list all applicable obligations. They also do not establish that the Article 50(1) exception for systems authorised by law to detect criminal offences [S7] covers exam cheating, so the university would need to check that with its national authorities.",
+    "cited": [
+      "anxIII-3-d",
+      "art10-p2-f",
+      "art50-p1",
+      "art79-p2"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [
+      "The sources do not say whether this use is permitted overall or list all applicable obligations."
+    ],
+    "format_error": false
+  },
+  {
+    "id": "q05",
+    "type": "scenario",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [
+      "art5-p1-c"
+    ],
+    "rewritten": "Is the evaluation or classification of natural persons over time based on their social behaviour, leading to detrimental or unfavourable treatment in access to public services, a prohibited AI practice under the AI Act when carried out by a public authority such as a city?",
+    "sources": [
+      "art5-p1-c",
+      "art5-p1-d",
+      "art59-p2",
+      "art50-p1",
+      "art10-p2-f",
+      "art4a-p2-a",
+      "art59-p3",
+      "anxIII-6-d",
+      "art75a-suite",
+      "art95-p2-e"
+    ],
+    "refused": false,
+    "answer": "Such a scheme is not automatically illegal. Article 5(1)(c) prohibits placing on the market, putting into service or using AI systems that evaluate or classify natural persons over a certain period based on their social behaviour or known, inferred or predicted personal characteristics, where the social score leads to detrimental or unfavourable treatment in social contexts unrelated to where the data was originally generated or collected, or to treatment that is unjustified or disproportionate to their social behaviour or its gravity [S1]. Whether the city's system falls under this prohibition therefore depends on how the scores are used to grant or refuse services [S1]. The sources do not state whether the city's system is an AI system or whether any exception applies, so this cannot be confirmed from them [S1].",
+    "cited": [
+      "art5-p1-c"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [
+      "Such a scheme is not automatically illegal."
+    ],
+    "format_error": false
+  },
+  {
+    "id": "q06",
+    "type": "scenario",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [
+      "art5-p1-e"
+    ],
+    "rewritten": "Can a provider place on the market or put into service an AI system that creates or expands facial recognition databases through untargeted scraping of facial images from the internet or CCTV footage?",
+    "sources": [
+      "art5-p1-e",
+      "art50-p1",
+      "art50-p2",
+      "art49-p2",
+      "art5-p1-ba",
+      "art25-p4",
+      "art49-p1",
+      "art26-p10",
+      "art46-p1",
+      "art25-p1-a"
+    ],
+    "refused": false,
+    "answer": "No, if the collection is untargeted scraping of facial images from the internet to create or expand a facial recognition database. Article 5(1)(e) prohibits placing on the market, putting into service for this specific purpose, or using AI systems that create or expand facial recognition databases through untargeted scraping of facial images from the internet or CCTV footage [S1]. The sources do not say whether targeted collection, or collection that does not involve an AI system, is permitted, so they cannot confirm that option [S1].",
+    "cited": [
+      "art5-p1-e"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [
+      "No, if the collection is untargeted scraping of facial images from the internet to create or expand a facial recognition database."
+    ],
+    "format_error": false
+  },
+  {
+    "id": "q07",
+    "type": "definition",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [
+      "art3-1"
+    ],
+    "rewritten": "How does the regulation define an 'AI system'?",
+    "sources": [
+      "art3-1",
+      "art3-55",
+      "art75-p1-a",
+      "art74-p6",
+      "art79-p1",
+      "art1-p2-a",
+      "art17-p1-a",
+      "art17-p1-b",
+      "art6-p1-a",
+      "art79-p2"
+    ],
+    "refused": false,
+    "answer": "The regulation defines an 'AI system' in Article 3(1) as a machine-based system designed to operate with varying levels of autonomy, that may exhibit adaptiveness after deployment, and that, for explicit or implicit objectives, infers from the input it receives how to generate outputs such as predictions, content, recommendations, or decisions that can influence physical or virtual environments [S1].",
+    "cited": [
+      "art3-1"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q08",
+    "type": "definition",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [
+      "art3-3",
+      "art3-4"
+    ],
+    "rewritten": "Are we a provider or a deployer under the AI Act, when our organisation uses an AI system that was purchased from another company, and what distinguishes the two roles?",
+    "sources": [
+      "art3-4",
+      "art25-p1-a",
+      "art4-p1",
+      "art25-p1-c",
+      "art3-3",
+      "art50-p2",
+      "art26-p5",
+      "art26-p7",
+      "art75-p1-suite",
+      "art50-p1"
+    ],
+    "refused": false,
+    "answer": "Based on the sources, if you only use an AI system bought from another company and do not develop it or place it on the market under your own name or trademark, you are a deployer: a body using an AI system under its authority, except in personal non-professional use [S1][S5]. A provider is an entity that develops an AI system, or has one developed, and places it on the market or puts it into service under its own name or trademark [S5]. You would become a provider of a high-risk AI system if you put your name or trademark on a high-risk system already placed on the market [S2], or if you modify the intended purpose of a non-high-risk system so that it becomes high-risk [S4]. As a deployer of a high-risk system, you must monitor its operation based on the instructions for use and inform the provider and authorities of risks or serious incidents [S7], and employers must inform workers' representatives and affected workers before using it at the workplace [S8]. Both providers and deployers must take measures to support AI literacy of their staff [S3].",
+    "cited": [
+      "art3-4",
+      "art25-p1-a",
+      "art4-p1",
+      "art25-p1-c",
+      "art3-3",
+      "art26-p5",
+      "art26-p7"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q09",
+    "type": "definition",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [
+      "art3-60"
+    ],
+    "rewritten": "What does the AI Act define as \"deep fake\" in terms of AI-generated or manipulated image, audio or video content that resembles existing persons, objects, places, entities or events and would falsely appear to be authentic or truthful?",
+    "sources": [
+      "art3-60",
+      "art50-p4",
+      "art5-p1-ba",
+      "art50-p2",
+      "art5-p1-a",
+      "art3-49",
+      "anxIII-6-d",
+      "art15-p5",
+      "anxIII-8-b",
+      "art27-p5"
+    ],
+    "refused": false,
+    "answer": "Under Article 3(60), a 'deep fake' is AI-generated or manipulated image, audio or video content that resembles existing persons, objects, places, entities or events and would falsely appear to a person to be authentic or truthful [S1]. The definition covers only image, audio and video content, not text [S1]. Deployers must disclose that deepfake content has been artificially generated or manipulated [S2]. For content that is part of an evidently artistic, creative, satirical, fictional or analogous work, the disclosure duty is limited to disclosing the existence of such content in a manner that does not hamper the display or enjoyment of the work [S2]. Disclosure does not apply where use is authorised by law to detect, prevent, investigate or prosecute criminal offences [S2]. Separately, Article 5(1)(ba) prohibits generating or manipulating realistic images, videos or audio of an identifiable natural person's intimate parts or sexually explicit activities without that person's explicit consent [S3].",
+    "cited": [
+      "art3-60",
+      "art50-p4",
+      "art5-p1-ba"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q10",
+    "type": "obligation",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [
+      "art50-p1"
+    ],
+    "rewritten": "Under the AI Act, must a provider of an AI system intended to interact directly with natural persons, such as a customer service chatbot, inform those persons that they are interacting with an AI system?",
+    "sources": [
+      "art50-p1",
+      "art50-p3",
+      "art26-p7",
+      "art5-p1-ba",
+      "art53-p1-b",
+      "art16-b",
+      "art25-p4",
+      "art55-p1-c",
+      "anxVIII-i15",
+      "art26-p11"
+    ],
+    "refused": false,
+    "answer": "Under Article 50(1), providers must ensure that AI systems intended to interact directly with natural persons are designed so that those persons are informed they are interacting with an AI system [S1]. This does not apply if it is obvious to a reasonably well-informed, observant and circumspect person, taking into account the circumstances and context of use [S1]. Article 50(1) is addressed to providers, and the sources do not say how it applies if your organisation is only a deployer [S1].",
+    "cited": [
+      "art50-p1"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q11",
+    "type": "obligation",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [
+      "art53-p1-a",
+      "art53-p1-b",
+      "anxXI*",
+      "anxXII*"
+    ],
+    "rewritten": "The user is a provider of a general-purpose AI model supplying it to downstream companies. The AI Act terms: \"provider of a general-purpose AI model\", \"downstream providers\", \"technical documentation\", \"information and documentation\". Rewrite in one sentence, no added obligations beyond what's asked (documentation). Should not add e.g. copyright policy or systemic risk.\n\nRewritten question:\n\nWhat technical documentation and information must a provider of a general-purpose AI model draw up and make available to downstream providers that integrate the model into their AI systems?",
+    "sources": [
+      "art53-p1-b",
+      "anxXI-1-a",
+      "anxXI-1-e",
+      "art53-p1-a",
+      "art91-p5",
+      "anxXII-1-e",
+      "anxXII-1-a",
+      "art3-68",
+      "art92-p5",
+      "art91-p1"
+    ],
+    "refused": false,
+    "answer": "You must draw up and keep up-to-date the technical documentation of the model, including its training and testing process and the results of its evaluation, containing at least the Annex XI information, to provide upon request to the AI Office and national competent authorities [S4]. You must also draw up, keep up-to-date and make available information and documentation to downstream providers (providers of AI systems that integrate your model) [S1][S8]. This information must let them understand the model's capabilities and limitations and contain at least the Annex XII elements, while protecting intellectual property and trade secrets [S1]. Examples of required content include the tasks the model is intended to perform and the types of AI systems it can be integrated into [S2][S7], the modality and format of inputs and outputs [S3], and the versions of relevant software where applicable [S6]. The sources do not reproduce the full Annex XI and Annex XII lists, so this answer is not exhaustive; the Commission may also request the documentation or any additional necessary information [S10].",
+    "cited": [
+      "art53-p1-b",
+      "anxXI-1-a",
+      "anxXI-1-e",
+      "art53-p1-a",
+      "anxXII-1-e",
+      "anxXII-1-a",
+      "art3-68",
+      "art91-p1"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [
+      "Annex XI → [S10]",
+      "Annex XII → [S10]"
+    ],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q12",
+    "type": "obligation",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [
+      "art26-p7"
+    ],
+    "rewritten": "Before deployers put into service a high-risk AI system in the workplace, is the employer required to inform workers' representatives and the affected employees that they will be subject to the use of the high-risk AI system?",
+    "sources": [
+      "art26-p7",
+      "art27-p1-b",
+      "art27-p1-a",
+      "art26-p5",
+      "art16-f",
+      "art16-b",
+      "anxVIII-i21",
+      "art22-p1",
+      "anxVIII-i22",
+      "art13-p3-b"
+    ],
+    "refused": false,
+    "answer": "Yes. Deployers who are employers must, before putting into service or using a high-risk AI system at the workplace, inform workers' representatives and the affected workers that they will be subject to its use [S1]. Article 26(7) states that this information shall be provided, where applicable, in accordance with the rules and procedures in Union and national law and practice on informing workers and their representatives [S1].",
+    "cited": [
+      "art26-p7"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q13",
+    "type": "date",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [
+      "art113-a"
+    ],
+    "rewritten": "When do the prohibitions on prohibited AI practices under the AI Act begin to apply?",
+    "sources": [
+      "art5-p1-ba",
+      "art5-p1-h",
+      "art75c-p8",
+      "art113-b",
+      "art113-a",
+      "art79-p8",
+      "art99-p3",
+      "art1-p2-b",
+      "art111-p2",
+      "art100-p2"
+    ],
+    "refused": false,
+    "answer": "The prohibitions on prohibited AI practices in Chapter II apply from 2 February 2025 [S5]. The exception is points (ba) and (bb) of Article 5(1), first subparagraph, together with Article 5(1a) and (1b), which apply from 2 December 2026 [S5]. Article 5(1)(ba) covers AI systems that generate or manipulate intimate or sexually explicit images of an identifiable person without that person's consent [S1].",
+    "cited": [
+      "art5-p1-ba",
+      "art113-a"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q14",
+    "type": "date",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [
+      "art113-c"
+    ],
+    "rewritten": "When do the obligations for high-risk AI systems referred to in Annex III of this Regulation begin to apply?",
+    "sources": [
+      "art113-c",
+      "art111-p2",
+      "art113-b",
+      "art26-p11",
+      "art25-p3-b",
+      "art7-p3-a",
+      "art80-p2",
+      "art42-p3",
+      "art25-p1-b",
+      "art1-p2-c"
+    ],
+    "refused": false,
+    "answer": "The obligations for high-risk AI systems classified under Article 6(2) and Annex III apply from 2 December 2027 [S1]. Article 113(c) sets this date for Chapter III, Sections 1, 2 and 3, while the Regulation as a whole applies from 2 August 2026 [S1]. Under Article 111(2), high-risk AI systems placed on the market before that date are covered only if they are subject to significant changes in their designs, except that providers and deployers of high-risk AI systems intended for use by public authorities must take the necessary steps to comply by 2 August 2030 [S2].",
+    "cited": [
+      "art113-c",
+      "art111-p2"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q15",
+    "type": "obligation",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [
+      "art99-p3"
+    ],
+    "rewritten": "What is the maximum administrative fine that may be imposed on a provider or deployer that places on the market, puts into service or uses an AI system for a prohibited artificial intelligence practice?",
+    "sources": [
+      "art99-p3",
+      "art100-p2",
+      "art5-p1-d",
+      "art5-p1-a",
+      "art100-p3",
+      "art101-p1-c",
+      "art101-p1-b",
+      "art50-p4",
+      "art99-p4-e",
+      "art74-p6"
+    ],
+    "refused": false,
+    "answer": "For non-compliance with the prohibition of the AI practices referred to in Article 5, the administrative fine is up to EUR 35 000 000. If the offender is an undertaking, the fine is up to 7 % of its total worldwide annual turnover for the preceding financial year, whichever is higher [S1]. This is set out in Article 99(3) [S1]. The EUR 1 500 000 cap in Article 100(2) applies to Union institutions, bodies, offices and agencies, not to companies [S2].",
+    "cited": [
+      "art99-p3",
+      "art100-p2"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [
+      "For non-compliance with the prohibition of the AI practices referred to in Article 5, the administrative fine is up to EUR 35 000 000."
+    ],
+    "format_error": false
+  },
+  {
+    "id": "q16",
+    "type": "date",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [
+      "art113-a"
+    ],
+    "rewritten": "From what date does the regulation prohibit the use of AI systems to generate deep fake intimate images of identifiable natural persons?",
+    "sources": [
+      "art5-p1-ba",
+      "art5-p1-h",
+      "art50-p4",
+      "art3-60",
+      "art26-p10",
+      "art4a-p1-b",
+      "art3-41",
+      "art4a-p1-e",
+      "art50-p3",
+      "art14-p5"
+    ],
+    "refused": true,
+    "answer": "The text of the AI Act provided does not answer this question.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n01",
+    "type": "no_answer",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [],
+    "rewritten": "How long may a provider retain personal data, such as customer email addresses, under the AI Act?",
+    "sources": [
+      "art18-p1-c",
+      "art18-p1-d",
+      "art19-p1",
+      "art26-p6",
+      "art23-p5",
+      "art59-p1-h",
+      "art59-p1-g",
+      "anxVIII-i14",
+      "art44-p2",
+      "art36-p9-a"
+    ],
+    "refused": true,
+    "answer": "The text of the AI Act provided does not answer this question.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n02",
+    "type": "no_answer",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [],
+    "rewritten": "What is the corporate tax rate applicable to start-up enterprises developing AI systems in Ireland?",
+    "sources": [
+      "art99-p3",
+      "art100-p3",
+      "art101-p1-d",
+      "art101-p1-c",
+      "art58-p2-d",
+      "art100-p2",
+      "anxIII-6-d",
+      "art62-p1-a",
+      "anxIII-6-e",
+      "art50-p1"
+    ],
+    "refused": true,
+    "answer": "The text of the AI Act provided does not answer this question.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n03",
+    "type": "no_answer",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [],
+    "rewritten": "What is the minimum remuneration for a software developer employed in France?",
+    "sources": [
+      "art99-p4-e",
+      "art99-p5",
+      "art101-p1-b",
+      "art101-p1-c",
+      "art63-p1",
+      "art100-p3",
+      "art62-p2",
+      "art11-p1",
+      "art62-p1-a",
+      "art1-p2-g"
+    ],
+    "refused": true,
+    "answer": "The text of the AI Act provided does not answer this question.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n04",
+    "type": "no_answer",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [],
+    "rewritten": "Which open-source general-purpose AI model performs best for customer support use?",
+    "sources": [
+      "art54-p6",
+      "anxXI-1-b",
+      "anxXI-1-a",
+      "anxXII-1-d",
+      "art53-p2",
+      "anxXII-1-e",
+      "art53-p1-b",
+      "art25-p4",
+      "art91-p5",
+      "art92-p5"
+    ],
+    "refused": true,
+    "answer": "The text of the AI Act provided does not answer this question.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n05",
+    "type": "no_answer",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [],
+    "rewritten": "Does the United States have a federal law equivalent to this Regulation laying down harmonised rules on artificial intelligence?",
+    "sources": [
+      "art1-p2-a",
+      "art1-p2-e",
+      "art74-p10",
+      "art28-p8",
+      "art75-p1-a",
+      "art110-‘68",
+      "art2-p1-a",
+      "art72-p4",
+      "art110-«68",
+      "art74-p4"
+    ],
+    "refused": true,
+    "answer": "The text of the AI Act provided does not answer this question.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n06",
+    "type": "no_answer",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [],
+    "rewritten": "How much does a notified body charge for conformity assessment to obtain CE marking for a high-risk AI system?",
+    "sources": [
+      "art16-h",
+      "art75-p1e",
+      "art48-p4",
+      "art34-p1",
+      "art24-p1",
+      "anxVII-text2",
+      "art48-p3",
+      "art23-p1-c",
+      "art31-p4",
+      "art43-suite"
+    ],
+    "refused": true,
+    "answer": "The text of the AI Act provided does not answer this question.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n07",
+    "type": "no_answer",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [],
+    "rewritten": "Can an invention created by an artificial intelligence system be the subject of a patent application?",
+    "sources": [
+      "art50-p1",
+      "anxIII-6-a",
+      "art26-p10",
+      "anxIII-6-d",
+      "art59-p1-a",
+      "art6-p1-b",
+      "art6-p1-a",
+      "art75-p1-a",
+      "art5-p1a-a",
+      "art50-p4"
+    ],
+    "refused": true,
+    "answer": "The text of the AI Act provided does not answer this question.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n08",
+    "type": "no_answer",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [],
+    "rewritten": "Which cloud service provider should a deployer or provider choose to host data within the European Union?\n\nWait, that adds actors the user did not mention. Correcting to stay faithful:\n\nWhich cloud computing service provider should be selected to host data within the European Union?",
+    "sources": [
+      "art26-p8",
+      "art100-p4",
+      "art71-p6",
+      "art71-p3",
+      "anxV-2",
+      "art70-p9",
+      "art57-p3",
+      "art49-p3",
+      "art47-p4",
+      "art74-p9"
+    ],
+    "refused": true,
+    "answer": "The text of the AI Act provided does not answer this question.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n09",
+    "type": "no_answer",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [],
+    "rewritten": "What is the monetary penalty imposed in Germany for a road traffic offence of proceeding through a signalised intersection against a red light?",
+    "sources": [
+      "art99-p4-f",
+      "art99-p4-d",
+      "art100-p2",
+      "art100-p3",
+      "art75c-p7",
+      "art75c-p5-e",
+      "anxX-i3",
+      "anxI-text3",
+      "art101-p1-a",
+      "anxX-i2"
+    ],
+    "refused": true,
+    "answer": "The text of the AI Act provided does not answer this question.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n10",
+    "type": "no_answer",
+    "lang": "en",
+    "detected_lang": "en",
+    "expected": [],
+    "rewritten": "Does the national legislation of the third country Algeria regulate artificial intelligence systems?",
+    "sources": [
+      "art2-p4",
+      "art74-p8",
+      "art59-p3",
+      "art2-p3",
+      "art80-p3",
+      "art104",
+      "art102",
+      "art26-p11",
+      "art79-p3",
+      "anxIII-6-d"
+    ],
+    "refused": true,
+    "answer": "The text of the AI Act provided does not answer this question.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q01",
+    "type": "scenario",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [
+      "anxIII-4-a"
+    ],
+    "rewritten": "Under the AI Act, is an AI system used for recruitment, such as screening résumés and pre-selecting job candidates, classified as a high-risk AI system?",
+    "sources": [
+      "anxIII-4-a",
+      "anxIII-1-b",
+      "art6-suite",
+      "art6-p1-a",
+      "art27-p1-b",
+      "art27-p1-c",
+      "art80-p1",
+      "art9-p8",
+      "anxVIII-i19",
+      "art25-p3-a"
+    ],
+    "refused": false,
+    "answer": "Oui. Un système d'IA destiné à être utilisé pour le recrutement ou la sélection de personnes physiques, en particulier pour analyser et filtrer les candidatures, est répertorié parmi les systèmes à haut risque à l'Annexe III, point 4(a) [S1]. Selon l'Article 6, un système visé à l'annexe III est toujours considéré comme à haut risque lorsqu'il effectue un profilage de personnes physiques [S3]. Les sources fournies ne permettent pas de dire si votre outil effectue un profilage au sens de cette disposition, ce point doit donc être vérifié.",
+    "cited": [
+      "anxIII-4-a",
+      "art6-suite"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [
+      "Les sources fournies ne permettent pas de dire si votre outil effectue un profilage au sens de cette disposition, ce point doit donc être vérifié."
+    ],
+    "format_error": false
+  },
+  {
+    "id": "q02",
+    "type": "scenario",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [
+      "art5-p1-f"
+    ],
+    "rewritten": "Can an AI system be used in the workplace to infer the emotional state of employees, such as stress or dissatisfaction, during video conferences?",
+    "sources": [
+      "anxIII-4-b",
+      "anxIII-8-b",
+      "art92-p7",
+      "art60-p4-i",
+      "art60-p2",
+      "art50-p3",
+      "art50-p2",
+      "art26-p7",
+      "art60a-p1",
+      "art15-p4"
+    ],
+    "refused": false,
+    "answer": "Les sources ne permettent pas de dire si ce dispositif est autorisé. Si le système relève de la reconnaissance des émotions, les déployeurs doivent informer les personnes qui y sont exposées de son fonctionnement et traiter les données à caractère personnel conformément aux règlements applicables [S6]. Un système destiné à suivre et évaluer les performances et le comportement de personnes dans le cadre de relations professionnelles est un système à haut risque au sens de l'Annexe III, point 4(b) [S1]. Dans ce cas, l'employeur doit informer les représentants des travailleurs et les travailleurs concernés avant de mettre en service ou d'utiliser ce système sur le lieu de travail, conformément à l'Article 26(7) [S8]. Les sources ne contiennent pas l'analyse complète des interdictions applicables ni de conseil juridique sur votre situation.",
+    "cited": [
+      "anxIII-4-b",
+      "art50-p3",
+      "art26-p7"
+    ],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [
+      "Les sources ne permettent pas de dire si ce dispositif est autorisé.",
+      "Les sources ne contiennent pas l'analyse complète des interdictions applicables ni de conseil juridique sur votre situation."
+    ],
+    "format_error": false
+  },
+  {
+    "id": "q03",
+    "type": "scenario",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [
+      "anxIII-5-b"
+    ],
+    "rewritten": "Under the AI Act, which category does an AI system used by a bank to decide who obtains a loan based on creditworthiness fall into, i.e. a high-risk AI system for evaluating the creditworthiness of natural persons or establishing their credit score?",
+    "sources": [
+      "anxIII-5-b",
+      "anxIII-6-d",
+      "art6-suite",
+      "art6-p1-b",
+      "art14-p5",
+      "art80-p1",
+      "art25-p3-a",
+      "art8-p1",
+      "art26-p11",
+      "art25-p3-b"
+    ],
+    "refused": false,
+    "answer": "Un système d'IA destiné à évaluer la solvabilité des personnes physiques ou à établir leur note de crédit figure parmi les systèmes à haut risque de l'Annexe III, point 5(b) [S1], à l'exception des systèmes utilisés à des fins de détection de fraudes financières [S1]. Un système visé à l'annexe III est en outre toujours considéré comme à haut risque lorsqu'il effectue un profilage de personnes physiques [S3]. Lorsque la banque utilise un tel système pour prendre des décisions concernant des personnes physiques, elle doit informer ces personnes qu'elles sont soumises à l'utilisation de ce système à haut risque [S9].",
+    "cited": [
+      "anxIII-5-b",
+      "art6-suite",
+      "art26-p11"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q04",
+    "type": "scenario",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [
+      "anxIII-3-d"
+    ],
+    "rewritten": "Is an AI system used by a university to monitor students and detect prohibited behaviour during online tests in an education and vocational training institution permitted, and under which requirements?",
+    "sources": [
+      "anxIII-3-d",
+      "art60-p1",
+      "art5-p1-d",
+      "art60-p4-i",
+      "art5-p1-h",
+      "art60a-p1",
+      "anxIII-6-d",
+      "art10-p2-f",
+      "art50-p1",
+      "art76-p2"
+    ],
+    "refused": false,
+    "answer": "Les sources ne permettent pas de conclure que ce système est permis dans votre cas, elles ne donnent qu'un cadre partiel. Un système d'IA destiné à surveiller et détecter des comportements interdits chez les étudiants lors d'examens, dans un établissement d'enseignement, est classé à haut risque par l'Annexe III, point 3(d) [S1]. Pour un système à haut risque, les jeux de données d'entraînement, de validation et de test doivent faire l'objet de pratiques de gouvernance incluant un examen permettant de repérer les biais susceptibles de porter atteinte aux droits fondamentaux ou de se traduire par une discrimination interdite (Article 10(2)(f)) [S8]. L'obligation d'informer les personnes qu'elles interagissent avec un système d'IA (Article 50(1)) ne s'applique pas aux systèmes autorisés à des fins de prévention ou de détection d'infractions pénales, mais les sources ne disent pas si la triche relève de ces infractions [S9].",
+    "cited": [
+      "anxIII-3-d",
+      "art10-p2-f",
+      "art50-p1"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [
+      "Les sources ne permettent pas de conclure que ce système est permis dans votre cas, elles ne donnent qu'un cadre partiel."
+    ],
+    "format_error": false
+  },
+  {
+    "id": "q05",
+    "type": "scenario",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [
+      "art5-p1-c"
+    ],
+    "rewritten": "A city wants to assign citizens a score based on their behaviour and use it to grant or deny public services: is this lawful under the AI Act?",
+    "sources": [
+      "art5-p1-c",
+      "art5-p1-d",
+      "art50-p1",
+      "art75a-p3",
+      "art59-p2",
+      "art95-p2-e",
+      "art50-p4",
+      "art46-p2",
+      "art46-p1",
+      "anxIII-6-d"
+    ],
+    "refused": false,
+    "answer": "Selon l'article 5, paragraphe 1, point c), du règlement, la mise sur le marché, la mise en service ou l'utilisation de systèmes d'IA pour évaluer ou classer des personnes physiques ou des groupes en fonction de leur comportement social ou de caractéristiques personnelles ou de personnalité est interdite [S1]. Cette interdiction vise le cas où la note sociale conduit à un traitement préjudiciable ou défavorable, soit dans des contextes sociaux dissociés de celui où les données ont été générées ou collectées, soit d'une manière injustifiée ou disproportionnée au regard du comportement social ou de sa gravité, ou aux deux [S1]. Une ville qui utiliserait une telle note pour accorder ou refuser des services publics relève donc de cette interdiction si ces conditions sont remplies [S1].",
+    "cited": [
+      "art5-p1-c"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q06",
+    "type": "scenario",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [
+      "art5-p1-e"
+    ],
+    "rewritten": "Can we build a facial database by scraping facial images from social media and the internet?",
+    "sources": [
+      "art5-p1-e",
+      "art5-p2-suite",
+      "art59-p1-j",
+      "art59-p1-b",
+      "art27-p5",
+      "art4a-p1-e",
+      "art50-p4",
+      "art26-p10",
+      "art71-p5",
+      "art71-p1"
+    ],
+    "refused": false,
+    "answer": "Non, pas dans ce cadre. L'article 5, paragraphe 1, point e), interdit la mise sur le marché, la mise en service à cette fin spécifique ou l'utilisation de systèmes d'IA qui créent ou développent des bases de données de reconnaissance faciale par le moissonnage non ciblé d'images faciales provenant de l'internet ou de la vidéosurveillance [S1]. La collecte de photos sur les réseaux sociaux et sur internet pour constituer une base de visages relève de cette interdiction si elle est réalisée de manière non ciblée [S1]. Les sources fournies ne prévoient pas d'exception pour ce type de collecte [S1].",
+    "cited": [
+      "art5-p1-e"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q07",
+    "type": "definition",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [
+      "art3-1"
+    ],
+    "rewritten": "How does the regulation define an AI system?",
+    "sources": [
+      "art3-1",
+      "art3-55",
+      "art75-p1-a",
+      "art74-p6",
+      "art1-p2-a",
+      "art17-p1-a",
+      "art1-p2-c",
+      "anxXIV-text1",
+      "art79-p1",
+      "art17-p1-f"
+    ],
+    "refused": false,
+    "answer": "Le règlement définit un « système d'IA » comme un système automatisé conçu pour fonctionner à différents niveaux d'autonomie et pouvant faire preuve d'une capacité d'adaptation après son déploiement [S1]. Pour des objectifs explicites ou implicites, il déduit, à partir des entrées qu'il reçoit, la manière de générer des sorties telles que des prédictions, du contenu, des recommandations ou des décisions, pouvant influencer les environnements physiques ou virtuels [S1]. Cette définition figure à l'Article 3(1) [S1].",
+    "cited": [
+      "art3-1"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q08",
+    "type": "definition",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [
+      "art3-3",
+      "art3-4"
+    ],
+    "rewritten": "Is an organisation that only uses an AI system purchased from another company a \"provider\" or a \"deployer\" under the AI Act, and what is the difference between these two roles?",
+    "sources": [
+      "art3-3",
+      "art3-4",
+      "art75-p1-suite",
+      "art25-p1-a",
+      "art25-p1-c",
+      "art4-p1",
+      "art50-p2",
+      "art50-p1",
+      "art75-p1-a",
+      "art2-p1-c"
+    ],
+    "refused": false,
+    "answer": "Si vous utilisez seulement un système d'IA acheté à une autre entreprise, sans le développer ni le mettre sur le marché ou en service sous votre nom, vous êtes en principe un déployeur, c'est-à-dire un organisme qui utilise un système d'IA sous sa propre autorité [S2][Article 3(4)]. Le fournisseur est celui qui développe ou fait développer un système d'IA et le met sur le marché ou en service sous son propre nom ou sa propre marque [S1][Article 3(3)]. La différence tient donc au rôle : le fournisseur conçoit et commercialise, le déployeur utilise. Vous pourriez toutefois être considérés comme fournisseur si vous commercialisez sous votre nom ou votre marque un système à haut risque déjà mis sur le marché, sans préjudice de dispositions contractuelles prévoyant une autre répartition des obligations [S4][Article 25(1)(a)], ou si vous modifiez la destination d'un système qui devient ainsi à haut risque au sens de l'article 6 [S5][Article 25(1)(c)]. Dans tous les cas, les fournisseurs comme les déployeurs doivent prendre des mesures pour favoriser la maîtrise de l'IA de leur personnel [S6][Article 4(1)]. Les sources ne permettent pas de dire si votre outil est à haut risque.",
+    "cited": [
+      "art3-3",
+      "art3-4",
+      "art25-p1-a",
+      "art25-p1-c",
+      "art4-p1"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [
+      "La différence tient donc au rôle : le fournisseur conçoit et commercialise, le déployeur utilise.",
+      "Les sources ne permettent pas de dire si votre outil est à haut risque."
+    ],
+    "format_error": false
+  },
+  {
+    "id": "q09",
+    "type": "definition",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [
+      "art3-60"
+    ],
+    "rewritten": "What does the AI Act define as a \"deepfake\" — that is, AI-generated or manipulated image, audio or video content that resembles existing persons, objects, places, entities or events and would falsely appear to a person to be authentic or truthful?",
+    "sources": [
+      "art3-60",
+      "art50-p4",
+      "art5-p1-ba",
+      "art50-p2",
+      "art5-p1-a",
+      "art3-49",
+      "art27-p5",
+      "anxIII-6-d",
+      "anxIII-8-b",
+      "art15-p5"
+    ],
+    "refused": false,
+    "answer": "Selon l'Article 3(60) [S1], un hypertrucage est une image ou un contenu audio ou vidéo généré ou manipulé par l'IA, qui présente une ressemblance avec des personnes, des objets, des lieux, des entités ou des événements existants et qui peut être perçu à tort comme authentique ou véridique [S1]. Selon l'Article 50(4) [S2], les déployeurs d'un système d'IA qui génère ou manipule un hypertrucage doivent indiquer que le contenu a été généré ou manipulé par une IA [S2]. Cette obligation ne s'applique pas lorsque l'utilisation est autorisée par la loi à des fins de prévention ou de détection des infractions pénales, d'enquêtes ou de poursuites en la matière [S2]. Lorsque le contenu fait partie d'une œuvre ou d'un programme manifestement artistique, créatif, satirique, fictif ou analogue, la transparence se limite à la divulgation de l'existence de ces contenus, d'une manière qui n'entrave pas l'affichage ou la jouissance de l'œuvre [S2].",
+    "cited": [
+      "art3-60",
+      "art50-p4"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q10",
+    "type": "obligation",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [
+      "art50-p1"
+    ],
+    "rewritten": "Is an operator required to inform natural persons that they are interacting with an AI system when it deploys an AI system intended to interact directly with them, such as a customer service chatbot?",
+    "sources": [
+      "art50-p1",
+      "art50-p3",
+      "art26-p7",
+      "art26-p5",
+      "art14-p4-e",
+      "art14-p4-b",
+      "art4-p1",
+      "art31-p4",
+      "art53-p1-b",
+      "art25-p4"
+    ],
+    "refused": false,
+    "answer": "Oui, si le chatbot est conçu pour interagir directement avec des personnes physiques, les personnes concernées doivent être informées qu'elles interagissent avec un système d'IA [S1]. Selon l'Article 50(1), cette obligation ne s'applique pas lorsque cela ressort clairement du point de vue d'une personne physique normalement informée, raisonnablement attentive et avisée, compte tenu des circonstances et du contexte d'utilisation [S1]. Cette obligation est formulée à l'intention des fournisseurs (« Les fournisseurs veillent à ce que... ») [S1]. Les sources fournies ne précisent pas si votre entreprise est fournisseur ou déployeur au sens du règlement, ni ne décrivent la forme que doit prendre cette information [S1].",
+    "cited": [
+      "art50-p1"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [
+      "Cette obligation est formulée à l'intention des fournisseurs (« Les fournisseurs veillent à ce que..."
+    ],
+    "format_error": false
+  },
+  {
+    "id": "q11",
+    "type": "obligation",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [
+      "art53-p1-a",
+      "art53-p1-b",
+      "anxXI*",
+      "anxXII*"
+    ],
+    "rewritten": "We supply a general-purpose AI model to other companies (downstream providers); what documentation must a general-purpose AI model provider prepare?",
+    "sources": [
+      "art53-p1-b",
+      "art53-p1-a",
+      "anxXI-1-a",
+      "anxXI-1-c",
+      "anxXII-1-h",
+      "anxXII-1-e",
+      "art91-p5",
+      "art55-p1-c",
+      "art92-p5",
+      "art25-p4"
+    ],
+    "refused": false,
+    "answer": "Deux volets de documentation sont requis. (1) Une documentation technique, tenue à jour, couvrant le processus d'entraînement et d'essai et les résultats d'évaluation, à fournir sur demande au Bureau de l'IA et aux autorités nationales compétentes [S2]. Elle doit contenir au minimum les informations de l'Annexe XI, notamment les tâches du modèle et les types de systèmes d'IA dans lesquels il peut être intégré [S3], ainsi que la date de publication et les méthodes de distribution [S4]. (2) Des informations et de la documentation destinées aux fournisseurs en aval qui envisagent d'intégrer le modèle, leur permettant de bien comprendre les capacités et les limites du modèle, contenant au minimum les éléments de l'Annexe XII [S1], dont la licence du modèle [S5] et les versions des logiciels pertinents, le cas échéant [S6]. Ces informations doivent respecter la propriété intellectuelle et les secrets d'affaires [S1]. Les informations demandées doivent être fournies par le fournisseur ou son représentant, et les clients restent pleinement responsables si elles sont incomplètes, inexactes ou trompeuses [S7].",
+    "cited": [
+      "art53-p1-b",
+      "art53-p1-a",
+      "anxXI-1-a",
+      "anxXI-1-c",
+      "anxXII-1-h",
+      "anxXII-1-e",
+      "art91-p5"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [
+      "Deux volets de documentation sont requis."
+    ],
+    "format_error": false
+  },
+  {
+    "id": "q12",
+    "type": "obligation",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [
+      "art26-p7"
+    ],
+    "rewritten": "Before deploying a high-risk AI system in the workplace, must the deployer inform the workers' representatives and the affected employees?\n\nNote: I've kept the question's meaning to informing employees, but the phrasing \"workers' representatives\" adds an actor the user did not mention, so here is the corrected version:\n\nBefore putting into service a high-risk AI system in the workplace, must the deployer inform the affected workers?",
+    "sources": [
+      "art26-p7",
+      "art27-p1-a",
+      "art27-p1-b",
+      "art26-p8",
+      "art22-p1",
+      "anxVIII-i21",
+      "anxVIII-i22",
+      "art23-p1-d",
+      "art16-f",
+      "art13-p1"
+    ],
+    "refused": false,
+    "answer": "Oui. Lorsque le déployeur est un employeur, il doit, avant de mettre en service ou d'utiliser un système d'IA à haut risque sur le lieu de travail, informer les représentants des travailleurs et les travailleurs concernés qu'ils seront soumis à l'utilisation de ce système [S1]. Article 26(7) [S1]. Ces informations sont fournies, le cas échéant, conformément aux règles et procédures prévues par le droit de l'Union et le droit national et aux pratiques en matière d'information des travailleurs et de leurs représentants [S1].",
+    "cited": [
+      "art26-p7"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q13",
+    "type": "date",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [
+      "art113-a"
+    ],
+    "rewritten": "When do the prohibitions on AI practices laid down in the Regulation begin to apply?",
+    "sources": [
+      "art113-a",
+      "art113-b",
+      "art1-p2-b",
+      "art111-p2",
+      "art5-p1-bb",
+      "art5-p1-h",
+      "art79-p8",
+      "art74-p1-a",
+      "art2-p8",
+      "art111-p1"
+    ],
+    "refused": false,
+    "answer": "Les chapitres I (Dispositions générales) et II (Pratiques interdites en matière d'IA) s'appliquent à partir du 2 février 2025 [S1]. Toutefois, l'article 5, paragraphe 1, premier alinéa, points b bis) et b ter), ainsi que l'article 5, paragraphes 1 bis et 1 ter, ne s'appliquent qu'à partir du 2 décembre 2026 [S1].",
+    "cited": [
+      "art113-a"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q14",
+    "type": "date",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [
+      "art113-c"
+    ],
+    "rewritten": "When do the obligations for high-risk AI systems listed in Annex III of the AI Act begin to apply?",
+    "sources": [
+      "art7-p3-a",
+      "art7-p1-b",
+      "art25-p3-b",
+      "art111-p2",
+      "art113-c",
+      "anxIII-6-a",
+      "anxIII-7-b",
+      "art26-p11",
+      "art6-p3",
+      "art25-p3-a"
+    ],
+    "refused": false,
+    "answer": "Selon l'Article 113(c), les obligations du chapitre III, sections 1, 2 et 3, s'appliquent aux systèmes d'IA classés à haut risque en vertu de l'article 6, paragraphe 2, et de l'annexe III à partir du 2 décembre 2027 [S5]. La date générale d'application du règlement est, quant à elle, le 2 août 2026 [S5].",
+    "cited": [
+      "art113-c"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q15",
+    "type": "obligation",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [
+      "art99-p3"
+    ],
+    "rewritten": "What is the maximum fine that can be imposed on a provider or deployer that places on the market, puts into service or uses an AI practice prohibited under the AI Act?",
+    "sources": [
+      "art5-p1-a",
+      "art5-p1-b",
+      "art101-p1-c",
+      "art101-p1-a",
+      "art99-p3",
+      "art100-p2",
+      "art100-p3",
+      "art25-p1-a",
+      "art25-p1-c",
+      "art50-p4"
+    ],
+    "refused": false,
+    "answer": "Le non-respect de l'interdiction des pratiques en matière d'IA visées à l'article 5 fait l'objet d'amendes administratives pouvant aller jusqu'à 35 000 000 EUR [S5]. Si l'auteur de l'infraction est une entreprise, l'amende peut aller jusqu'à 7 % de son chiffre d'affaires annuel mondial total réalisé au cours de l'exercice précédent [S5]. Le montant le plus élevé est retenu [S5]. Le montant maximal encouru par une entreprise est donc le plus élevé entre 35 000 000 EUR et 7 % de son chiffre d'affaires annuel mondial [S5].",
+    "cited": [
+      "art99-p3"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q16",
+    "type": "date",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [
+      "art113-a"
+    ],
+    "rewritten": "From what date does the regulation prohibit the use of an AI system to generate deep fake intimate images depicting an identifiable real natural person?",
+    "sources": [
+      "art5-p1-ba",
+      "art5-p1-h",
+      "art50-p4",
+      "art3-60",
+      "art3-41",
+      "art50-p3",
+      "art26-p10",
+      "art4a-p1-b",
+      "art14-p5",
+      "art4a-p1-e"
+    ],
+    "refused": false,
+    "answer": "L'article 5, paragraphe 1, point ba), interdit la mise sur le marché, la mise en service ou l'utilisation d'un système d'IA qui génère ou manipule des images réalistes représentant les parties intimes d'une personne identifiable, ou une personne identifiable se livrant à des activités sexuellement explicites, sans le consentement libre, spécifique, éclairé, univoque et explicite de cette personne [S1]. Les sources fournies ne précisent toutefois pas la date à partir de laquelle cette interdiction s'applique, et je ne peux donc pas la indiquer. Pour les contenus d'hypertrucage, les déployeurs doivent en outre indiquer que le contenu a été généré ou manipulé par une IA, obligation distincte de l'interdiction [S3][S4].",
+    "cited": [
+      "art5-p1-ba",
+      "art50-p4",
+      "art3-60"
+    ],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [
+      "Les sources fournies ne précisent toutefois pas la date à partir de laquelle cette interdiction s'applique, et je ne peux donc pas la indiquer."
+    ],
+    "format_error": false
+  },
+  {
+    "id": "n01",
+    "type": "no_answer",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [],
+    "rewritten": "How long are we permitted to retain our customers' email correspondence?",
+    "sources": [
+      "art18-p1-c",
+      "art18-p1-d",
+      "art36-p9-a",
+      "art23-p5",
+      "art19-p1",
+      "art36-p9-b",
+      "art44-p2",
+      "art26-p6",
+      "art46-p5",
+      "art79-p8"
+    ],
+    "refused": true,
+    "answer": "Le texte de l'AI Act fourni ne répond pas à cette question.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n02",
+    "type": "no_answer",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [],
+    "rewritten": "What is the corporate income tax rate applicable to artificial intelligence startups in Ireland?",
+    "sources": [
+      "art99-p3",
+      "art100-p3",
+      "art100-p2",
+      "art101-p1-c",
+      "art101-p1-d",
+      "art111-p1",
+      "art58-p2-d",
+      "art50-p1",
+      "art5-p1-h",
+      "art113-b"
+    ],
+    "refused": true,
+    "answer": "Le texte de l'AI Act fourni ne répond pas à cette question.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n03",
+    "type": "no_answer",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [],
+    "rewritten": "What is the minimum salary of a software developer in France?",
+    "sources": [
+      "art99-p4-e",
+      "art99-p5",
+      "art101-p1-b",
+      "art101-p1-d",
+      "art63-p1",
+      "art100-p3",
+      "art62-p2",
+      "art11-p1",
+      "art62-p1-a",
+      "art74-p12"
+    ],
+    "refused": true,
+    "answer": "Le texte de l'AI Act fourni ne répond pas à cette question.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n04",
+    "type": "no_answer",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [],
+    "rewritten": "Which open-source large language model achieves the best performance for customer support use cases?",
+    "sources": [
+      "art25-p4",
+      "anxXII-2-b",
+      "anxXI-1-b",
+      "anxXI-2-c",
+      "anxVII-i7",
+      "anxVII-i8",
+      "art53-p4",
+      "anxXII-1-e",
+      "art55-p2",
+      "art111-p1"
+    ],
+    "refused": true,
+    "answer": "Le texte de l'AI Act fourni ne répond pas à cette question.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n05",
+    "type": "no_answer",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [],
+    "rewritten": "Does the United States have a federal law equivalent to the Artificial Intelligence Act?",
+    "sources": [
+      "art75-p1-a",
+      "art59-p3",
+      "art74-p8",
+      "art57-p3a",
+      "art110-‘68",
+      "art74-p6",
+      "anxIII-6-a",
+      "art50-p1",
+      "anxIII-6-d",
+      "art49-p5"
+    ],
+    "refused": true,
+    "answer": "Le texte de l'AI Act fourni ne répond pas à cette question.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n06",
+    "type": "no_answer",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [],
+    "rewritten": "How much does it cost to obtain a conformity assessment from a notified body?",
+    "sources": [
+      "art31-p9",
+      "art30-p4",
+      "art30-p1",
+      "art29-p1",
+      "art34-p1",
+      "art45-p1-d",
+      "art29-p4",
+      "art43-suite",
+      "art45-p3",
+      "art36-p3"
+    ],
+    "refused": true,
+    "answer": "Le texte de l'AI Act fourni ne répond pas à cette question.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n07",
+    "type": "no_answer",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [],
+    "rewritten": "Can a patent be obtained for an invention generated by an AI system?",
+    "sources": [
+      "art50-p1",
+      "art59-p1-a",
+      "art50-p2",
+      "anxIII-6-a",
+      "art26-p10",
+      "anxIII-6-c",
+      "art5-p1a-a",
+      "art75-p3",
+      "art52-p6",
+      "art75-p1-a"
+    ],
+    "refused": true,
+    "answer": "Le texte de l'AI Act fourni ne répond pas à cette question.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n08",
+    "type": "no_answer",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [],
+    "rewritten": "Which cloud service provider should we choose to host our data in Europe?",
+    "sources": [
+      "art71-p6",
+      "art57-p3",
+      "art100-p4",
+      "art70-p9",
+      "anxV-5",
+      "art18-p1-e",
+      "art47-p1",
+      "art71-p5",
+      "art53-p1-c",
+      "art100-p5"
+    ],
+    "refused": true,
+    "answer": "Le texte de l'AI Act fourni ne répond pas à cette question.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n09",
+    "type": "no_answer",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [],
+    "rewritten": "What is the fine for failing to stop at a red traffic light in Germany?",
+    "sources": [
+      "art99-p4-d",
+      "art99-p4-f",
+      "art100-p3",
+      "art100-p2",
+      "art75c-b",
+      "art75c-a",
+      "art101-p1-b",
+      "art101-p1-c"
+    ],
+    "refused": true,
+    "answer": "Le texte de l'AI Act fourni ne répond pas à cette question.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n10",
+    "type": "no_answer",
+    "lang": "fr",
+    "detected_lang": "fr",
+    "expected": [],
+    "rewritten": "Does Algeria have a law regulating artificial intelligence?",
+    "sources": [
+      "art5-p1-h",
+      "art50-p1",
+      "art59-p3",
+      "art26-p10",
+      "art5-p1-ba",
+      "art102",
+      "art104",
+      "art74-p8",
+      "anxIII-6-d",
+      "anxIII-6-e"
+    ],
+    "refused": true,
+    "answer": "Le texte de l'AI Act fourni ne répond pas à cette question.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q01",
+    "type": "scenario",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [
+      "anxIII-4-a"
+    ],
+    "rewritten": "Is an AI system used to screen job applicants' CVs and select candidates for recruitment classified as high-risk under the AI Act?",
+    "sources": [
+      "anxIII-4-a",
+      "anxIII-7-d",
+      "art6-suite",
+      "art14-p5",
+      "art9-p6",
+      "art80-p1",
+      "art27-p1-b",
+      "art27-p1-c",
+      "art6-p1-b",
+      "art60-p1"
+    ],
+    "refused": false,
+    "answer": "نعم، وفقًا للمرفق Annex III, point 4(a)، تُعد أنظمة الذكاء الاصطناعي المخصصة للتوظيف أو الاختيار لأشخاص طبيعيين عالية المخاطر، ومن ذلك تحليل طلبات التوظيف وتصفيتها وتقييم المرشحين [S1]. كما تُعتبر أنظمة المرفق Annex III دائمًا عالية المخاطر إذا كانت تنفذ إنشاء ملفات تعريف (profiling) للأشخاص الطبيعيين [S3].",
+    "cited": [
+      "anxIII-4-a",
+      "art6-suite"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q02",
+    "type": "scenario",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [
+      "art5-p1-f"
+    ],
+    "rewritten": "Is it permitted to deploy an emotion recognition system in the workplace to infer the emotional states of employees, such as stress or dissatisfaction, from their behaviour during video calls?",
+    "sources": [
+      "art50-p3",
+      "art3-39",
+      "art5-p1-f",
+      "art26-p7",
+      "anxIII-1-c",
+      "anxIII-4-b",
+      "art60-p4-i",
+      "art79-p8",
+      "art2-p11",
+      "art5-p1-c"
+    ],
+    "refused": false,
+    "answer": "لا، لا يجوز ذلك بصورة عامة. تحظر المادة Article 5(1)(f) وضع في السوق أو تشغيل أو استخدام أنظمة الذكاء الاصطناعي لاستنتاج مشاعر الأشخاص الطبيعيين في مكان العمل [S3]. ويُعرَّف نظام التعرف على المشاعر بأنه نظام ذكاء اصطناعي يهدف إلى تحديد أو استنتاج مشاعر الأشخاص الطبيعيين أو نواياهم استناداً إلى بياناتهم البيومترية [S2]. ولا ينطبق هذا الحظر إلا إذا كان استخدام النظام مقصوداً لأسباب طبية أو لأسباب تتعلق بالسلامة [S3]. وفي حال السماح باستخدام نظام للتعرف على المشاعر، يجب على المشغّل إبلاغ الأشخاص المعرّضين له بتشغيل النظام، وأن تتم معالجة بياناتهم الشخصية وفقاً للتشريعات المعمول بها [S1].",
+    "cited": [
+      "art50-p3",
+      "art3-39",
+      "art5-p1-f"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [
+      "لا، لا يجوز ذلك بصورة عامة."
+    ],
+    "format_error": false
+  },
+  {
+    "id": "q03",
+    "type": "scenario",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [
+      "anxIII-5-b"
+    ],
+    "rewritten": "Under which risk classification does an AI system used by a bank to evaluate the creditworthiness of natural persons or establish their credit score, and so determine who is granted a loan, fall?",
+    "sources": [
+      "anxIII-5-b",
+      "anxIII-6-d",
+      "art6-suite",
+      "art6-p1-b",
+      "art9-p9",
+      "art5-p1-d",
+      "anxXIV-text1",
+      "art26-p11",
+      "art80-p7",
+      "art14-p5"
+    ],
+    "refused": false,
+    "answer": "يندرج ذلك ضمن الأنظمة عالية المخاطر المذكورة في Annex III, point 5(b)، وهي أنظمة الذكاء الاصطناعي المخصصة لتقييم الجدارة الائتمانية للأشخاص الطبيعيين أو تحديد درجتهم الائتمانية [S1]. ولا ينطبق الاستثناء الوارد في النص، وهو الأنظمة المستخدمة لاكتشاف الاحتيال المالي، لأن غرض النظام هنا هو تقييم الجدارة الائتمانية لطالب القرض [S1].",
+    "cited": [
+      "anxIII-5-b"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q04",
+    "type": "scenario",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [
+      "anxIII-3-d"
+    ],
+    "rewritten": "Is it permissible for an educational institution to deploy an AI system to monitor and detect prohibited behaviour of students during online tests, and what requirements apply to such a high-risk AI system in education and vocational training?",
+    "sources": [
+      "anxIII-3-d",
+      "anxIII-3-c",
+      "art15-p5",
+      "art60-p1",
+      "art10-p2-f",
+      "art5-p1-d",
+      "art9-p6",
+      "art60-p3",
+      "art13-p3-b",
+      "art9-p8"
+    ],
+    "refused": false,
+    "answer": "{\"refused\": false, \"answer\": \"المصادر المتاحة لا تحدد أن هذا الاستخدام مسموح به بشكل مطلق، لكنها تصنّف أنظمة الذكاء الاصطناعي المخصصة لمراقبة الطلاب ورصد السلوك المحظور أثناء الاختبارات داخل مؤسسات التعليم بوصفها أنظمة عالية المخاطر وفق Annex III, point 3(d) [S1]. يجب اختبار هذه الأنظمة قبل طرحها أو تشغيلها، وأن يكون الاختبار وفق مقاييس وعتبات احتمالية محددة مسبقاً تناسب الغرض المقصود بموجب Article 9(8) و Article 9(6) [S7][S10]. يجب أن تكون الحلول التقنية للأمن السيبراني ملائمة للمخاطر، وأن تحمي النظام من محاولات التلاعب باستخدامه أو بمخرجاته وفق Article 15(5) [S3]. يجب أن تتضمن تعليمات الاستخدام حدود الأداء ودرجة الدقة والظروف التي قد تؤثر فيها، وأن توضح ما يلزم لتفسير المخرجات واستخدامها بشكل مناسب وفق Article 13(3)(b) [S9]. يجب فحص بيانات التدريب والتحقق والاختبار بحثاً عن التحيزات المحتملة التي قد تمس الحقوق الأساسية أو تؤدي إلى تمييز محظور وفق Article 10(2)(f) [S5]. وإذا أُجري الاختبار في ظروف العالم الحقيقي خارج البيئات التجريبية، فيج",
+    "cited": [
+      "anxIII-3-d",
+      "art15-p5",
+      "art10-p2-f",
+      "art9-p6",
+      "art13-p3-b",
+      "art9-p8"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [
+      "وإذا أُجري الاختبار في ظروف العالم الحقيقي خارج البيئات التجريبية، فيج"
+    ],
+    "format_error": true
+  },
+  {
+    "id": "q05",
+    "type": "scenario",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [
+      "art5-p1-c"
+    ],
+    "rewritten": "Is it lawful for a public authority to use a social scoring system, evaluating natural persons based on their social behaviour so that this score leads to the detrimental or unfavourable treatment of those persons in the access to or denial of public services?",
+    "sources": [
+      "art5-p1-c",
+      "art5-p1-d",
+      "art10-p2-f",
+      "art85",
+      "art46-p2",
+      "art77-p1",
+      "art46-p1",
+      "art50-p1",
+      "art99-p7-a",
+      "art77-p3"
+    ],
+    "refused": false,
+    "answer": "بموجب Article 5(1)(c)، يُحظر استخدام نظام ذكاء اصطناعي لتقييم الأشخاص الطبيعيين أو فئاتهم أو تصنيفهم على مدى فترة من الزمن استنادًا إلى سلوكهم الاجتماعي أو خصائصهم الشخصية المعروفة أو المستنتجة أو المتوقعة، إذا أدى التقييم إلى إحدى النتيجتين أو كلتيهما: معاملة ضارة أو غير مواتية في سياقات اجتماعية لا تتصل بالسياقات التي جُمعت فيها البيانات أصلًا [S1]، أو معاملة ضارة أو غير مواتية غير مبررة أو غير متناسبة مع السلوك الاجتماعي أو مع خطورته [S1]. ولا تتناول المصادر المتاحة تطبيق ذلك على المدينة في حالتها المحددة، لذا يتوقف الحكم النهائي على وقائع النظام وطريقة استخدامه. ويجوز تقديم شكوى إلى سلطة مراقبة السوق المختصة إذا توافرت أسباب للاعتقاد بمخالفة أحكام اللائحة [S4].",
+    "cited": [
+      "art5-p1-c",
+      "art85"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [
+      "ولا تتناول المصادر المتاحة تطبيق ذلك على المدينة في حالتها المحددة، لذا يتوقف الحكم النهائي على وقائع النظام وطريقة استخدامه."
+    ],
+    "format_error": false
+  },
+  {
+    "id": "q06",
+    "type": "scenario",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [
+      "art5-p1-e"
+    ],
+    "rewritten": "Is it permitted to create a facial recognition database through the untargeted scraping of facial images from social media and the internet?",
+    "sources": [
+      "art5-p1-e",
+      "art5-p2-suite",
+      "art26-p10",
+      "art59-p1-j",
+      "art50-p4",
+      "art59-p1-b",
+      "art4a-p1-e",
+      "art4a-p1-b",
+      "art50-p3"
+    ],
+    "refused": false,
+    "answer": "لا يمكن ذلك إذا كان جمع الصور عشوائياً (untargeted scraping). تحظر المادة Article 5(1)(e) وضع في السوق أو تشغيل أو استخدام أنظمة ذكاء اصطناعي تنشئ قواعد بيانات للتعرف على الوجوه أو توسّعها عبر الجمع العشوائي لصور الوجوه من الإنترنت أو من تسجيلات الدوائر التلفزيونية المغلقة [S1]. ولا تتناول المصادر المقدَّمة حالة الجمع المستهدف (targeted) لصور الوجوه، لذلك لا يمكن الجزم بمدى جوازها من خلالها [S1]. كما أن المادة Article 5(1)(e) تحظر الغرض المحدد وهو إنشاء قاعدة البيانات أو توسيعها بهذه الطريقة، لا مجرد وجود الصور [S1].",
+    "cited": [
+      "art5-p1-e"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [
+      "لا يمكن ذلك إذا كان جمع الصور عشوائياً (untargeted scraping)."
+    ],
+    "format_error": false
+  },
+  {
+    "id": "q07",
+    "type": "definition",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [
+      "art3-1"
+    ],
+    "rewritten": "How does the Regulation define an \"AI system\"?",
+    "sources": [
+      "art3-1",
+      "art3-55",
+      "art1-p2-a",
+      "art75-p1-a",
+      "art79-p1",
+      "art1-p2-c",
+      "art74-p1-b",
+      "art74-p1-a",
+      "art17-p1-a",
+      "art17-p1-b"
+    ],
+    "refused": false,
+    "answer": "يعرّف التنظيم نظام الذكاء الاصطناعي بأنه نظام قائم على آلة مصمم للعمل بمستويات متفاوتة من الاستقلالية، وقد يُظهر قابلية للتكيف بعد نشره [S1]. ويستنتج هذا النظام، لأهداف صريحة أو ضمنية، من المدخلات التي يتلقاها كيفية توليد مخرجات مثل التنبؤات أو المحتوى أو التوصيات أو القرارات [S1]. ويمكن لهذه المخرجات أن تؤثر في البيئات المادية أو الافتراضية [S1]. وهذا التعريف وارد في Article 3(1) [S1].",
+    "cited": [
+      "art3-1"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q08",
+    "type": "definition",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [
+      "art3-3",
+      "art3-4"
+    ],
+    "rewritten": "Does an organisation that only uses an AI system purchased from another company qualify as a 'provider' or a 'deployer' under the AI Act, and what is the distinction between these two roles?",
+    "sources": [
+      "art3-4",
+      "art3-3",
+      "art75-p1-suite",
+      "art25-p1-a",
+      "art25-p1-c",
+      "art4-p1",
+      "art50-p2",
+      "art50-p1",
+      "art2-p1-c",
+      "art75-p1-a"
+    ],
+    "refused": false,
+    "answer": "المزوّد هو الجهة التي تطوّر نظام الذكاء الاصطناعي أو تُطوّره لصالحها وتطرحه في السوق أو تضعه في الخدمة باسمها أو علامتها التجارية، بمقابل أو مجانًا (Article 3(3)) [S2]. المُشغِّل هو الجهة التي تستخدم نظام ذكاء اصطناعي تحت سلطتها، باستثناء الاستخدام في نشاط شخصي غير مهني (Article 3(4)) [S1]. وبناءً على ذلك، إذا كانت شركتكم تستخدم أداة اشتريتموها من شركة أخرى دون وضع اسمكم أو علامتكم التجارية عليها، فإنها تُعدّ مُشغِّلًا لا مزوّدًا [S1][S2]. مع ذلك، تُعامَل الجهة كمزوّد لنظام عالي المخاطر إذا وضعت اسمها أو علامتها التجارية على نظام عالي المخاطر طُرح في السوق أو وُضع في الخدمة من قبل (Article 25(1)(a)) [S4]، أو إذا عدّلت الغرض المقصود من نظام لم يُصنَّف عالي المخاطر بحيث أصبح عالي المخاطر (Article 25(1)(c)) [S5]، مع مراعاة الترتيبات التعاقدية التي قد تحدد توزيع الالتزامات بطريقة مختلفة [S4]. كما أن الالتزام بتنمية محو الأمية في مجال الذكاء الاصطناعي ينطبق على كل من المزوّدين والمُشغِّلين (Article 4(1)) [S6].",
+    "cited": [
+      "art3-4",
+      "art3-3",
+      "art25-p1-a",
+      "art25-p1-c",
+      "art4-p1"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q09",
+    "type": "definition",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [
+      "art3-60"
+    ],
+    "rewritten": "What exactly qualifies as a \"deep fake\" under the EU AI Act?",
+    "sources": [
+      "art3-60",
+      "art50-p4",
+      "art5-p1-h",
+      "art5-p1-ba",
+      "anxIII-6-d",
+      "anxIII-6-e",
+      "art47-p1",
+      "art40-p1",
+      "art101-p1-b",
+      "art47-p2"
+    ],
+    "refused": false,
+    "answer": "وفق المادة 3(60) يُقصد بالتزييف العميق محتوى صور أو صوت أو فيديو أنشأه الذكاء الاصطناعي أو عدّله، ويشبه أشخاصًا أو أشياءً أو أماكن أو كيانات أو أحداثًا موجودة، ومن شأنه أن يبدو للشخص زائفًا على أنه أصلي أو صادق [S1]. أي أن الشرط الجوهري هو أن يظهر المحتوى للشخص كأنه حقيقي أو صادق بشكل مضلل [S1]. ويلزم وفق المادة 50(4) الجهات المُشغِّلة لنظام ذكاء اصطناعي ينتج تزييفًا عميقًا بالإفصاح عن أن المحتوى مُولَّد أو مُعدَّل اصطناعيًا [S2]. ويُستثنى من ذلك الاستخدام المصرح به قانونًا لأغراض كشف الجرائم أو منعها أو التحقيق فيها أو مقاضاتها [S2]. وإذا كان المحتوى جزءًا من عمل فني أو إبداعي أو ساخر أو خيالي واضح الطابع، يقتصر الإفصاح على وجود المحتوى المُولَّد أو المُعدَّل بطريقة مناسبة لا تعيق عرض العمل أو الاستمتاع به [S2].",
+    "cited": [
+      "art3-60",
+      "art50-p4"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q10",
+    "type": "obligation",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [
+      "art50-p1"
+    ],
+    "rewritten": "Do providers of an AI system intended to interact directly with natural persons, such as a customer service chatbot, have to inform those users that they are interacting with an AI system?",
+    "sources": [
+      "art50-p1",
+      "art50-p3",
+      "art26-p7",
+      "art53-p1-b",
+      "art25-p4",
+      "art16-b",
+      "art31-p4",
+      "art55-p1-c",
+      "art31-p5",
+      "art91-p2"
+    ],
+    "refused": false,
+    "answer": "نعم، إذا كان الروبوت مصمماً للتفاعل المباشر مع أشخاص طبيعيين، فيجب على مقدمه ضمان تصميمه وتطويره بحيث يُعلم هؤلاء الأشخاص بأنهم يتفاعلون مع نظام ذكاء اصطناعي [S1]. ولا يسري هذا الالتزام إذا كان ذلك واضحاً من منظور شخص طبيعي معقول الاطلاع ويقظ وحذر، مع مراعاة الظروف وسياق الاستخدام [S1]. وتقدير ما إذا كان ذلك واضحاً في حالة خدمة العملاء يعتمد على هذه الظروف والسياق [S1].",
+    "cited": [
+      "art50-p1"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q11",
+    "type": "obligation",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [
+      "art53-p1-a",
+      "art53-p1-b",
+      "anxXI*",
+      "anxXII*"
+    ],
+    "rewritten": "What documentation must a provider of a general-purpose AI model draw up and make available to downstream providers who integrate that model into their AI systems?",
+    "sources": [
+      "art53-p1-b",
+      "anxXI-1-a",
+      "art53-p1-a",
+      "anxXI-2-a",
+      "anxXII-1-h",
+      "anxXII-2-a",
+      "art55-p1-c",
+      "art91-p1",
+      "art25-p4",
+      "art11-p1"
+    ],
+    "refused": false,
+    "answer": "يجب على مقدّم نموذج الذكاء الاصطناعي للأغراض العامة أن يُعدّ ويحدّث الوثائق الفنية للنموذج، بما يشمل عملية التدريب والاختبار ونتائج التقييم، وأن تتضمن الحد الأدنى من المعلومات الواردة في الملحق XI [S3]. ويجب أيضًا إعداد معلومات ووثائق وإتاحتها لمقدّمي أنظمة الذكاء الاصطناعي الذين ينوون دمج النموذج في أنظمتهم، بحيث تمكّنهم من فهم قدرات النموذج وقيوده والوفاء بالتزاماتهم، وأن تتضمن على الأقل العناصر الواردة في الملحق XII [S1]. ومن المحتوى المطلوب وصف عام للنموذج يشمل المهام المقصودة وأنواع أنظمة الذكاء الاصطناعي التي يمكن دمجه فيها [S2]، والوسائل التقنية اللازمة لدمجه مثل تعليمات الاستخدام والبنية التحتية والأدوات [S4][S6]، والترخيص الخاص بالنموذج [S5]. وإذا كان النموذج ذا مخاطر نظامية، فيجب تتبع وتوثيق وإبلاغ مكتب الذكاء الاصطناعي عن المعلومات المتعلقة بالحوادث الخطيرة وتدابير التصحيح المحتملة دون تأخير لا مبرر له [S7]. ويجوز للمفوضية أن تطلب من المقدّم الوثائق المُعدّة أو أي معلومات إضافية لازمة لتقييم امتثاله [S8].",
+    "cited": [
+      "art53-p1-b",
+      "anxXI-1-a",
+      "art53-p1-a",
+      "anxXI-2-a",
+      "anxXII-1-h",
+      "anxXII-2-a",
+      "art55-p1-c",
+      "art91-p1"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q12",
+    "type": "obligation",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [
+      "art26-p7"
+    ],
+    "rewritten": "Before we begin deploying a high-risk AI system in the workplace, are we required to inform our employees?",
+    "sources": [
+      "art26-p7",
+      "art27-p1-b",
+      "art27-p1-e",
+      "art26-p5",
+      "art16-f",
+      "art13-p3-b",
+      "art20-p2",
+      "art6-p4",
+      "art9-p8",
+      "art16-b"
+    ],
+    "refused": false,
+    "answer": "نعم. تنص المادة 26(7) على أن أصحاب العمل الذين يعملون بصفتهم جهات نشر (deployers) يجب عليهم، قبل تشغيل نظام ذكاء اصطناعي عالي المخاطر أو استخدامه في مكان العمل، إبلاغ ممثلي العمال والعمال المعنيين بأنهم سيخضعون لاستخدام هذا النظام [S1]. ويُقدَّم هذا الإبلاغ، عند الاقتضاء، وفقاً للقواعد والإجراءات المنصوص عليها في قانون الاتحاد والقانون الوطني وممارساتهما المتعلقة بإعلام العمال وممثليهم [S1].",
+    "cited": [
+      "art26-p7"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q13",
+    "type": "date",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [
+      "art113-a"
+    ],
+    "rewritten": "From what date do the prohibitions on prohibited artificial intelligence practices apply?",
+    "sources": [
+      "art5-p1-h",
+      "art5-p1-ba",
+      "art99-p3",
+      "art113-a",
+      "art113-b",
+      "art79-p8",
+      "art1-p2-b",
+      "art100-p2",
+      "art111-p2",
+      "art26-p10"
+    ],
+    "refused": false,
+    "answer": "تُطبَّق الفصول الأول (الأحكام العامة) والثاني (الممارسات المحظورة) من الذكاء الاصطناعي اعتباراً من 2 فبراير 2025 وفق المادة 113 الفقرة (أ) [S4]. يُستثنى من ذلك المادة 5(1) الفقرة الأولى النقطتان (ba) و(bb)، والمادة 5(1a) و5(1b)، إذ تُطبَّق اعتباراً من 2 ديسمبر 2026 [S4]. ومن هذه النقاط النقطة Article 5(1)(ba) التي تحظر وضع نظام ذكاء اصطناعي في السوق أو تشغيله أو استخدامه لتوليد أو معالجة صور أو مقاطع فيديو أو صوت واقعية لشخص طبيعي محدد دون موافقته الصريحة [S2].",
+    "cited": [
+      "art5-p1-ba",
+      "art113-a"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q14",
+    "type": "date",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [
+      "art113-c"
+    ],
+    "rewritten": "When do the obligations for high-risk AI systems listed in Annex III begin to apply?",
+    "sources": [
+      "art7-p3-a",
+      "art7-p1-b",
+      "art111-p2",
+      "art25-p3-b",
+      "art113-c",
+      "art26-p11",
+      "art6-p3",
+      "art80-p2",
+      "art6-p4",
+      "art25-p3-a"
+    ],
+    "refused": false,
+    "answer": "تنطبق الالتزامات الخاصة بأنظمة الذكاء الاصطناعي عالية المخاطر المصنفة وفقًا للمادة 6(2) والملحق الثالث اعتبارًا من 2 ديسمبر 2027 [S5] (Article 113(c)(i)). أما الأنظمة التي طُرحت في السوق أو دخلت الخدمة قبل تاريخ بدء التطبيق، فلا تخضع للائحة إلا إذا تعرضت بعد ذلك التاريخ لتغييرات جوهرية في تصميمها [S3] (Article 111(2)). وبالنسبة إلى الأنظمة عالية المخاطر المعدة لاستخدام السلطات العامة، يجب على المزودين والناشرين اتخاذ الخطوات اللازمة للامتثال بحلول 2 أغسطس 2030 [S3] (Article 111(2)).",
+    "cited": [
+      "art111-p2",
+      "art113-c"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q15",
+    "type": "obligation",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [
+      "art99-p3"
+    ],
+    "rewritten": "What is the maximum administrative fine that can be imposed on a provider or deployer that places on the market, puts into service or uses a prohibited AI practice?",
+    "sources": [
+      "art99-p3",
+      "art5-p1-a",
+      "art5-p1-ba",
+      "art100-p2",
+      "art101-p1-c",
+      "art101-p1-a",
+      "art100-p3",
+      "art50-p4",
+      "art57-p12",
+      "art25-p1-a"
+    ],
+    "refused": false,
+    "answer": "بموجب Article 99(3)، يخضع عدم الامتثال لحظر الممارسات المحظورة المشار إليها في Article 5 لغرامات إدارية تصل إلى 35 000 000 يورو [S1]. وإذا كان المخالف مؤسسة، فإن الحد الأقصى هو 7% من إجمالي الدخل السنوي العالمي للسنة المالية السابقة [S1]. والحد الذي يُطبَّق هو الأعلى من المبلغين [S1].",
+    "cited": [
+      "art99-p3"
+    ],
+    "retrieved": true,
+    "correct": true,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "q16",
+    "type": "date",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [
+      "art113-a"
+    ],
+    "rewritten": "From what date does the prohibition on using AI systems to generate or manipulate deep fake content that depicts an identifiable real person in intimate or sexually explicit form apply?",
+    "sources": [
+      "art5-p1-ba",
+      "art50-p4",
+      "art5-p1-h",
+      "art3-60",
+      "art4a-p1-b",
+      "art4a-p1-e",
+      "art113-b",
+      "art26-p10",
+      "art113-c",
+      "art14-p5"
+    ],
+    "refused": false,
+    "answer": "تحظر المادة 5(1)(ba) وضع على السوق أو تشغيل أو استخدام نظام ذكاء اصطناعي يُنشئ أو يعدّل صورًا أو مقاطع فيديو واقعية لشخص طبيعي محدد تظهر فيها أجزاؤه الحميمة أو انخراطه في أنشطة جنسية صريحة، دون موافقته الحرة والمحددة والمستنيرة وغير الملتبسة والصريحة لذلك التوليد أو التعديل [S1]. وتنص المادة 113 على أن اللائحة تُطبَّق عمومًا من 2 أغسطس 2026 [S7][S9]، ولا تستثني المقتطفات المقدمة الفصل الثاني الذي يتضمن هذا الحظر من هذا التاريخ العام [S7][S9]. غير أن المقتطفات لا تتضمن المادة 113(a) التي تحدد تاريخ تطبيق الممارسات المحظورة صراحةً، لذلك لا يمكن تأكيد التاريخ الدقيق لبدء الحظر من المصادر المتاحة [S7]. كما أن الصور المزيفة التي تبدو واقعية لأشخاص موجودين تندرج ضمن تعريف التزييف العميق [S4]، ويجب على الناشرين الإفصاح عن أن المحتوى مُولَّد أو معدّل اصطناعيًا وفق المادة 50(4) [S2].",
+    "cited": [
+      "art5-p1-ba",
+      "art50-p4",
+      "art3-60",
+      "art113-b",
+      "art113-c"
+    ],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n01",
+    "type": "no_answer",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [],
+    "rewritten": "How long are we permitted to retain our customers' email messages?",
+    "sources": [
+      "art18-p1-d",
+      "art18-p1-c",
+      "art19-p1",
+      "art36-p9-a",
+      "art23-p5",
+      "art26-p6",
+      "art36-p9-b",
+      "art44-p2",
+      "art79-p8",
+      "art47-p1"
+    ],
+    "refused": true,
+    "answer": "نص قانون الذكاء الاصطناعي المتوفر لا يجيب عن هذا السؤال.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n02",
+    "type": "no_answer",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [],
+    "rewritten": "What is the corporate tax rate applicable to start-ups active in the field of artificial intelligence in Ireland?",
+    "sources": [
+      "art99-p3",
+      "art100-p2",
+      "art101-p1-b",
+      "art101-p1-c",
+      "art100-p3",
+      "art58-p2-d",
+      "art62-p1-a",
+      "art111-p1",
+      "anxIII-6-d",
+      "art50-p1"
+    ],
+    "refused": true,
+    "answer": "نص قانون الذكاء الاصطناعي المتوفر لا يجيب عن هذا السؤال.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n03",
+    "type": "no_answer",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [],
+    "rewritten": "What is the minimum wage for a software developer in France?",
+    "sources": [
+      "art99-p5",
+      "art99-p4-e",
+      "art101-p1-b",
+      "art101-p1-d",
+      "art63-p1",
+      "art100-p3",
+      "art62-p2",
+      "art11-p1",
+      "art62-p1-a",
+      "art74-p12"
+    ],
+    "refused": true,
+    "answer": "نص قانون الذكاء الاصطناعي المتوفر لا يجيب عن هذا السؤال.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n04",
+    "type": "no_answer",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [],
+    "rewritten": "Which general-purpose AI model released under a free and open-source licence performs best when deployed for customer service?",
+    "sources": [
+      "art54-p6",
+      "art53-p2",
+      "art25-p4",
+      "art2-p12",
+      "anxXII-1-h",
+      "art53-p4",
+      "anxXI-1-f",
+      "art55-p2",
+      "anxXII-1-c",
+      "anxXI-1-c"
+    ],
+    "refused": true,
+    "answer": "نص قانون الذكاء الاصطناعي المتوفر لا يجيب عن هذا السؤال.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n05",
+    "type": "no_answer",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [],
+    "rewritten": "Does the United States have a federal law comparable to the EU AI Act?",
+    "sources": [
+      "art74-p8",
+      "art75-p1-a",
+      "art100-p2",
+      "art74-p10",
+      "art59-p3",
+      "anxV-5",
+      "anxIII-7-b",
+      "art57-p3a",
+      "art100-p3",
+      "art2-p1-a"
+    ],
+    "refused": true,
+    "answer": "نص قانون الذكاء الاصطناعي المتوفر لا يجيب عن هذا السؤال.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n06",
+    "type": "no_answer",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [],
+    "rewritten": "How much does a CE certificate cost when issued by a notified body?",
+    "sources": [
+      "art48-p4",
+      "art45-p1-a",
+      "art44-p1",
+      "art44-p3",
+      "art36-p3",
+      "anxVII-text2",
+      "art36-p8-b",
+      "art45-p1-b",
+      "art30-p4",
+      "art31-p9"
+    ],
+    "refused": true,
+    "answer": "نص قانون الذكاء الاصطناعي المتوفر لا يجيب عن هذا السؤال.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n07",
+    "type": "no_answer",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [],
+    "rewritten": "Can a patent be registered for an invention whose output was generated by an AI system?",
+    "sources": [
+      "art49-p5",
+      "anxIII-6-a",
+      "art5-p1a-a",
+      "art50-p2",
+      "anxIII-6-c",
+      "art50-p1",
+      "art52-p6",
+      "art59-p1-a",
+      "anxVIII-i17",
+      "art5-p1-ba"
+    ],
+    "refused": true,
+    "answer": "نص قانون الذكاء الاصطناعي المتوفر لا يجيب عن هذا السؤال.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n08",
+    "type": "no_answer",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [],
+    "rewritten": "Which cloud service provider should we choose to host our data in Europe?",
+    "sources": [
+      "art71-p6",
+      "art57-p3",
+      "art100-p4",
+      "art70-p9",
+      "anxV-5",
+      "art18-p1-e",
+      "art47-p1",
+      "art71-p5",
+      "art53-p1-c",
+      "art100-p5"
+    ],
+    "refused": true,
+    "answer": "نص قانون الذكاء الاصطناعي المتوفر لا يجيب عن هذا السؤال.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n09",
+    "type": "no_answer",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [],
+    "rewritten": "What is the fine for disregarding a red traffic signal in Germany?",
+    "sources": [
+      "art99-p4-f",
+      "art99-p4-d",
+      "art100-p3",
+      "art100-p2",
+      "art75c-a",
+      "art101-p1-b",
+      "art75c-b",
+      "art101-p1-c",
+      "art80-p7",
+      "art113-b"
+    ],
+    "refused": true,
+    "answer": "نص قانون الذكاء الاصطناعي المتوفر لا يجيب عن هذا السؤال.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  },
+  {
+    "id": "n10",
+    "type": "no_answer",
+    "lang": "ar",
+    "detected_lang": "ar",
+    "expected": [],
+    "rewritten": "Does Algeria have a law regulating artificial intelligence?",
+    "sources": [
+      "art5-p1-h",
+      "art50-p1",
+      "art59-p3",
+      "art26-p10",
+      "art5-p1-ba",
+      "art102",
+      "art104",
+      "art74-p8",
+      "anxIII-6-d",
+      "anxIII-6-e"
+    ],
+    "refused": true,
+    "answer": "نص قانون الذكاء الاصطناعي المتوفر لا يجيب عن هذا السؤال.",
+    "cited": [],
+    "retrieved": false,
+    "correct": false,
+    "invalid_tags": [],
+    "phantom_refs": [],
+    "mismatched": [],
+    "untagged": [],
+    "format_error": false
+  }
+]

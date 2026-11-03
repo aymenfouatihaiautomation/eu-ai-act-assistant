@@ -1,0 +1,9 @@
+# Secrets : ne JAMAIS envoyer sur GitHub
+.env
+
+# Environnement Python et caches
+.venv/
+__pycache__/
+
+# Fichiers lourds ou régénérables
+data/index/

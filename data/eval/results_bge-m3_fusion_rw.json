@@ -1,0 +1,1973 @@
+[
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "q01",
+    "type": "scenario",
+    "expected": [
+      "anxIII-4-a"
+    ],
+    "query": "Is the AI system used for recruitment and candidate selection considered a high‑risk AI system?",
+    "found": [
+      "en-anxIII-4-a",
+      "en-anxIII-8-b",
+      "en-art6-p1-a",
+      "en-art6-suite",
+      "en-art9-p8",
+      "en-art9-suite",
+      "en-art13-p3-b",
+      "en-art80-p1",
+      "en-art27-p1-b",
+      "en-art26-p7"
+    ],
+    "top_cosine": 0.729,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "q02",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-f"
+    ],
+    "query": "Is the deployment of an AI‑based emotion recognition system to assess employees’ stress or unhappiness during video calls permissible under the AI Act?",
+    "found": [
+      "en-art50-p3",
+      "en-art5-p1-f",
+      "en-anxIII-6-d",
+      "en-anxIII-1-c",
+      "en-art60a-p1",
+      "en-art50-p1",
+      "en-art46-p2",
+      "en-art5-p1-d",
+      "en-art60-p1",
+      "en-art43-p3-part1"
+    ],
+    "top_cosine": 0.619,
+    "hit": true,
+    "rank_in_50": 2
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "q03",
+    "type": "scenario",
+    "expected": [
+      "anxIII-5-b"
+    ],
+    "query": "Which category does an AI system used by a bank for credit scoring and loan allocation fall under under the AI Act?",
+    "found": [
+      "en-anxIII-5-b",
+      "en-anxIII-6-d",
+      "en-anxXIV-text1",
+      "en-art74-p6",
+      "en-art75-p1-a",
+      "en-art6-p1-b",
+      "en-art6-p1-a",
+      "en-art72-p4",
+      "en-art5-p1-d",
+      "en-art75-p1e"
+    ],
+    "top_cosine": 0.649,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "q04",
+    "type": "scenario",
+    "expected": [
+      "anxIII-3-d"
+    ],
+    "query": "Is the deployment of a remote biometric identification system by a university to monitor students for cheating during online examinations permitted under the AI Act, and which provisions apply?",
+    "found": [
+      "en-art5-p1-h",
+      "en-art5-p5",
+      "en-art26-p10-part1",
+      "en-anxIII-1-a",
+      "en-art60-p1",
+      "en-art60a-p1",
+      "en-anxIII-7-d",
+      "en-art14-p5",
+      "en-art46-p1",
+      "en-art3-41"
+    ],
+    "top_cosine": 0.678,
+    "hit": false,
+    "rank_in_50": 26
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "q05",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-c"
+    ],
+    "query": "Is the use by a public authority of a social‑scoring system to allocate or deny public services lawful under the AI Act?",
+    "found": [
+      "en-art5-p1-c",
+      "en-art5-p1-g",
+      "en-art46-p2",
+      "en-art50-p1",
+      "en-art2-p4",
+      "en-art46-p1",
+      "en-art59-p3",
+      "en-art77-p3",
+      "en-anxIII-6-d",
+      "en-anxIII-5-a"
+    ],
+    "top_cosine": 0.653,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "q06",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-e"
+    ],
+    "query": "Is it permissible to collect and process facial images from social media and the internet to create a biometric database?",
+    "found": [
+      "fr-art5-p2-suite",
+      "en-art5-p1-e",
+      "en-art26-p10-part2",
+      "en-anxIII-1-a",
+      "en-art50-p3",
+      "fr-art3-35",
+      "fr-art59-p1-c",
+      "en-art3-34",
+      "fr-art59-p1-j",
+      "en-art71-p5"
+    ],
+    "top_cosine": 0.593,
+    "hit": true,
+    "rank_in_50": 2
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "q07",
+    "type": "definition",
+    "expected": [
+      "art3-1"
+    ],
+    "query": "How does the Regulation define an “AI system”?",
+    "found": [
+      "en-art3-1",
+      "en-art3-55",
+      "en-art1-p2-a",
+      "en-art79-p1",
+      "en-art75-p1-a",
+      "en-art1-p2-c",
+      "en-art74-p1-b",
+      "en-art74-p1-a",
+      "en-art17-p1-a",
+      "en-art17-p1-b"
+    ],
+    "top_cosine": 0.738,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "q08",
+    "type": "definition",
+    "expected": [
+      "art3-3",
+      "art3-4"
+    ],
+    "query": "Is an entity that merely uses an AI system purchased from another company considered a provider or a deployer under the AI Act, and what distinguishes these two roles?",
+    "found": [
+      "en-art3-4",
+      "en-art25-p1-a",
+      "en-art75-p1-suite",
+      "en-art25-p1-c",
+      "en-art3-3",
+      "en-art4-p1",
+      "en-art50-p2",
+      "en-art50-p1",
+      "en-art26-p5",
+      "en-art2-p1-c"
+    ],
+    "top_cosine": 0.686,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "q09",
+    "type": "definition",
+    "expected": [
+      "art3-60"
+    ],
+    "query": "How does the AI Act define a deepfake?",
+    "found": [
+      "en-art3-60",
+      "en-art50-p4",
+      "en-art5-p1-ba",
+      "en-art5-p1-a",
+      "en-art23-p2",
+      "en-art50-p2",
+      "en-art80-p7",
+      "en-anxIII-6-d",
+      "en-art25-p1-a",
+      "en-art25-p1-b"
+    ],
+    "top_cosine": 0.68,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "q10",
+    "type": "obligation",
+    "expected": [
+      "art50-p1"
+    ],
+    "query": "Does the transparency obligation require us to inform users that the customer‑service chatbot is an AI system?",
+    "found": [
+      "en-art50-p1",
+      "en-art50-p4",
+      "en-art13-p1",
+      "en-art53-p1-b",
+      "en-art6-p4",
+      "en-art55-p1-c",
+      "en-art79-p6-c",
+      "en-art25-b",
+      "en-art26-p7",
+      "en-art79-p6-a"
+    ],
+    "top_cosine": 0.677,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "q11",
+    "type": "obligation",
+    "expected": [
+      "art53-p1-a",
+      "art53-p1-b"
+    ],
+    "query": "What technical documentation must be prepared for providing a general‑purpose AI system to other companies?",
+    "found": [
+      "en-art53-p1-b",
+      "en-anxXI-1-c",
+      "en-anxXI-1-a",
+      "en-art11-p1",
+      "en-art53-p1-a",
+      "en-art11-p2",
+      "en-anxIV-1-d",
+      "en-anxXII-2-a",
+      "en-anxIV-2-b",
+      "en-anxXII-1-c"
+    ],
+    "top_cosine": 0.715,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "q12",
+    "type": "obligation",
+    "expected": [
+      "art26-p7"
+    ],
+    "query": "Is it required to provide information to employees before deploying a high‑risk AI system?",
+    "found": [
+      "en-art26-p7",
+      "en-art13-p3-b",
+      "en-art27-p1-b",
+      "en-anxVIII-i21",
+      "en-anxVIII-i19",
+      "en-art16-f",
+      "en-art27-p1-e",
+      "en-art26-p5",
+      "en-art13-p2",
+      "en-art6-p4"
+    ],
+    "top_cosine": 0.782,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "q13",
+    "type": "date",
+    "expected": [
+      "art113-a"
+    ],
+    "query": "From which date do the bans on prohibited AI systems apply?",
+    "found": [
+      "en-art5-p1-h",
+      "en-art5-p1-ba",
+      "en-art111-p1",
+      "en-art99-p3",
+      "en-art113-b",
+      "en-art111-p2",
+      "en-art113-c",
+      "en-art79-p8",
+      "en-art75c-p8",
+      "en-art100-p2"
+    ],
+    "top_cosine": 0.631,
+    "hit": false,
+    "rank_in_50": 25
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "q14",
+    "type": "date",
+    "expected": [
+      "art113-c"
+    ],
+    "query": "When do the obligations for high‑risk AI systems set out in Annex III commence?",
+    "found": [
+      "en-art7-p3-a",
+      "en-art7-p1-b",
+      "en-art25-p3-b",
+      "en-art6-p4",
+      "en-art26-p11",
+      "en-art111-p2",
+      "en-art113-c",
+      "en-art80-p2",
+      "en-art25-p3-a",
+      "en-art6-p3"
+    ],
+    "top_cosine": 0.728,
+    "hit": true,
+    "rank_in_50": 8
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "q15",
+    "type": "obligation",
+    "expected": [
+      "art99-p3"
+    ],
+    "query": "What is the maximum administrative fine applicable to a provider that deploys a prohibited AI system?",
+    "found": [
+      "en-art99-p3",
+      "en-art100-p2",
+      "en-art5-p1-d",
+      "en-art100-p3",
+      "en-art5-p1-h",
+      "en-art101-p1-c",
+      "en-art101-p1-a",
+      "en-art80-p7",
+      "en-art57-p12",
+      "en-art50-p1"
+    ],
+    "top_cosine": 0.702,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "q16",
+    "type": "date",
+    "expected": [
+      "art113-a"
+    ],
+    "query": "From which date does the prohibition on using AI systems to generate synthetic media depicting a real person in a sexual context apply?",
+    "found": [
+      "en-art5-p1-ba",
+      "en-art5-p1-h",
+      "en-art50-p4",
+      "en-art3-60",
+      "en-art111-p4",
+      "en-art26-p10-part1",
+      "en-art50-p1",
+      "en-anxIII-1-a",
+      "en-art59-p1-f",
+      "en-art59-p1-c"
+    ],
+    "top_cosine": 0.671,
+    "hit": false,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "n01",
+    "type": "no_answer",
+    "expected": [],
+    "query": "What is the permissible retention period for customers' email addresses?",
+    "found": [
+      "en-art19-p1",
+      "en-art18-p1-c",
+      "en-art18-p1-d",
+      "fr-art36-p9-a",
+      "fr-art23-p5",
+      "en-art44-p2",
+      "en-art26-p6",
+      "fr-art36-p9-b",
+      "en-art79-p8",
+      "en-art75c-p8"
+    ],
+    "top_cosine": 0.554,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "n02",
+    "type": "no_answer",
+    "expected": [],
+    "query": "What is the corporate tax rate applicable to artificial intelligence start‑up enterprises established in Ireland?",
+    "found": [
+      "en-art99-p3",
+      "en-art100-p3",
+      "en-art100-p2",
+      "en-art101-p1-c",
+      "en-art101-p1-b",
+      "en-art58-p2-d",
+      "en-art111-p1",
+      "en-art62-p1-a",
+      "en-art49-p1",
+      "en-art49-p5"
+    ],
+    "top_cosine": 0.537,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "n03",
+    "type": "no_answer",
+    "expected": [],
+    "query": "What is the minimum wage for a software developer in France?",
+    "found": [
+      "fr-art99-p5",
+      "fr-art99-p4-e",
+      "en-art101-p1-b",
+      "en-art101-p1-d",
+      "en-art63-p1",
+      "fr-art100-p3",
+      "en-art62-p2",
+      "en-art11-p1",
+      "fr-art62-p1-a",
+      "en-art74-p12"
+    ],
+    "top_cosine": 0.425,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "n04",
+    "type": "no_answer",
+    "expected": [],
+    "query": "Which open‑source AI system provides the best results for customer support?",
+    "found": [
+      "en-art25-p4",
+      "en-art75-p1-a",
+      "en-art75-p3",
+      "en-anxIII-5-d",
+      "fr-anxXIV-text2",
+      "en-anxVII-i1",
+      "en-anxVII-i7",
+      "fr-art50-p2",
+      "en-art15-p4",
+      "en-anxIII-5-a"
+    ],
+    "top_cosine": 0.513,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "n05",
+    "type": "no_answer",
+    "expected": [],
+    "query": "Is there a federal legislative framework in the United States comparable to the Union’s AI Regulation?",
+    "found": [
+      "en-art57-p3a",
+      "en-art75-p1-a",
+      "en-art74-p8",
+      "en-art74-p10",
+      "en-art60a-p4",
+      "en-art28-p8-part1",
+      "en-art2-p3",
+      "en-art72-p4",
+      "en-art60a-p1",
+      "en-art2-p4"
+    ],
+    "top_cosine": 0.606,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "n06",
+    "type": "no_answer",
+    "expected": [],
+    "query": "What is the cost of obtaining a CE conformity assessment from a notified body?",
+    "found": [
+      "en-art48-p4",
+      "en-art31-p9",
+      "en-art30-p4",
+      "en-art45-p1-a",
+      "en-art45-p1-b",
+      "en-art29-p4",
+      "en-anxVII-text2",
+      "fr-art28-p8-part1",
+      "en-art43-suite",
+      "en-art29-p1"
+    ],
+    "top_cosine": 0.623,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "n07",
+    "type": "no_answer",
+    "expected": [],
+    "query": "Is it permissible to obtain a patent for an invention generated by an AI system?",
+    "found": [
+      "en-art50-p1",
+      "en-art26-p10-part1",
+      "en-art5-p1a-a",
+      "en-art59-p1-a",
+      "en-art50-p2",
+      "en-anxIII-6-a",
+      "en-art5-p1-ba",
+      "en-art25-p4",
+      "en-anxIII-6-d",
+      "en-art52-p6"
+    ],
+    "top_cosine": 0.595,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "n08",
+    "type": "no_answer",
+    "expected": [],
+    "query": "Which provider of cloud services should be selected for hosting data in the Union?",
+    "found": [
+      "fr-art71-p6",
+      "en-art62-p1-a",
+      "en-art80-p5",
+      "en-art26-p8",
+      "en-art100-p4",
+      "en-art49-p3",
+      "en-art53-p1-c",
+      "en-art57-p3",
+      "en-art22-p1",
+      "en-anxVIII-10"
+    ],
+    "top_cosine": 0.541,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "n09",
+    "type": "no_answer",
+    "expected": [],
+    "query": "What monetary penalty applies to a natural person who commits a traffic violation by proceeding through a red traffic signal in Germany?",
+    "found": [
+      "en-art99-p4-f",
+      "en-art99-p4-d",
+      "fr-art100-p2",
+      "en-art100-p3",
+      "en-art75c-p5-e",
+      "en-art75c-p5-suite",
+      "en-art101-p1-b",
+      "en-art101-p1-a"
+    ],
+    "top_cosine": 0.544,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "en",
+    "id": "n10",
+    "type": "no_answer",
+    "expected": [],
+    "query": "Does Algeria have a national AI regulatory framework?",
+    "found": [
+      "en-art79-p2",
+      "en-art79-p5",
+      "en-art74-p8",
+      "en-art111-p2",
+      "en-art57-p14",
+      "en-art75-p1-a",
+      "en-art57-p10",
+      "en-art5-p1-h",
+      "en-art2-p4",
+      "en-art74-p6"
+    ],
+    "top_cosine": 0.545,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "q01",
+    "type": "scenario",
+    "expected": [
+      "anxIII-4-a"
+    ],
+    "query": "Is the use of an AI tool for sorting CVs and pre‑selecting candidates considered a high‑risk AI system?",
+    "found": [
+      "fr-anxIII-4-a",
+      "fr-anxIII-8-b",
+      "fr-art6-suite",
+      "fr-art80-p1",
+      "fr-art15-p5",
+      "fr-art9-suite",
+      "fr-art6-p1-a",
+      "fr-art25-p4",
+      "fr-art14-p4-b",
+      "fr-art14-p4-d"
+    ],
+    "top_cosine": 0.693,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "q02",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-f"
+    ],
+    "query": "Is the deployment of an AI system for emotion recognition of workers during video conferences permissible?",
+    "found": [
+      "en-art50-p3",
+      "en-art5-p1-f",
+      "en-anxIII-1-c",
+      "en-art26-p7",
+      "fr-art50-p2",
+      "en-anxIII-8-b",
+      "en-art13-p3-b",
+      "en-art26-p10-part1",
+      "en-art46-p2",
+      "en-art60-p1"
+    ],
+    "top_cosine": 0.603,
+    "hit": true,
+    "rank_in_50": 2
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "q03",
+    "type": "scenario",
+    "expected": [
+      "anxIII-5-b"
+    ],
+    "query": "Under which classification does a bank’s AI system for creditworthiness assessment and loan granting fall?",
+    "found": [
+      "en-anxIII-5-b",
+      "en-anxXIV-text1",
+      "en-art6-p4",
+      "en-anxIII-6-d",
+      "en-art6-p1-b",
+      "en-art80-p7",
+      "en-art43-p1-a",
+      "en-art75-p1e",
+      "en-art43-p1-b",
+      "en-art74-p6"
+    ],
+    "top_cosine": 0.616,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "q04",
+    "type": "scenario",
+    "expected": [
+      "anxIII-3-d"
+    ],
+    "query": "Is the deployment of an AI system for monitoring students and detecting cheating during online examinations permissible, and under which provisions of the AI Act does it fall?",
+    "found": [
+      "en-art5-p1-d",
+      "en-anxIII-3-d",
+      "en-art60-p1",
+      "en-art60a-p1",
+      "fr-art60-p6",
+      "en-anxIII-6-c",
+      "en-art5-p1-a",
+      "en-art75-p1-a",
+      "en-art50-p1",
+      "en-art75-p1e"
+    ],
+    "top_cosine": 0.621,
+    "hit": true,
+    "rank_in_50": 2
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "q05",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-c"
+    ],
+    "query": "Is the use by a public authority of a social‑scoring system to allocate public services to individuals lawful under the AI Act?",
+    "found": [
+      "en-art5-p1-c",
+      "en-art50-p1",
+      "en-art2-p4",
+      "en-art5-p1-d",
+      "en-anxIII-6-d",
+      "en-art59-p3",
+      "en-art59-p2",
+      "en-anxIII-5-a",
+      "en-art46-p2",
+      "en-art74-p8"
+    ],
+    "top_cosine": 0.652,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "q06",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-e"
+    ],
+    "query": "Is it permissible to compile a biometric database of facial images by harvesting publicly available photographs from social media and the internet?",
+    "found": [
+      "fr-art5-p2-suite",
+      "en-art5-p1-e",
+      "en-art26-p10-part2",
+      "en-art3-34",
+      "en-anxIII-1-a",
+      "en-art3-35",
+      "en-art71-p5",
+      "en-art50-p3",
+      "fr-art59-p1-j",
+      "fr-art59-p1-e"
+    ],
+    "top_cosine": 0.558,
+    "hit": true,
+    "rank_in_50": 2
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "q07",
+    "type": "definition",
+    "expected": [
+      "art3-1"
+    ],
+    "query": "How does the Regulation define an AI system?",
+    "found": [
+      "fr-art3-1",
+      "fr-art3-55",
+      "fr-art1-p2-a",
+      "fr-art79-p2",
+      "en-art75-p1-a",
+      "en-art1-p2-c",
+      "fr-art74-p8",
+      "fr-anxXIV-text1",
+      "fr-art111-p1",
+      "fr-art74-p1-b"
+    ],
+    "top_cosine": 0.729,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "q08",
+    "type": "definition",
+    "expected": [
+      "art3-3",
+      "art3-4"
+    ],
+    "query": "We only use an AI system acquired from another enterprise; are we considered a provider or a deployer under the AI Act, and what distinguishes these roles?",
+    "found": [
+      "fr-art3-4",
+      "fr-art3-3",
+      "fr-art25-p1-a",
+      "fr-art25-p1-b",
+      "en-art75-p1-suite",
+      "en-art4-p1",
+      "fr-art92-p5",
+      "fr-art91-p5",
+      "fr-art50-p2",
+      "en-art50-p1"
+    ],
+    "top_cosine": 0.656,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "q09",
+    "type": "definition",
+    "expected": [
+      "art3-60"
+    ],
+    "query": "What definition does the AI Act provide for synthetic media (deepfake)?",
+    "found": [
+      "en-art3-60",
+      "en-art50-p4",
+      "en-art50-p2",
+      "en-art5-p1-a",
+      "en-art5-p1-ba",
+      "en-art15-p5",
+      "en-art23-p2",
+      "en-art111-p4",
+      "en-anxIII-1-a",
+      "en-anxIII-6-b"
+    ],
+    "top_cosine": 0.671,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "q10",
+    "type": "obligation",
+    "expected": [
+      "art50-p1"
+    ],
+    "query": "Must we inform users that they are interacting with an AI system?",
+    "found": [
+      "en-art50-p1",
+      "en-art26-p7",
+      "en-art50-p3",
+      "en-art13-p2",
+      "en-art26-p5",
+      "en-anxVIII-6",
+      "fr-art5-p4",
+      "en-anxVIII-i18",
+      "en-art16-b",
+      "en-art13-p1"
+    ],
+    "top_cosine": 0.709,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "q11",
+    "type": "obligation",
+    "expected": [
+      "art53-p1-a",
+      "art53-p1-b"
+    ],
+    "query": "What technical documentation must a provider of a general‑purpose language model prepare for downstream users?",
+    "found": [
+      "en-anxXI-1-c",
+      "en-art53-p1-a",
+      "en-anxXI-1-e",
+      "en-art53-p1-d",
+      "en-anxXII-1-e",
+      "en-anxXII-1-c",
+      "en-art11-p1",
+      "fr-art91-p5",
+      "fr-art91-p1",
+      "fr-art92-p5"
+    ],
+    "top_cosine": 0.684,
+    "hit": true,
+    "rank_in_50": 2
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "q12",
+    "type": "obligation",
+    "expected": [
+      "art26-p7"
+    ],
+    "query": "Must employers inform employees prior to the deployment of a high‑risk AI system in the workplace?",
+    "found": [
+      "en-art26-p7",
+      "en-art27-p1-b",
+      "fr-art26-p5",
+      "en-art27-p1-e",
+      "fr-art16-b",
+      "en-art16-f",
+      "fr-anxVIII-12",
+      "fr-art20-p2",
+      "fr-anxIII-4-a",
+      "fr-anxVIII-i19"
+    ],
+    "top_cosine": 0.794,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "q13",
+    "type": "date",
+    "expected": [
+      "art113-a"
+    ],
+    "query": "From which date do the prohibitions on prohibited AI practices become applicable?",
+    "found": [
+      "fr-art5-p1-h",
+      "fr-art5-p1-d",
+      "en-art113-a",
+      "en-art113-b",
+      "en-art79-p8",
+      "en-art75c-p8",
+      "en-art99-p3",
+      "en-art111-p2",
+      "en-art1-p2-b",
+      "en-art100-p2"
+    ],
+    "top_cosine": 0.67,
+    "hit": true,
+    "rank_in_50": 10
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "q14",
+    "type": "date",
+    "expected": [
+      "art113-c"
+    ],
+    "query": "From which date do the obligations applicable to high‑risk AI systems set out in Annex III commence?",
+    "found": [
+      "en-art7-p3-a",
+      "en-art113-c",
+      "en-art111-p2",
+      "en-art7-p1-b",
+      "en-art25-p3-b",
+      "en-art26-p11",
+      "en-art25-p3-a",
+      "en-art80-p2",
+      "en-art6-p4",
+      "en-art113-b"
+    ],
+    "top_cosine": 0.719,
+    "hit": true,
+    "rank_in_50": 2
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "q15",
+    "type": "obligation",
+    "expected": [
+      "art99-p3"
+    ],
+    "query": "What is the maximum penalty for a provider that uses a prohibited AI system?",
+    "found": [
+      "fr-art99-p3",
+      "fr-art100-p2",
+      "fr-art5-p1-d",
+      "fr-art101-p1-d",
+      "fr-art5-p1-h",
+      "fr-art100-p3",
+      "fr-art101-p1-c",
+      "en-art80-p7",
+      "en-art80-p4",
+      "en-art50-p1"
+    ],
+    "top_cosine": 0.74,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "q16",
+    "type": "date",
+    "expected": [
+      "art113-a"
+    ],
+    "query": "From which date is the use of AI to produce synthetic media depicting a natural person in a sexual context without consent prohibited?",
+    "found": [
+      "en-art5-p1-ba",
+      "fr-art5-p1-h",
+      "en-art50-p4",
+      "fr-art26-p10-part1",
+      "fr-art59-p1-c",
+      "fr-art59-p1-f",
+      "fr-art50-p3",
+      "en-art111-p4",
+      "en-art14-p5"
+    ],
+    "top_cosine": 0.66,
+    "hit": false,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "n01",
+    "type": "no_answer",
+    "expected": [],
+    "query": "What is the permissible storage period for personal data contained in client e‑mail communications?",
+    "found": [
+      "en-art18-p1-b",
+      "en-art19-p1",
+      "en-art18-p1-d",
+      "fr-art36-p9-a",
+      "fr-art23-p5",
+      "en-art26-p6",
+      "fr-art36-p9-b",
+      "fr-art44-p2",
+      "en-art59-p1-h",
+      "fr-art100-p5"
+    ],
+    "top_cosine": 0.547,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "n02",
+    "type": "no_answer",
+    "expected": [],
+    "query": "What is the corporate tax rate applicable to artificial intelligence startups established in Ireland?",
+    "found": [
+      "en-art99-p3",
+      "en-art100-p3",
+      "en-art100-p2",
+      "en-art101-p1-c",
+      "en-art101-p1-b",
+      "en-art111-p1",
+      "en-art58-p2-d",
+      "fr-art62-p1-a",
+      "en-art50-p1",
+      "en-art49-p1"
+    ],
+    "top_cosine": 0.521,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "n03",
+    "type": "no_answer",
+    "expected": [],
+    "query": "What is the minimum salary for a software developer in France?",
+    "found": [
+      "fr-art99-p4-e",
+      "fr-art99-p5",
+      "en-art101-p1-b",
+      "en-art101-p1-d",
+      "en-art63-p1",
+      "fr-art100-p3",
+      "fr-art3-4",
+      "en-art62-p2",
+      "fr-art3-3",
+      "en-art11-p1"
+    ],
+    "top_cosine": 0.422,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "n04",
+    "type": "no_answer",
+    "expected": [],
+    "query": "Which open‑source foundation model delivers the best performance for customer‑support applications?",
+    "found": [
+      "en-art25-p4",
+      "fr-art53-p4",
+      "fr-anxXI-2-a",
+      "fr-art55-p2",
+      "fr-art91-p5",
+      "fr-anxXI-2-c",
+      "fr-art56-p3",
+      "fr-art56-p7",
+      "fr-anxVII-i1",
+      "fr-anxXII-2-b"
+    ],
+    "top_cosine": 0.449,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "n05",
+    "type": "no_answer",
+    "expected": [],
+    "query": "Does the United States have a federal legislative framework comparable to the AI Act?",
+    "found": [
+      "en-art75-p1-a",
+      "en-art57-p3a",
+      "en-art74-p8",
+      "en-art5-p1-ba",
+      "en-art59-p3",
+      "en-art60a-p4",
+      "en-art50-p1",
+      "en-art74-p6",
+      "en-art72-p4",
+      "en-art49-p5"
+    ],
+    "top_cosine": 0.565,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "n06",
+    "type": "no_answer",
+    "expected": [],
+    "query": "What is the cost of a CE conformity assessment performed by a notified body?",
+    "found": [
+      "en-art48-p4",
+      "en-art31-p9",
+      "en-art30-p4",
+      "en-art43-suite",
+      "en-art34-p1",
+      "fr-art28-p8-part1",
+      "en-art3-22",
+      "en-art75-p1e",
+      "en-art29-p4",
+      "en-art28-p1"
+    ],
+    "top_cosine": 0.635,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "n07",
+    "type": "no_answer",
+    "expected": [],
+    "query": "May an AI‑generated invention be eligible for patent protection?",
+    "found": [
+      "en-art59-p1-a",
+      "en-art5-p1a-a",
+      "en-art50-p1",
+      "fr-art50-p4",
+      "fr-art26-p10-part1",
+      "en-art59-p1-c",
+      "en-art52-p6",
+      "en-art75-p1-a",
+      "en-art53-p1-c",
+      "fr-art57-p3a"
+    ],
+    "top_cosine": 0.58,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "n08",
+    "type": "no_answer",
+    "expected": [],
+    "query": "Which cloud service provider should we select to host our data within the European Union?",
+    "found": [
+      "en-art71-p6",
+      "en-art57-p3",
+      "en-art70-p9",
+      "en-art100-p4",
+      "en-art47-p1",
+      "en-art18-p1-e",
+      "en-art74-p9",
+      "en-anxV-5",
+      "en-art100-p1-d",
+      "en-art71-p5"
+    ],
+    "top_cosine": 0.505,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "n09",
+    "type": "no_answer",
+    "expected": [],
+    "query": "What is the penalty for the traffic violation of running a red light in Germany?",
+    "found": [
+      "fr-art99-p4-f",
+      "fr-art99-p4-d",
+      "fr-art100-p2",
+      "en-art100-p3",
+      "en-art75c-b",
+      "en-art75c-p5-e",
+      "fr-art101-p1-b",
+      "fr-art101-p1-d",
+      "en-art5-p1-h",
+      "fr-art87"
+    ],
+    "top_cosine": 0.506,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "fr",
+    "id": "n10",
+    "type": "no_answer",
+    "expected": [],
+    "query": "Does Algeria have a national AI law that regulates artificial intelligence?",
+    "found": [
+      "en-art5-p1-h",
+      "en-art26-p10-part1",
+      "en-anxIII-6-d",
+      "en-anxIII-6-e",
+      "en-art50-p1",
+      "en-art59-p3",
+      "en-art111-p1",
+      "en-art5-p1-ba",
+      "en-art79-p2",
+      "en-art104"
+    ],
+    "top_cosine": 0.541,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "q01",
+    "type": "scenario",
+    "expected": [
+      "anxIII-4-a"
+    ],
+    "query": "Is the use of an AI system for CV screening and candidate selection classified as a high‑risk AI system under the AI Act?",
+    "found": [
+      "en-anxIII-4-a",
+      "en-anxIII-6-d",
+      "en-art6-suite",
+      "en-art6-p1-a",
+      "en-art14-p5",
+      "en-anxVIII-i19",
+      "en-art80-p1",
+      "en-anxVIII-12",
+      "en-art60-p1",
+      "en-art27-p1-b"
+    ],
+    "top_cosine": 0.715,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "q02",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-f"
+    ],
+    "query": "Can we deploy an AI‑based emotion recognition system to assess whether our employees are stressed or dissatisfied during video calls?",
+    "found": [
+      "en-art50-p3",
+      "en-art3-39",
+      "en-anxIII-1-c",
+      "en-anxIII-4-b",
+      "en-art50-p2",
+      "en-art27-p5",
+      "en-art92-p7",
+      "en-anxVII-text2",
+      "fr-anxXIV-text2",
+      "en-anxVII-text3"
+    ],
+    "top_cosine": 0.546,
+    "hit": false,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "q03",
+    "type": "scenario",
+    "expected": [
+      "anxIII-5-b"
+    ],
+    "query": "Within which category does a credit‑scoring system used by a bank to assess loan eligibility based on creditworthiness fall?",
+    "found": [
+      "fr-anxIII-5-b",
+      "fr-art75-p1e",
+      "en-anxXIV-text1",
+      "en-anxVII-i8",
+      "en-anxVII-i9",
+      "fr-art52-p5",
+      "fr-art80-p1",
+      "en-art43-p1-b",
+      "fr-anxXIII-i5",
+      "fr-anxXIII-i6"
+    ],
+    "top_cosine": 0.499,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "q04",
+    "type": "scenario",
+    "expected": [
+      "anxIII-3-d"
+    ],
+    "query": "Is the deployment of an AI system for monitoring students and detecting cheating during online examinations permissible, and under which provisions?",
+    "found": [
+      "en-art60-p1",
+      "en-art60a-p1",
+      "en-art60-p4-i",
+      "en-anxIII-3-d",
+      "en-art5-p1-d",
+      "en-art50-p1",
+      "en-anxIII-6-d",
+      "en-art46-p1",
+      "en-art5-p1-h",
+      "en-art76-p2"
+    ],
+    "top_cosine": 0.638,
+    "hit": true,
+    "rank_in_50": 5
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "q05",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-c"
+    ],
+    "query": "Is the practice of social scoring by a public authority to grant or deny public services legal?",
+    "found": [
+      "en-art5-p1-c",
+      "en-art5-p3",
+      "en-art75a-p3",
+      "en-art92-p1-a",
+      "en-art85",
+      "fr-art77-p3",
+      "en-art46-p1",
+      "en-art75a-suite",
+      "en-art112-p10",
+      "en-art92-p5"
+    ],
+    "top_cosine": 0.546,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "q06",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-e"
+    ],
+    "query": "Is the establishment of a biometric database by collecting facial images from social media and the internet permissible under the AI Act?",
+    "found": [
+      "en-art5-p2-suite",
+      "en-art5-p1-e",
+      "en-art26-p10-part1",
+      "en-anxIII-1-a",
+      "en-art50-p3",
+      "en-anxIII-7-d",
+      "en-art49-p4-a",
+      "en-art49-p4-b",
+      "en-art71-p5",
+      "en-art59-p1-f"
+    ],
+    "top_cosine": 0.638,
+    "hit": true,
+    "rank_in_50": 2
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "q07",
+    "type": "definition",
+    "expected": [
+      "art3-1"
+    ],
+    "query": "How does the AI Act define an artificial intelligence system?",
+    "found": [
+      "en-art3-1",
+      "en-anxIII-6-d",
+      "en-art50-p1",
+      "en-anxIII-6-a",
+      "en-art75-p1-a",
+      "en-art79-p1",
+      "en-art3-41",
+      "en-anxXIV-text1",
+      "en-art6-p1-a",
+      "en-art6-p1-b"
+    ],
+    "top_cosine": 0.67,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "q08",
+    "type": "definition",
+    "expected": [
+      "art3-3",
+      "art3-4"
+    ],
+    "query": "We only use an AI system acquired from a third‑party; are we considered a provider or an operator under the AI Act, and what distinguishes these roles?",
+    "found": [
+      "en-art3-3",
+      "en-art25-p1-a",
+      "en-art25-p1-c",
+      "en-art50-p1",
+      "en-art75-p1-a",
+      "en-art3-68",
+      "en-art6-p4",
+      "en-art50-p2",
+      "en-art91-p5",
+      "en-art92-p5"
+    ],
+    "top_cosine": 0.656,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "q09",
+    "type": "definition",
+    "expected": [
+      "art3-60"
+    ],
+    "query": "What is defined as deep synthetic media under the EU AI Act?",
+    "found": [
+      "en-art3-60",
+      "en-art50-p4",
+      "en-anxIII-6-e",
+      "en-art50-p2",
+      "en-anxIII-7-d",
+      "en-art74-p8",
+      "en-art5-p1-h",
+      "en-art111-p4",
+      "en-art73-p10",
+      "en-art3-23"
+    ],
+    "top_cosine": 0.601,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "q10",
+    "type": "obligation",
+    "expected": [
+      "art50-p1"
+    ],
+    "query": "Must we inform users that they are interacting with an AI system?",
+    "found": [
+      "en-art50-p1",
+      "en-art26-p7",
+      "en-art50-p3",
+      "en-art13-p2",
+      "en-art26-p5",
+      "en-anxVIII-6",
+      "fr-art5-p4",
+      "en-anxVIII-i18",
+      "en-art16-b",
+      "en-art13-p1"
+    ],
+    "top_cosine": 0.709,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "q11",
+    "type": "obligation",
+    "expected": [
+      "art53-p1-a",
+      "art53-p1-b"
+    ],
+    "query": "What documentation must a provider of a foundation model for general‑purpose use to other companies prepare?",
+    "found": [
+      "en-art53-p1-b",
+      "en-art53-p1-d",
+      "fr-anxXI-2-a",
+      "fr-anxXI-1-b",
+      "fr-art91-p5",
+      "fr-art92-p5",
+      "en-anxXII-1-h",
+      "fr-art91-p1",
+      "fr-anxXII-1-e",
+      "en-art54-p3-b"
+    ],
+    "top_cosine": 0.614,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "q12",
+    "type": "obligation",
+    "expected": [
+      "art26-p7"
+    ],
+    "query": "Before deploying a high‑risk AI system in the workplace, is it required to inform the persons affected?",
+    "found": [
+      "en-art26-p7",
+      "en-art27-p1-e",
+      "en-art27-p1-b",
+      "en-art26-p11",
+      "en-art13-p3-b",
+      "en-art14-p4-d",
+      "en-art14-p4-b",
+      "en-art20-p2",
+      "en-art16-f",
+      "en-anxVIII-i21"
+    ],
+    "top_cosine": 0.792,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "q13",
+    "type": "date",
+    "expected": [
+      "art113-a"
+    ],
+    "query": "From which date do the prohibitions on prohibited AI practices under the AI Act take effect?",
+    "found": [
+      "en-art5-p1-ba",
+      "en-art5-p1-b",
+      "en-art113-a",
+      "en-art113-b",
+      "en-art75c-p8",
+      "en-art99-p3",
+      "en-art79-p8",
+      "en-art1-p2-b",
+      "en-art100-p2",
+      "en-art111-p2"
+    ],
+    "top_cosine": 0.664,
+    "hit": true,
+    "rank_in_50": 11
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "q14",
+    "type": "date",
+    "expected": [
+      "art113-c"
+    ],
+    "query": "When do the obligations applicable to high‑risk AI systems listed in Annex III commence?",
+    "found": [
+      "en-art7-p3-a",
+      "en-art25-p3-b",
+      "en-art7-p1-b",
+      "en-art111-p2",
+      "en-art26-p11",
+      "en-art6-p4",
+      "en-art113-c",
+      "en-art25-p3-a",
+      "en-anxIII-7-b",
+      "en-art6-p3"
+    ],
+    "top_cosine": 0.726,
+    "hit": true,
+    "rank_in_50": 7
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "q15",
+    "type": "obligation",
+    "expected": [
+      "art99-p3"
+    ],
+    "query": "What is the maximum fine for a provider that employs a prohibited AI system?",
+    "found": [
+      "en-art101-p1-c",
+      "en-art101-p1-b",
+      "en-art99-p3",
+      "en-art100-p2",
+      "en-art100-p3",
+      "en-art5-p1-h",
+      "en-art5-p1-d",
+      "en-art80-p7",
+      "en-art80-p4",
+      "en-art50-p1"
+    ],
+    "top_cosine": 0.663,
+    "hit": true,
+    "rank_in_50": 3
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "q16",
+    "type": "date",
+    "expected": [
+      "art113-a"
+    ],
+    "query": "From which date is the use of AI systems to generate synthetic sexual imagery of a real person prohibited?",
+    "found": [
+      "en-art5-p1-ba",
+      "en-art5-p1-h",
+      "en-art50-p4",
+      "en-art26-p10-part1",
+      "en-art50-p1",
+      "en-art3-60",
+      "en-anxIII-1-a",
+      "en-art14-p5",
+      "en-art111-p4",
+      "en-art4a-p1-b"
+    ],
+    "top_cosine": 0.662,
+    "hit": false,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "n01",
+    "type": "no_answer",
+    "expected": [],
+    "query": "What is the permissible storage period for personal data contained in customers’ email communications?",
+    "found": [
+      "en-art18-p1-c",
+      "en-art18-p1-d",
+      "en-art19-p1",
+      "fr-art23-p5",
+      "fr-art36-p9-a",
+      "en-art26-p6",
+      "fr-art36-p9-b",
+      "fr-art44-p2",
+      "en-art79-p8",
+      "en-art59-p1-h"
+    ],
+    "top_cosine": 0.552,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "n02",
+    "type": "no_answer",
+    "expected": [],
+    "query": "What is the corporate tax rate applicable to AI system providers that are start‑ups in Ireland?",
+    "found": [
+      "en-art101-p1-c",
+      "en-art101-p1-d",
+      "en-art100-p3",
+      "en-art62-p1-a",
+      "en-art50-p1",
+      "en-art58-p2-d",
+      "en-art99-p3",
+      "en-art50-p2",
+      "en-art17-p2",
+      "en-art111-p1"
+    ],
+    "top_cosine": 0.548,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "n03",
+    "type": "no_answer",
+    "expected": [],
+    "query": "What is the minimum remuneration for a software developer in France?",
+    "found": [
+      "fr-art99-p4-e",
+      "fr-art99-p4-f",
+      "en-art101-p1-b",
+      "en-art101-p1-d",
+      "fr-art100-p3",
+      "fr-art100-p2",
+      "en-art63-p1",
+      "fr-art3-3",
+      "en-art50-p2",
+      "en-art53-p4"
+    ],
+    "top_cosine": 0.46,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "n04",
+    "type": "no_answer",
+    "expected": [],
+    "query": "Which open‑source foundation model provides the highest performance for customer support services?",
+    "found": [
+      "fr-art53-p4",
+      "en-art25-p4",
+      "fr-art53-p2",
+      "fr-art91-p5",
+      "en-anxXII-2-b",
+      "fr-anxXIV-text2",
+      "fr-art56-p3",
+      "fr-art55-p2",
+      "fr-art92-p5",
+      "fr-art92-p7"
+    ],
+    "top_cosine": 0.455,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "n05",
+    "type": "no_answer",
+    "expected": [],
+    "query": "Is there a United States federal legislation comparable to the EU Regulation on artificial intelligence?",
+    "found": [
+      "en-art110-‘68",
+      "fr-art110-«68",
+      "en-art108-4",
+      "en-art108-2",
+      "en-art74-p8",
+      "en-art107-p‘4",
+      "en-art103",
+      "en-art104",
+      "en-art2-p1-a",
+      "en-art74-p1-b"
+    ],
+    "top_cosine": 0.605,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "n06",
+    "type": "no_answer",
+    "expected": [],
+    "query": "What is the cost of obtaining a CE conformity assessment certificate from a notified body?",
+    "found": [
+      "en-art48-p4",
+      "en-art31-p9",
+      "en-art30-p4",
+      "en-art45-p1-a",
+      "en-anxVII-text2",
+      "en-art29-p3",
+      "en-art45-p1-b",
+      "en-art29-p4",
+      "en-art44-p3",
+      "en-art36-p3"
+    ],
+    "top_cosine": 0.614,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "n07",
+    "type": "no_answer",
+    "expected": [],
+    "query": "Is it permissible to obtain a patent for an invention generated by an AI system?",
+    "found": [
+      "en-art50-p1",
+      "en-art26-p10-part1",
+      "en-art5-p1a-a",
+      "en-art59-p1-a",
+      "en-art50-p2",
+      "en-anxIII-6-a",
+      "en-art5-p1-ba",
+      "en-art25-p4",
+      "en-anxIII-6-d",
+      "en-art52-p6"
+    ],
+    "top_cosine": 0.595,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "n08",
+    "type": "no_answer",
+    "expected": [],
+    "query": "Which provider of cloud computing services should be selected for hosting our data in the European Union?",
+    "found": [
+      "en-art71-p6",
+      "en-art57-p3",
+      "en-art100-p4",
+      "en-art47-p1",
+      "en-art70-p9",
+      "en-art18-p1-e",
+      "en-art26-p8",
+      "en-art57-p14",
+      "en-art71-p2",
+      "en-art74-p9"
+    ],
+    "top_cosine": 0.542,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "n09",
+    "type": "no_answer",
+    "expected": [],
+    "query": "What is the penalty for red‑light running in Germany?",
+    "found": [
+      "fr-art99-p4-d",
+      "fr-art99-p4-f",
+      "fr-art100-p2",
+      "fr-art100-p3",
+      "en-art101-p1-b",
+      "en-art101-p1-a",
+      "en-art75c-p5-e",
+      "en-art75c-p5-f",
+      "en-art5-p1-h",
+      "en-art60-p7"
+    ],
+    "top_cosine": 0.534,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "bge-m3",
+    "strategy": "fusion",
+    "lang": "ar",
+    "id": "n10",
+    "type": "no_answer",
+    "expected": [],
+    "query": "Does Algeria have national AI legislation?",
+    "found": [
+      "en-art5-p1-h",
+      "en-art49-p5",
+      "en-art75a-suite",
+      "en-art5-p1-g",
+      "en-art26-p10-part1",
+      "en-art110-‘68",
+      "en-art108-6",
+      "en-art79-p2",
+      "en-art50-p1",
+      "en-art108-4"
+    ],
+    "top_cosine": 0.536,
+    "hit": null,
+    "rank_in_50": null
+  }
+]

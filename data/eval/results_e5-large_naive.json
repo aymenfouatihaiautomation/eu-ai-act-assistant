@@ -1,0 +1,1508 @@
+[
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "q01",
+    "type": "scenario",
+    "expected": [
+      "anxIII-4-a"
+    ],
+    "found": [
+      "en-art6-c",
+      "en-anxIII-4-a",
+      "en-anxIII-4-b",
+      "en-art6-suite",
+      "en-anxIII-1-a"
+    ],
+    "top_cosine": 0.878,
+    "hit": true,
+    "rank_in_50": 2
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "q02",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-f"
+    ],
+    "found": [
+      "en-art50-p3",
+      "en-art5-p1-c",
+      "en-art5-p1-a",
+      "en-art5-p1-h",
+      "en-art5-p2-a"
+    ],
+    "top_cosine": 0.838,
+    "hit": false,
+    "rank_in_50": 6
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "q03",
+    "type": "scenario",
+    "expected": [
+      "anxIII-5-b"
+    ],
+    "found": [
+      "en-art6-c",
+      "en-anxIII-5-b",
+      "en-art51-p1-b",
+      "en-art51-p1-a",
+      "en-art3-40"
+    ],
+    "top_cosine": 0.83,
+    "hit": true,
+    "rank_in_50": 2
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "q04",
+    "type": "scenario",
+    "expected": [
+      "anxIII-3-d"
+    ],
+    "found": [
+      "en-art5-p1-d",
+      "en-art60-p3",
+      "en-art5-p1-a",
+      "en-art5-p1-h",
+      "en-art2-p8"
+    ],
+    "top_cosine": 0.862,
+    "hit": false,
+    "rank_in_50": 9
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "q05",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-c"
+    ],
+    "found": [
+      "en-art5-p1-c",
+      "en-art46-p2",
+      "en-art5-p1-d",
+      "en-anxIII-5-a",
+      "en-art27-p1-a"
+    ],
+    "top_cosine": 0.848,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "q06",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-e"
+    ],
+    "found": [
+      "en-art5-p1-e",
+      "en-art5-p1-g",
+      "en-art5-p2-a",
+      "en-art5-p7",
+      "en-art5-p2-b"
+    ],
+    "top_cosine": 0.831,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "q07",
+    "type": "definition",
+    "expected": [
+      "art3-1"
+    ],
+    "found": [
+      "en-art3-1",
+      "en-art3-66",
+      "en-art3-55",
+      "en-art3-3",
+      "en-art3-18"
+    ],
+    "top_cosine": 0.894,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "q08",
+    "type": "definition",
+    "expected": [
+      "art3-3",
+      "art3-4"
+    ],
+    "found": [
+      "en-art3-4",
+      "en-art25-p1-c",
+      "en-art25-p1-b",
+      "en-art25-p1-a",
+      "en-art3-3"
+    ],
+    "top_cosine": 0.863,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "q09",
+    "type": "definition",
+    "expected": [
+      "art3-60"
+    ],
+    "found": [
+      "en-art3-60",
+      "en-art50-p4",
+      "en-art5-p1-ba",
+      "en-art5-p1-h",
+      "en-art5-p1-g"
+    ],
+    "top_cosine": 0.889,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "q10",
+    "type": "obligation",
+    "expected": [
+      "art50-p1"
+    ],
+    "found": [
+      "en-art26-p7",
+      "en-art50-p1",
+      "en-art4-p1",
+      "en-art50-p4",
+      "en-art50-p5"
+    ],
+    "top_cosine": 0.852,
+    "hit": true,
+    "rank_in_50": 2
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "q11",
+    "type": "obligation",
+    "expected": [
+      "art53-p1-a",
+      "art53-p1-b"
+    ],
+    "found": [
+      "en-art53-p1-a",
+      "en-art53-p1-b",
+      "en-art53-p1-d",
+      "en-anxXI-2-b",
+      "en-anxXI-1-e"
+    ],
+    "top_cosine": 0.857,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "q12",
+    "type": "obligation",
+    "expected": [
+      "art26-p7"
+    ],
+    "found": [
+      "en-art26-p7",
+      "en-art6-c",
+      "en-art26-p8",
+      "en-art24-p2",
+      "en-art26-p11"
+    ],
+    "top_cosine": 0.899,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "q13",
+    "type": "date",
+    "expected": [
+      "art113-a"
+    ],
+    "found": [
+      "en-art5-p1-d",
+      "en-art5-p1-f",
+      "en-art5-p1-g",
+      "en-art5-p1-bb",
+      "en-art5-p1-ba"
+    ],
+    "top_cosine": 0.861,
+    "hit": false,
+    "rank_in_50": 17
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "q14",
+    "type": "date",
+    "expected": [
+      "art113-c"
+    ],
+    "found": [
+      "en-art6-p4",
+      "en-art49-p1",
+      "en-art113-c",
+      "en-art73-p9",
+      "en-art49-p5"
+    ],
+    "top_cosine": 0.861,
+    "hit": true,
+    "rank_in_50": 3
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "q15",
+    "type": "obligation",
+    "expected": [
+      "art99-p3"
+    ],
+    "found": [
+      "en-art99-p3",
+      "en-art100-p2",
+      "en-art5-p1-d",
+      "en-art5-p1-a",
+      "en-art5-p1-f"
+    ],
+    "top_cosine": 0.87,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "q16",
+    "type": "date",
+    "expected": [
+      "art113-a"
+    ],
+    "found": [
+      "en-art5-p1-ba",
+      "en-art5-p1-h",
+      "en-art5-p1-g",
+      "en-art5-p1-c",
+      "en-art5-p2-a"
+    ],
+    "top_cosine": 0.86,
+    "hit": false,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "n01",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art18-p1-c",
+      "en-art19-p1",
+      "en-art18-p1-e",
+      "en-art18-p1-d",
+      "en-art18-p1-b"
+    ],
+    "top_cosine": 0.837,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "n02",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art99-p3",
+      "en-art57-p3a",
+      "en-art58-p2-d",
+      "en-art101-p1-a",
+      "en-art101-p1-c"
+    ],
+    "top_cosine": 0.807,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "n03",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art99-p3",
+      "en-art99-p5",
+      "en-art95-p2-e",
+      "en-art4a-p1-b",
+      "en-art95-p2-d"
+    ],
+    "top_cosine": 0.777,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "n04",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art25-p4",
+      "en-art54-p6",
+      "en-art53-p2",
+      "en-art15-p4",
+      "en-art91-p5"
+    ],
+    "top_cosine": 0.781,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "n05",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art5-p8",
+      "en-art86-p2",
+      "en-art57-p11",
+      "en-art57-p3a",
+      "en-art75-p1-a"
+    ],
+    "top_cosine": 0.828,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "n06",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art36-p3",
+      "en-art30-p4",
+      "en-art48-p4",
+      "en-art45-p1-a",
+      "en-art31-p9"
+    ],
+    "top_cosine": 0.843,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "n07",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art5-p1a-a",
+      "en-art5-p1-ba",
+      "en-art5-p1-a",
+      "en-art5-p1-d",
+      "en-art5-p1-bb"
+    ],
+    "top_cosine": 0.846,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "n08",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art71-p6",
+      "en-art71-p5",
+      "en-art74-p9",
+      "en-art71-p3",
+      "en-art71-p2"
+    ],
+    "top_cosine": 0.816,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "n09",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art99-p4-d",
+      "en-art99-p3",
+      "en-art99-p4-g",
+      "en-art99-p4-f",
+      "en-art99-p4-da"
+    ],
+    "top_cosine": 0.799,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "en",
+    "id": "n10",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art104",
+      "en-art75-p1-a",
+      "en-art103",
+      "en-art102",
+      "en-art110-‘68"
+    ],
+    "top_cosine": 0.821,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "q01",
+    "type": "scenario",
+    "expected": [
+      "anxIII-4-a"
+    ],
+    "found": [
+      "fr-anxIII-4-a",
+      "fr-anxIII-4-b",
+      "fr-art6-c",
+      "fr-art6-a",
+      "fr-art6-suite"
+    ],
+    "top_cosine": 0.893,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "q02",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-f"
+    ],
+    "found": [
+      "fr-art50-p3",
+      "fr-art6-c",
+      "fr-art50-p1",
+      "fr-art5-p1-c",
+      "fr-art3-39"
+    ],
+    "top_cosine": 0.846,
+    "hit": false,
+    "rank_in_50": 14
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "q03",
+    "type": "scenario",
+    "expected": [
+      "anxIII-5-b"
+    ],
+    "found": [
+      "fr-anxIII-5-b",
+      "fr-art52-p5",
+      "fr-anxXIII-i6",
+      "fr-anxXIII-i2",
+      "fr-art7-p2-b"
+    ],
+    "top_cosine": 0.84,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "q04",
+    "type": "scenario",
+    "expected": [
+      "anxIII-3-d"
+    ],
+    "found": [
+      "fr-art74-p12",
+      "fr-art75a-p2",
+      "fr-art75-p1d",
+      "fr-anxIII-3-d",
+      "fr-art5-p1-a"
+    ],
+    "top_cosine": 0.868,
+    "hit": true,
+    "rank_in_50": 4
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "q05",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-c"
+    ],
+    "found": [
+      "fr-art5-p1-c",
+      "fr-art28-p2",
+      "fr-art75c-p2",
+      "fr-art46-p5",
+      "fr-art46-p2"
+    ],
+    "top_cosine": 0.837,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "q06",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-e"
+    ],
+    "found": [
+      "fr-art5-p1-e",
+      "fr-art5-p1-g",
+      "fr-art3-34",
+      "fr-art5-p2-suite",
+      "fr-art5-p1-c"
+    ],
+    "top_cosine": 0.833,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "q07",
+    "type": "definition",
+    "expected": [
+      "art3-1"
+    ],
+    "found": [
+      "fr-art3-1",
+      "fr-art3-66",
+      "fr-art3-55",
+      "fr-art3-17",
+      "fr-art3-16"
+    ],
+    "top_cosine": 0.897,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "q08",
+    "type": "definition",
+    "expected": [
+      "art3-3",
+      "art3-4"
+    ],
+    "found": [
+      "fr-art3-3",
+      "fr-art25-p1-a",
+      "fr-art25-p1-b",
+      "fr-art25-p1-c",
+      "fr-art4-p1"
+    ],
+    "top_cosine": 0.866,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "q09",
+    "type": "definition",
+    "expected": [
+      "art3-60"
+    ],
+    "found": [
+      "fr-art3-60",
+      "fr-art50-p4",
+      "en-art3-60",
+      "fr-art5-p1-a",
+      "en-art50-p4"
+    ],
+    "top_cosine": 0.899,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "q10",
+    "type": "obligation",
+    "expected": [
+      "art50-p1"
+    ],
+    "found": [
+      "fr-art50-p1",
+      "fr-art50-p3",
+      "fr-art50-p4",
+      "fr-art5-p1-a",
+      "fr-art26-p7"
+    ],
+    "top_cosine": 0.857,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "q11",
+    "type": "obligation",
+    "expected": [
+      "art53-p1-a",
+      "art53-p1-b"
+    ],
+    "found": [
+      "fr-art53-p1-a",
+      "fr-anxXI-2-a",
+      "fr-anxXI-2-b",
+      "fr-anxXI-2-d",
+      "fr-art53-p1-b"
+    ],
+    "top_cosine": 0.86,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "q12",
+    "type": "obligation",
+    "expected": [
+      "art26-p7"
+    ],
+    "found": [
+      "fr-art26-p7",
+      "en-art26-p7",
+      "fr-anxIII-4-b",
+      "fr-art6-c",
+      "fr-art6-b"
+    ],
+    "top_cosine": 0.888,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "q13",
+    "type": "date",
+    "expected": [
+      "art113-a"
+    ],
+    "found": [
+      "fr-art5-p1-bb",
+      "fr-art5-p1-c",
+      "fr-art5-p1-a",
+      "fr-art5-p1-e",
+      "fr-art5-p1-d"
+    ],
+    "top_cosine": 0.879,
+    "hit": false,
+    "rank_in_50": 17
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "q14",
+    "type": "date",
+    "expected": [
+      "art113-c"
+    ],
+    "found": [
+      "fr-art73-p9",
+      "fr-art113-c",
+      "fr-anxIII-5-c",
+      "fr-art2-p13-a",
+      "fr-art80-p6"
+    ],
+    "top_cosine": 0.881,
+    "hit": true,
+    "rank_in_50": 2
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "q15",
+    "type": "obligation",
+    "expected": [
+      "art99-p3"
+    ],
+    "found": [
+      "fr-art99-p3",
+      "fr-art100-p2",
+      "fr-art101-p1-d",
+      "fr-art101-p1-a",
+      "fr-art101-p1-b"
+    ],
+    "top_cosine": 0.904,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "q16",
+    "type": "date",
+    "expected": [
+      "art113-a"
+    ],
+    "found": [
+      "fr-art5-p1-ba",
+      "fr-art5-p1-c",
+      "fr-art5-p1-g",
+      "fr-art5-p1b",
+      "fr-art5-p1-e"
+    ],
+    "top_cosine": 0.881,
+    "hit": false,
+    "rank_in_50": 32
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "n01",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art18-p1-e",
+      "fr-art18-p1-d",
+      "fr-art18-p1-a",
+      "fr-art18-p1-c",
+      "fr-art18-p1-b"
+    ],
+    "top_cosine": 0.85,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "n02",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art99-p3",
+      "fr-art57-p9-e",
+      "fr-art101-p1-d",
+      "fr-art101-p1-c",
+      "fr-art101-p1-a"
+    ],
+    "top_cosine": 0.822,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "n03",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art99-p3",
+      "fr-art99-p4-g",
+      "fr-art99-p4-e",
+      "fr-art99-p5",
+      "fr-art101-p1-b"
+    ],
+    "top_cosine": 0.783,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "n04",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art54-p6",
+      "fr-art91-p5",
+      "fr-art53-p2",
+      "fr-art25-p4",
+      "fr-art27-p5"
+    ],
+    "top_cosine": 0.805,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "n05",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art94",
+      "fr-art2-p8",
+      "fr-art5-p8",
+      "fr-art86-p2",
+      "fr-art74-p4"
+    ],
+    "top_cosine": 0.827,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "n06",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art48-p4",
+      "fr-art36-p3",
+      "fr-art30-p4",
+      "fr-art28-p2",
+      "fr-art34-p2"
+    ],
+    "top_cosine": 0.852,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "n07",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art2-p6",
+      "fr-art5-p1a-a",
+      "fr-art5-p1-a",
+      "fr-art3-3",
+      "fr-art5-p1-bb"
+    ],
+    "top_cosine": 0.845,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "n08",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art71-p6",
+      "fr-art49-p2",
+      "fr-art71-p2",
+      "fr-art71-p5",
+      "fr-art49-p1"
+    ],
+    "top_cosine": 0.821,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "n09",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art100-p3",
+      "fr-art99-p5",
+      "fr-art99-p4-d",
+      "fr-art99-p4-g",
+      "fr-art100-p2"
+    ],
+    "top_cosine": 0.817,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "fr",
+    "id": "n10",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art1-p1",
+      "fr-art5-p1-a",
+      "fr-art75-p1d",
+      "fr-art110-«68",
+      "fr-art102"
+    ],
+    "top_cosine": 0.831,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "q01",
+    "type": "scenario",
+    "expected": [
+      "anxIII-4-a"
+    ],
+    "found": [
+      "fr-anxIII-4-a",
+      "fr-anxIII-4-b",
+      "fr-anxIII-8-b",
+      "en-art6-c",
+      "fr-art6-c"
+    ],
+    "top_cosine": 0.828,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "q02",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-f"
+    ],
+    "found": [
+      "fr-art50-p3",
+      "en-art50-p3",
+      "fr-art50-p1",
+      "fr-art3-39",
+      "en-art6-c"
+    ],
+    "top_cosine": 0.792,
+    "hit": false,
+    "rank_in_50": 9
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "q03",
+    "type": "scenario",
+    "expected": [
+      "anxIII-5-b"
+    ],
+    "found": [
+      "fr-anxXIII-i2",
+      "fr-anxIII-5-b",
+      "fr-anxXIII-i6",
+      "fr-anxXIII-i5",
+      "fr-anxXIII-i4"
+    ],
+    "top_cosine": 0.781,
+    "hit": true,
+    "rank_in_50": 2
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "q04",
+    "type": "scenario",
+    "expected": [
+      "anxIII-3-d"
+    ],
+    "found": [
+      "en-art5-p1-a",
+      "en-art60-p3",
+      "en-art5-p1-h",
+      "en-art5-p1-d",
+      "en-art5-p1a-a"
+    ],
+    "top_cosine": 0.82,
+    "hit": false,
+    "rank_in_50": 8
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "q05",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-c"
+    ],
+    "found": [
+      "fr-art5-p1-c",
+      "en-art5-p1-c",
+      "en-art92-p1-a",
+      "en-art46-p2",
+      "en-art112-p11-b"
+    ],
+    "top_cosine": 0.8,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "q06",
+    "type": "scenario",
+    "expected": [
+      "art5-p1-e"
+    ],
+    "found": [
+      "en-art5-p1-e",
+      "en-art5-p1-g",
+      "fr-art59-p1-j",
+      "en-art5-p7",
+      "fr-art92-p3"
+    ],
+    "top_cosine": 0.779,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "q07",
+    "type": "definition",
+    "expected": [
+      "art3-1"
+    ],
+    "found": [
+      "fr-art3-1",
+      "fr-art1-p1",
+      "en-art3-1",
+      "en-art65-p1",
+      "en-art65-p7"
+    ],
+    "top_cosine": 0.787,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "q08",
+    "type": "definition",
+    "expected": [
+      "art3-3",
+      "art3-4"
+    ],
+    "found": [
+      "en-art5-p1-a",
+      "en-art5-p1a-a",
+      "fr-art5-p1-a",
+      "en-art2-p10",
+      "fr-art2-p6"
+    ],
+    "top_cosine": 0.788,
+    "hit": false,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "q09",
+    "type": "definition",
+    "expected": [
+      "art3-60"
+    ],
+    "found": [
+      "en-art3-60",
+      "en-art50-p4",
+      "fr-art105-p«5",
+      "en-art4a-p1-a",
+      "fr-art6-p5"
+    ],
+    "top_cosine": 0.795,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "q10",
+    "type": "obligation",
+    "expected": [
+      "art50-p1"
+    ],
+    "found": [
+      "en-art26-p7",
+      "fr-art50-p3",
+      "fr-art50-p1",
+      "en-art4-p1",
+      "en-art50-p1"
+    ],
+    "top_cosine": 0.81,
+    "hit": true,
+    "rank_in_50": 3
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "q11",
+    "type": "obligation",
+    "expected": [
+      "art53-p1-a",
+      "art53-p1-b"
+    ],
+    "found": [
+      "en-art53-p1-a",
+      "en-art53-p1-b",
+      "fr-art53-p1-b",
+      "fr-art53-p1-a",
+      "fr-anxXI-text1"
+    ],
+    "top_cosine": 0.81,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "q12",
+    "type": "obligation",
+    "expected": [
+      "art26-p7"
+    ],
+    "found": [
+      "en-art26-p7",
+      "fr-art26-p7",
+      "en-art6-c",
+      "en-art26-p11",
+      "en-art14-p1"
+    ],
+    "top_cosine": 0.843,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "q13",
+    "type": "date",
+    "expected": [
+      "art113-a"
+    ],
+    "found": [
+      "fr-art5-p1-a",
+      "en-art5-p1-a",
+      "fr-art5-p1-bb",
+      "fr-art5-p1-c",
+      "fr-art5-p1-b"
+    ],
+    "top_cosine": 0.81,
+    "hit": false,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "q14",
+    "type": "date",
+    "expected": [
+      "art113-c"
+    ],
+    "found": [
+      "en-art113-c",
+      "fr-art113-c",
+      "en-art113-b",
+      "fr-art113-b",
+      "fr-art2-p13-a"
+    ],
+    "top_cosine": 0.848,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "q15",
+    "type": "obligation",
+    "expected": [
+      "art99-p3"
+    ],
+    "found": [
+      "fr-art99-p3",
+      "en-art99-p3",
+      "fr-art101-p1-d",
+      "fr-art101-p1-b",
+      "fr-art101-p1-c"
+    ],
+    "top_cosine": 0.824,
+    "hit": true,
+    "rank_in_50": 1
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "q16",
+    "type": "date",
+    "expected": [
+      "art113-a"
+    ],
+    "found": [
+      "fr-art5-p1-ba",
+      "en-art5-p1-ba",
+      "en-art5-p1-h",
+      "fr-art5-p1-g",
+      "en-art5-p1-g"
+    ],
+    "top_cosine": 0.799,
+    "hit": false,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "n01",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art18-p1-d",
+      "fr-art18-p1-b",
+      "fr-art18-p1-c",
+      "fr-art18-p1-a",
+      "fr-art18-p1-e"
+    ],
+    "top_cosine": 0.808,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "n02",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art99-p3",
+      "en-art101-p1-a",
+      "en-art101-p1-b",
+      "en-art101-p1-c",
+      "en-art101-p1-d"
+    ],
+    "top_cosine": 0.761,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "n03",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art101-p1-b",
+      "fr-art101-p1-d",
+      "fr-art101-p1-c",
+      "fr-art99-p4-g",
+      "fr-art99-p4-e"
+    ],
+    "top_cosine": 0.76,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "n04",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art54-p6",
+      "en-art54-p6",
+      "en-art53-p2",
+      "en-art25-p4",
+      "fr-art53-p2"
+    ],
+    "top_cosine": 0.774,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "n05",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art74-p8",
+      "en-art50-p3",
+      "en-art101-p5",
+      "en-art86-p2",
+      "fr-art106-p«12"
+    ],
+    "top_cosine": 0.779,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "n06",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art48-p4",
+      "fr-art3-24",
+      "fr-art48-p3",
+      "en-art24-p1",
+      "en-art48-p3"
+    ],
+    "top_cosine": 0.774,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "n07",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art5-p1a-a",
+      "en-art2-p1-e",
+      "en-art12-p1",
+      "en-art2-p12",
+      "en-art2-p6"
+    ],
+    "top_cosine": 0.783,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "n08",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "en-art71-p6",
+      "fr-art58-p3",
+      "en-art74-p9",
+      "fr-art49-p2",
+      "fr-art71-p2"
+    ],
+    "top_cosine": 0.785,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "n09",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art99-p4-f",
+      "fr-art99-p4-d",
+      "fr-art99-p4-g",
+      "fr-art99-p4-b",
+      "fr-art99-p4-e"
+    ],
+    "top_cosine": 0.761,
+    "hit": null,
+    "rank_in_50": null
+  },
+  {
+    "model": "e5-large",
+    "strategy": "naive",
+    "lang": "ar",
+    "id": "n10",
+    "type": "no_answer",
+    "expected": [],
+    "found": [
+      "fr-art5-p1-a",
+      "en-anxIV-3",
+      "fr-art111-p1",
+      "fr-art106-p«12",
+      "fr-art102"
+    ],
+    "top_cosine": 0.783,
+    "hit": null,
+    "rank_in_50": null
+  }
+]
