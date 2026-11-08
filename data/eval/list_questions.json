@@ -1,0 +1,13 @@
+[
+  {
+    "id": "l01",
+    "type": "list",
+    "expected": [
+      "art5-p1-a", "art5-p1-b", "art5-p1-ba", "art5-p1-bb", "art5-p1-c",
+      "art5-p1-d", "art5-p1-e", "art5-p1-f", "art5-p1-g", "art5-p1-h"
+    ],
+    "question_en": "Which AI practices are prohibited under the AI Act?",
+    "question_fr": "Quelles pratiques d'IA sont interdites par l'AI Act ?",
+    "question_ar": "ما هي ممارسات الذكاء الاصطناعي المحظورة بموجب قانون الذكاء الاصطناعي؟"
+  }
+]

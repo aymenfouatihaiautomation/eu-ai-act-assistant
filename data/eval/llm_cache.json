@@ -474,5 +474,6 @@
   "rewrite_v2|claude-haiku-5-5|ddfc0984|Quelle est la capitale de la France ?": "What is the capital of France?",
   "rewrite_v2|claude-haiku-5-5|ddfc0984|Which AI practices are prohibited under the AI Act?": "Which artificial intelligence practices are prohibited under Regulation (EU) 2024/1689?",
   "rewrite_v2|claude-haiku-5-5|ddfc0984|ما هي التزامات الشفافية لروبوتات الدردشة؟": "What transparency obligations apply to AI systems intended to interact directly with natural persons, such as chatbots?",
-  "rewrite_v2|claude-haiku-5-5|ddfc0984|Quelles pratiques d'IA sont interdites par l'AI Act ?": "Which artificial intelligence practices are prohibited under the AI Act?"
+  "rewrite_v2|claude-haiku-5-5|ddfc0984|Quelles pratiques d'IA sont interdites par l'AI Act ?": "Which artificial intelligence practices are prohibited under the AI Act?",
+  "rewrite_v2|claude-haiku-5-5|ddfc0984|ما هي ممارسات الذكاء الاصطناعي المحظورة بموجب قانون الذكاء الاصطناعي؟": "What are the AI practices prohibited under the AI Act?"
 }

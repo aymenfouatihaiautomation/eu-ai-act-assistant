@@ -4,7 +4,7 @@
 
 Chaque ligne affiche ✅ ou ❌. Quand tout est ✅, lance la vraie évaluation.
 """
-from evaluate import is_hit, legal_id, recall
+from evaluate import coverage, is_hit, legal_id, recall
 
 tests = [
     ("legal_id : langue retirée",          lambda: legal_id("en-art5-p1-f") == "art5-p1-f"),
@@ -18,6 +18,9 @@ tests = [
     ("recall : 3 sur 4",                   lambda: recall([True, False, True, True]) == 75.0),
     ("recall : liste vide",                lambda: recall([]) == 0.0),
     ("recall : tout faux",                 lambda: recall([False, False]) == 0.0),
+    ("coverage : 2 attendus sur 3",        lambda: abs(coverage(["en-art5-p1-a", "fr-art5-p1-b"], ["art5-p1-a", "art5-p1-b", "art5-p1-c"]) - 2 / 3) < 1e-9),
+    ("coverage : une fiche en 2 langues compte 1 fois", lambda: coverage(["en-art5-p1-a", "fr-art5-p1-a"], ["art5-p1-a", "art5-p1-b"]) == 0.5),
+    ("coverage : rien attendu",            lambda: coverage(["en-art5-p1-a"], []) == 0.0),
 ]
 
 passed = 0

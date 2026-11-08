@@ -103,6 +103,19 @@ def rank_in_pool(ids, expected):
                 return len(seen)
     return None
 
+
+def coverage(found_ids, expected):
+    """Part des fiches attendues qui sont présentes (0.0 à 1.0).
+    is_hit répond « au moins une ? » ; coverage répond « combien sur tout ce qu'on attendait ? ».
+    Sert aux questions qui demandent une LISTE (ex. les 10 points de l'article 5(1)).
+        coverage(["en-art5-p1-a", "fr-art5-p1-b"], ["art5-p1-a", "art5-p1-b", "art5-p1-c"]) → 0.667
+    """
+    if not expected:
+        return 0.0
+    found_legal = {legal_id(i) for i in found_ids}
+    return sum(e in found_legal for e in expected) / len(expected)
+
+
 def evaluate_model(name, questions, k):
     """Renvoie {"naive": [lignes], "diverse": [lignes]}."""
     print(f"\n=== {name} : chargement du modèle ===")
