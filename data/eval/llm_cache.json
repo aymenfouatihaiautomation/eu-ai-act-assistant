@@ -556,5 +556,7 @@
   "rewrite_v3|claude-haiku-5-5|8e24c8a8|هل لدى الجزائر قانون ينظّم الذكاء الاصطناعي؟": "Does Algeria have a law regulating artificial intelligence?",
   "rewrite_v3|claude-haiku-5-5|8e24c8a8|Which AI practices are prohibited under the AI Act?": "Which artificial intelligence practices are prohibited under the Artificial Intelligence Act?",
   "rewrite_v3|claude-haiku-5-5|8e24c8a8|Quelles pratiques d'IA sont interdites par l'AI Act ?": "Which AI practices are prohibited under the AI Act?",
-  "rewrite_v3|claude-haiku-5-5|8e24c8a8|ما هي ممارسات الذكاء الاصطناعي المحظورة بموجب قانون الذكاء الاصطناعي؟": "What are the prohibited artificial intelligence practices under the EU Artificial Intelligence Act?"
+  "rewrite_v3|claude-haiku-5-5|8e24c8a8|ما هي ممارسات الذكاء الاصطناعي المحظورة بموجب قانون الذكاء الاصطناعي؟": "What are the prohibited artificial intelligence practices under the EU Artificial Intelligence Act?",
+  "rewrite_v2|claude-haiku-5-5|ddfc0984|Quelles pratiques d'IA sont interdites ?": "Which AI practices are prohibited under the AI Act?",
+  "rewrite_v2|claude-haiku-5-5|ddfc0984|Which AI practices are prohibited?": "Which AI practices are prohibited under the AI Act?"
 }

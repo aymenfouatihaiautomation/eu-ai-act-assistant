@@ -1,6 +1,7 @@
 """T6.2 — La recherche « de production » : le réglage retenu en T5/T6.1, en une fonction.
 
-    question → réécriture v2 (LLM) → BGE-M3 → 50 plus proches → diversité → 10 fiches
+    question → réécriture v2 (LLM, sortie nettoyée) → BGE-M3 → 50 plus proches → diversité → 10 fiches
+             → si la question visait une liste (art. 5(1)...) : on ajoute les autres points (diversity.py)
              → chaque fiche est rendue dans la LANGUE de l'utilisateur si elle existe
 
 Utilisé par answer.py (et plus tard par l'interface web).
@@ -8,6 +9,7 @@ Utilisé par answer.py (et plus tard par l'interface web).
 import re
 import threading
 
+from diversity import expand_siblings
 from embeddings import encode, get_collection, load_model
 from evaluate import POOL, diversify, legal_id
 from query_rewrite import transform
@@ -17,6 +19,7 @@ K = 10
 
 _model = None
 _collection = None
+_all_ids = None      # tous les ids de l'index : expand_siblings() en a besoin pour trouver les « frères »
 _lock = threading.Lock()
 
 
@@ -27,11 +30,12 @@ def _load():
     chargeaient TOUTES LES DEUX le modèle et ouvraient TOUTES LES DEUX ChromaDB au même
     instant → ChromaDB plantait (« RustBindingsAPI... », « KeyError: 'data\\\\index' »).
     Avec le verrou, la 2e question attend que la 1re ait fini de charger, puis réutilise tout."""
-    global _model, _collection
+    global _model, _collection, _all_ids
     with _lock:
         if _model is None:
             _model = load_model(MODEL_NAME)
             _collection = get_collection(MODEL_NAME)
+            _all_ids = _collection.get(include=[])["ids"]
     return _model, _collection
 
 
@@ -82,6 +86,10 @@ def search(question):
     res = collection.query(query_embeddings=encode(model, MODEL_NAME, [rewritten], kind="query"),
                            n_results=POOL)
     ids, _ = diversify(res["ids"][0], res["distances"][0], K)
+    # Question « liste » (les 2 premières fiches sont deux points du même paragraphe) : on AJOUTE les
+    # autres points APRÈS les 10 fiches. Elles passent ensuite par le même traitement que les autres
+    # (version dans la langue de l'utilisateur, libellé de citation).
+    ids = ids + expand_siblings(ids, _all_ids)
 
     # L'utilisateur francophone lit la version FRANÇAISE officielle de la fiche ;
     # l'arabe n'existe pas au Journal officiel : on donne l'anglais.

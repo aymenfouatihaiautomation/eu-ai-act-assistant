@@ -164,13 +164,20 @@
       "art59-p3",
       "anxIII-6-d",
       "art75a-suite",
-      "art95-p2-e"
+      "art95-p2-e",
+      "art5-p1-a",
+      "art5-p1-b",
+      "art5-p1-ba",
+      "art5-p1-bb",
+      "art5-p1-e",
+      "art5-p1-f",
+      "art5-p1-g",
+      "art5-p1-h"
     ],
     "refused": false,
-    "answer": "Under the sources, such a scheme is prohibited if it is an AI system that evaluates citizens' social behaviour or personal characteristics over time and the resulting score leads to either detrimental treatment in social contexts unrelated to where the data was collected, or treatment that is unjustified or disproportionate to the behaviour or its gravity [S1]. Whether the city's scheme meets these conditions depends on facts the sources do not contain, such as whether it is an AI system and how the score is used [S1]. The prohibition covers placing on the market, putting into service, or using such systems, so the city's use would fall within its scope if the conditions are met [S1]. Article 5(1)(d) addresses a different purpose, namely assessing the risk of a person committing a criminal offence, and does not directly govern general citizen scoring [S2].",
+    "answer": "Under Article 5(1)(c), placing on the market, putting into service or using AI systems to evaluate or classify natural persons over a period of time based on their social behaviour or known, inferred or predicted personal characteristics is prohibited where the resulting score leads to detrimental or unfavourable treatment [S1]. This covers treatment in social contexts unrelated to those in which the data was originally generated or collected, and treatment that is unjustified or disproportionate to the social behaviour or its gravity [S1]. A city scoring citizens to grant or refuse public services would therefore likely fall within this prohibition if either of those conditions is met [S1]. The sources do not establish whether the city's specific scheme meets these conditions, so that assessment depends on the facts of the system [S1]. The sources do not address other legal regimes that may govern the city's public services [S1].",
     "cited": [
-      "art5-p1-c",
-      "art5-p1-d"
+      "art5-p1-c"
     ],
     "retrieved": true,
     "correct": true,
@@ -368,31 +375,29 @@
       "anxXI*",
       "anxXII*"
     ],
-    "rewritten": "The user is a provider of a general-purpose AI model supplying it to downstream companies. The AI Act terms: \"provider of a general-purpose AI model\", \"downstream providers\", \"technical documentation\", \"information and documentation\". Rewrite in one sentence, no added obligations beyond what's asked (documentation). Should not add e.g. copyright policy or systemic risk.\n\nRewritten question:\n\nWhat technical documentation and information must a provider of a general-purpose AI model draw up and make available to downstream providers that integrate the model into their AI systems?",
+    "rewritten": "What technical documentation and information must a provider of a general-purpose AI model draw up and make available to downstream providers that integrate the model into their AI systems?",
     "sources": [
       "art53-p1-b",
       "anxXI-1-a",
-      "anxXI-1-e",
+      "anxXI-1-c",
       "art53-p1-a",
-      "art91-p5",
-      "anxXII-1-e",
-      "anxXII-1-a",
-      "art3-68",
-      "art92-p5",
-      "art91-p1"
+      "anxXII-2-a",
+      "anxXII-1-h",
+      "art55-p1-c",
+      "art25-p4",
+      "anxIV-1-d",
+      "art91-p5"
     ],
     "refused": false,
-    "answer": "You must draw up and keep up to date the technical documentation of the model, including its training and testing process and the results of its evaluation, for provision upon request to the AI Office and national competent authorities [S4]. This technical documentation must contain at least the Annex XI information, as appropriate to the model's size and risk profile, including a general description of the tasks the model is intended to perform and the types of AI systems it can be integrated into [S4][S2]. Because you supply the model to other companies, you must also draw up and keep up to date information and documentation for downstream providers, meaning providers who integrate an AI model into their AI system, whether under contractual relations or not [S1][S8]. This downstream documentation must enable those providers to understand the model's capabilities and limitations and comply with their obligations, and must contain at least the Annex XII elements, while protecting intellectual property rights, confidential business information and trade secrets [S1]. The Annex XII elements cited in these sources include the intended tasks and types of integrating AI systems [S7] and the versions of relevant software where applicable [S6], while the modality and format of inputs and outputs is listed in Annex XI [S3]. The Commission may request your technical documentation or any additional information needed to assess your compliance, and you must supply it [S10][S5].",
+    "answer": "You must draw up and keep up-to-date technical documentation of the model, including its training and testing process and evaluation results, containing at least the information set out in Annex XI [S4]. You must also make available information and documentation to downstream providers who intend to integrate the model, so they can understand its capabilities and limitations, and this must contain at least the Annex XII elements [S1]. The Annex XI information includes a general description of the model's intended tasks and the types of AI systems it can be integrated into, plus the date of release and methods of distribution, as appropriate to its size and risk profile [S2][S3]. The Annex XII information includes the licence for the model and the technical means needed for integration, such as instructions for use, infrastructure and tools [S6][S5]. This information must be provided without prejudice to protection of intellectual property rights, confidential business information and trade secrets [S1]. If the model has systemic risk, Article 55(1)(c) also requires you to keep track of, document and report serious incidents and possible corrective measures [S7].",
     "cited": [
       "art53-p1-b",
       "anxXI-1-a",
-      "anxXI-1-e",
+      "anxXI-1-c",
       "art53-p1-a",
-      "art91-p5",
-      "anxXII-1-e",
-      "anxXII-1-a",
-      "art3-68",
-      "art91-p1"
+      "anxXII-2-a",
+      "anxXII-1-h",
+      "art55-p1-c"
     ],
     "retrieved": true,
     "correct": true,
@@ -455,13 +460,22 @@
       "art99-p3",
       "art1-p2-b",
       "art111-p2",
-      "art100-p2"
+      "art100-p2",
+      "art5-p1-a",
+      "art5-p1-b",
+      "art5-p1-bb",
+      "art5-p1-c",
+      "art5-p1-d",
+      "art5-p1-e",
+      "art5-p1-f",
+      "art5-p1-g"
     ],
     "refused": false,
-    "answer": "The bans on prohibited AI practices in Chapters I and II apply from 2 February 2025 [S5]. Article 5(1), first subparagraph, points (ba) and (bb), and Article 5(1a) and (1b) are an exception and apply from 2 December 2026 [S5]. Article 5(1)(ba) prohibits placing on the market, putting into service or using AI systems that generate or manipulate intimate or sexually explicit images of an identifiable person without that person's consent [S1].",
+    "answer": "The bans on prohibited AI practices in Article 5 apply from 2 February 2025 under Article 113(a) [S5]. Article 5(1), first subparagraph, points (ba) and (bb), and Article 5(1a) and (1b) are an exception and apply from 2 December 2026 [S5]. Point (ba) covers AI systems that generate or manipulate intimate or sexually explicit images of an identifiable person without their consent [S1]. Point (bb) covers AI systems that generate or manipulate material within the meaning of Directive 2011/93/EU, except where a 'without right' defence applies under national law [S13].",
     "cited": [
       "art5-p1-ba",
-      "art113-a"
+      "art113-a",
+      "art5-p1-bb"
     ],
     "retrieved": true,
     "correct": true,
@@ -559,7 +573,15 @@
       "art3-41",
       "art4a-p1-e",
       "art50-p3",
-      "art14-p5"
+      "art14-p5",
+      "art5-p1-a",
+      "art5-p1-b",
+      "art5-p1-bb",
+      "art5-p1-c",
+      "art5-p1-d",
+      "art5-p1-e",
+      "art5-p1-f",
+      "art5-p1-g"
     ],
     "refused": true,
     "answer": "The text of the AI Act provided does not answer this question.",
@@ -589,7 +611,10 @@
       "art59-p1-g",
       "anxVIII-i14",
       "art44-p2",
-      "art36-p9-a"
+      "art36-p9-a",
+      "art18-p1-a",
+      "art18-p1-b",
+      "art18-p1-e"
     ],
     "refused": true,
     "answer": "The text of the AI Act provided does not answer this question.",
@@ -619,7 +644,7 @@
       "anxIII-6-d",
       "art62-p1-a",
       "anxIII-6-e",
-      "art111-p1"
+      "art50-p1"
     ],
     "refused": true,
     "answer": "The text of the AI Act provided does not answer this question.",
@@ -709,7 +734,12 @@
       "art2-p1-a",
       "art72-p4",
       "art110-«68",
-      "art74-p4"
+      "art74-p4",
+      "art1-p2-b",
+      "art1-p2-c",
+      "art1-p2-d",
+      "art1-p2-f",
+      "art1-p2-g"
     ],
     "refused": true,
     "answer": "The text of the AI Act provided does not answer this question.",
@@ -788,18 +818,18 @@
     "lang": "en",
     "detected_lang": "en",
     "expected": [],
-    "rewritten": "Which cloud service provider should a deployer or provider choose to host data within the European Union?\n\nWait, that adds actors the user did not mention. Correcting to stay faithful:\n\nWhich cloud computing service provider should be selected to host data within the European Union?",
+    "rewritten": "Which cloud computing service provider should be selected to host data within the European Union?",
     "sources": [
-      "art26-p8",
-      "art100-p4",
       "art71-p6",
-      "art71-p3",
-      "anxV-2",
-      "art70-p9",
       "art57-p3",
-      "art49-p3",
-      "art47-p4",
-      "art74-p9"
+      "art100-p4",
+      "art47-p1",
+      "art70-p9",
+      "art18-p1-e",
+      "art74-p9",
+      "art57-p14",
+      "art26-p8",
+      "art71-p2"
     ],
     "refused": true,
     "answer": "The text of the AI Act provided does not answer this question.",
@@ -826,10 +856,15 @@
       "art100-p3",
       "art75c-p7",
       "art75c-p5-e",
-      "anxX-i3",
-      "anxI-text3",
       "art101-p1-a",
-      "anxX-i2"
+      "art101-p1-b",
+      "art5-p1-h",
+      "art99-p4-a",
+      "art99-p4-b",
+      "art99-p4-c",
+      "art99-p4-da",
+      "art99-p4-e",
+      "art99-p4-g"
     ],
     "refused": true,
     "answer": "The text of the AI Act provided does not answer this question.",
@@ -1038,10 +1073,18 @@
       "art50-p4",
       "art46-p2",
       "art46-p1",
-      "anxIII-6-d"
+      "anxIII-6-d",
+      "art5-p1-a",
+      "art5-p1-b",
+      "art5-p1-ba",
+      "art5-p1-bb",
+      "art5-p1-e",
+      "art5-p1-f",
+      "art5-p1-g",
+      "art5-p1-h"
     ],
     "refused": false,
-    "answer": "Un tel système est interdit lorsqu'il réunit les conditions de l'Article 5(1)(c) [S1]. Cette disposition vise la mise sur le marché, la mise en service ou l'utilisation de systèmes d'IA qui évaluent ou classent des personnes physiques ou des groupes selon leur comportement social ou leurs caractéristiques personnelles ou de personnalité [S1]. L'interdiction s'applique lorsque la note sociale conduit à un traitement préjudiciable ou défavorable dans des contextes sociaux dissociés de celui où les données ont été générées ou collectées [S1]. Elle s'applique également lorsque ce traitement est injustifié ou disproportionné par rapport au comportement social ou à sa gravité [S1]. Les sources fournies ne permettent pas de dire si le système projeté par cette ville remplit ces conditions, qui doivent être appréciées au cas par cas [S1].",
+    "answer": "Une telle pratique est interdite par l'article 5(1)(c) lorsque la note sociale conduit à un traitement défavorable [S1]. Cet article interdit la mise sur le marché, la mise en service ou l'utilisation de systèmes d'IA qui évaluent ou classent des personnes physiques ou des groupes selon leur comportement social ou leurs caractéristiques personnelles, déduites ou prédites, au cours d'une période donnée [S1]. L'interdiction vise la note sociale qui entraîne un traitement préjudiciable ou défavorable dans des contextes sociaux dissociés de celui dans lequel les données ont été collectées [S1]. Elle vise aussi le traitement préjudiciable ou défavorable injustifié ou disproportionné par rapport au comportement social ou à sa gravité [S1]. Un refus de services publics fondé sur une telle note relève donc de cette interdiction lorsque l'une de ces deux conditions est remplie [S1].",
     "cited": [
       "art5-p1-c"
     ],
@@ -1252,17 +1295,22 @@
       "art91-p5",
       "art55-p1-c",
       "art92-p5",
-      "art25-p4"
+      "art25-p4",
+      "art53-p1-c",
+      "art53-p1-d"
     ],
     "refused": false,
-    "answer": "Vous devez élaborer et tenir à jour une documentation technique du modèle, y compris son processus d'entraînement et d'essai ainsi que les résultats de son évaluation, et la fournir sur demande au Bureau de l'IA et aux autorités nationales compétentes [S2]. Cette documentation contient au minimum les informations de l'Annexe XI, point 1(a), notamment une description générale du modèle, les tâches qu'il est censé accomplir et les types de systèmes d'IA dans lesquels il peut être intégré [S3]. Elle doit aussi indiquer la date de publication et les méthodes de distribution du modèle [S4]. Pour les fournisseurs en aval qui envisagent de l'intégrer dans leurs systèmes d'IA, vous devez élaborer, tenir à jour et mettre à disposition des informations et une documentation permettant une bonne compréhension des capacités et des limites du modèle, contenant au minimum les éléments de l'Annexe XII [S1]. Ces informations doivent inclure la licence du modèle et, le cas échéant, les versions des logiciels pertinents liés à son utilisation [S5][S6]. Ces informations doivent respecter les droits de propriété intellectuelle et les secrets d'affaires, sans préjudice de l'obligation de les fournir [S1].",
+    "answer": "Vous devez élaborer et tenir à jour une documentation technique du modèle, y compris son processus d'entraînement et d'essai et les résultats de son évaluation, à fournir sur demande au Bureau de l'IA et aux autorités nationales compétentes [S2]. Cette documentation doit contenir au minimum les informations de l'annexe XI, notamment une description générale du modèle (tâches prévues, types de systèmes d'IA dans lesquels il peut être intégré) ainsi que la date de publication et les méthodes de distribution [S3][S4]. Vous devez aussi élaborer, tenir à jour et mettre à disposition des fournisseurs de systèmes d'IA qui envisagent de l'intégrer des informations leur permettant de bien comprendre les capacités et limites du modèle, contenant au minimum les éléments de l'annexe XII, sans porter atteinte aux droits de propriété intellectuelle ni aux secrets d'affaires [S1]. Ces informations doivent notamment inclure la licence du modèle et, le cas échéant, les versions des logiciels pertinents liés à son utilisation [S5][S6]. Vous devez mettre en place une politique visant à respecter le droit d'auteur de l'Union, y compris les réservations de droits, et élaborer et publier un résumé suffisamment détaillé du contenu utilisé pour entraîner le modèle, conforme à un modèle fourni par le Bureau de l'IA [S11][S12]. Sur demande, les informations demandées doivent être fournies par le fournisseur ou son représentant, et, pour une personne morale, par les personnes autorisées à la représenter [S7].",
     "cited": [
       "art53-p1-b",
       "art53-p1-a",
       "anxXI-1-a",
       "anxXI-1-c",
       "anxXII-1-h",
-      "anxXII-1-e"
+      "anxXII-1-e",
+      "art91-p5",
+      "art53-p1-c",
+      "art53-p1-d"
     ],
     "retrieved": true,
     "correct": true,
@@ -1280,21 +1328,21 @@
     "expected": [
       "art26-p7"
     ],
-    "rewritten": "Before deploying a high-risk AI system in the workplace, must the deployer inform the workers' representatives and the affected employees?\n\nNote: I've kept the question's meaning to informing employees, but the phrasing \"workers' representatives\" adds an actor the user did not mention, so here is the corrected version:\n\nBefore putting into service a high-risk AI system in the workplace, must the deployer inform the affected workers?",
+    "rewritten": "Before putting into service a high-risk AI system in the workplace, must the deployer inform the affected workers?",
     "sources": [
       "art26-p7",
+      "art26-p5",
       "art27-p1-a",
       "art27-p1-b",
-      "art26-p8",
-      "art22-p1",
       "anxVIII-i21",
-      "anxVIII-i22",
-      "art23-p1-d",
+      "art13-p1",
+      "art13-p2",
       "art16-f",
-      "art13-p1"
+      "art20-p2",
+      "anxVIII-i22"
     ],
     "refused": false,
-    "answer": "Oui, l'employeur qui est déployeur doit informer les représentants des travailleurs et les travailleurs concernés avant de mettre en service ou d'utiliser un système d'IA à haut risque sur le lieu de travail [S1]. Ces informations sont fournies, le cas échéant, conformément aux règles et procédures du droit de l'Union et du droit national, ainsi qu'aux pratiques en matière d'information des travailleurs et de leurs représentants [S1]. Cette obligation relève de l'Article 26(7) [S1].",
+    "answer": "Oui, l'employeur qui est déployeur doit informer les représentants des travailleurs et les travailleurs concernés avant de mettre en service ou d'utiliser un système d'IA à haut risque sur le lieu de travail, en les prévenant qu'ils seront soumis à son utilisation [S1]. Ces informations sont fournies, le cas échéant, selon les règles et procédures du droit de l'Union et du droit national ainsi que les pratiques en matière d'information des travailleurs et de leurs représentants [S1].",
     "cited": [
       "art26-p7"
     ],
@@ -1325,14 +1373,15 @@
       "art79-p8",
       "art74-p1-a",
       "art2-p8",
-      "art111-p1"
+      "art111-p1",
+      "art113-c",
+      "art113-d"
     ],
     "refused": false,
-    "answer": "Les interdictions de pratiques en matière d'IA, prévues au chapitre II, s'appliquent depuis le 2 février 2025 [S1][S3]. Font exception l'article 5, paragraphe 1, premier alinéa, points b bis) et b ter), ainsi que l'article 5, paragraphes 1 bis et 1 ter, qui s'appliquent depuis le 2 décembre 2026 [S1]. Le point b ter) de l'article 5, paragraphe 1, concerne la mise sur le marché, la mise en service ou l'utilisation de systèmes d'IA qui génèrent ou manipulent du matériel ou des spectacles au sens de la directive 2011/93/UE, sauf défense « sans droit » en vertu du droit national [S5].",
+    "answer": "Les interdictions de pratiques en matière d'IA s'appliquent depuis le 2 février 2025 [S1][S3]. Cette date concerne les chapitres I et II du règlement, qui traitent des pratiques interdites [S1]. Toutefois, l'article 5, paragraphe 1, premier alinéa, points b bis) et b ter), ainsi que l'article 5, paragraphes 1 bis et 1 ter, ne s'appliquent qu'à partir du 2 décembre 2026 [S1].",
     "cited": [
       "art113-a",
-      "art1-p2-b",
-      "art5-p1-bb"
+      "art1-p2-b"
     ],
     "retrieved": true,
     "correct": true,
@@ -1396,12 +1445,19 @@
       "art100-p3",
       "art25-p1-a",
       "art25-p1-c",
-      "art50-p4"
+      "art50-p4",
+      "art5-p1-ba",
+      "art5-p1-bb",
+      "art5-p1-c",
+      "art5-p1-d",
+      "art5-p1-e",
+      "art5-p1-f",
+      "art5-p1-g",
+      "art5-p1-h"
     ],
     "refused": false,
-    "answer": "Pour une entreprise qui ne respecte pas l'interdiction des pratiques en matière d'IA visées à l'article 5, l'amende administrative peut aller jusqu'à 7 % de son chiffre d'affaires annuel mondial total réalisé au cours de l'exercice précédent, le montant le plus élevé étant retenu, soit au maximum 35 000 000 EUR pour le plafond fixe [S5]. Cette sanction vise par exemple une pratique relevant de l'Article 5(1)(a), qui interdit les techniques subliminales ou délibérément manipulatrices causant un préjudice important [S1][S5].",
+    "answer": "Selon l'Article 99(3), le non-respect de l'interdiction des pratiques en matière d'IA visées à l'article 5 peut donner lieu à une amende administrative pouvant aller jusqu'à 35 000 000 EUR [S5]. Si l'auteur de l'infraction est une entreprise, l'amende peut aller jusqu'à 7 % de son chiffre d'affaires annuel mondial total réalisé au cours de l'exercice précédent [S5]. Le montant le plus élevé est retenu [S5].",
     "cited": [
-      "art5-p1-a",
       "art99-p3"
     ],
     "retrieved": true,
@@ -1431,14 +1487,20 @@
       "art26-p10",
       "art4a-p1-b",
       "art14-p5",
-      "art4a-p1-e"
+      "art4a-p1-e",
+      "art5-p1-a",
+      "art5-p1-b",
+      "art5-p1-bb",
+      "art5-p1-c",
+      "art5-p1-d",
+      "art5-p1-e",
+      "art5-p1-f",
+      "art5-p1-g"
     ],
     "refused": false,
-    "answer": "Selon l'Article 5(1)(ba), il est interdit de mettre sur le marché, de mettre en service ou d'utiliser un système d'IA qui génère ou manipule des images réalistes représentant les parties intimes d'une personne identifiable, ou une personne identifiable se livrant à des activités sexuellement explicites, sans son consentement libre, spécifique, éclairé, univoque et explicite [S1]. Les sources fournies ne précisent toutefois pas la date à partir de laquelle cette interdiction s'applique [S1]. Par ailleurs, un hypertrucage est une image générée ou manipulée par l'IA, présentant une ressemblance avec des personnes existantes et pouvant être perçue à tort comme authentique [S4]. Les déployeurs doivent alors indiquer que le contenu a été généré ou manipulé par une IA, sous réserve d'exceptions prévues par l'Article 50(4) [S3].",
+    "answer": "L'Article 5(1)(ba) interdit la mise sur le marché, la mise en service ou l'utilisation d'un système d'IA qui génère ou manipule des images réalistes représentant les parties intimes d'une personne identifiable, ou une personne identifiable se livrant à des activités sexuellement explicites, sans son consentement libre, spécifique, éclairé, univoque et explicite [S1]. Les sources fournies ne précisent cependant pas la date à partir de laquelle cette interdiction s'applique [S1].",
     "cited": [
-      "art5-p1-ba",
-      "art50-p4",
-      "art3-60"
+      "art5-p1-ba"
     ],
     "retrieved": false,
     "correct": false,
@@ -1465,7 +1527,10 @@
       "art44-p2",
       "art26-p6",
       "art46-p5",
-      "art79-p8"
+      "art79-p8",
+      "art18-p1-a",
+      "art18-p1-b",
+      "art18-p1-e"
     ],
     "refused": true,
     "answer": "Le texte de l'AI Act fourni ne répond pas à cette question.",
@@ -1703,7 +1768,13 @@
       "art75c-b",
       "art75c-a",
       "art101-p1-b",
-      "art101-p1-c"
+      "art101-p1-c",
+      "art99-p4-a",
+      "art99-p4-b",
+      "art99-p4-c",
+      "art99-p4-da",
+      "art99-p4-e",
+      "art99-p4-g"
     ],
     "refused": true,
     "answer": "Le texte de l'AI Act fourni ne répond pas à cette question.",
@@ -1875,10 +1946,12 @@
       "art9-p6",
       "art60-p3",
       "art13-p3-b",
-      "art9-p8"
+      "art9-p8",
+      "anxIII-3-a",
+      "anxIII-3-b"
     ],
     "refused": false,
-    "answer": "وفق المصادر المتاحة، يُعد نظام الذكاء الاصطناعي المخصص لمراقبة الطلاب وكشف السلوك المحظور أثناء الاختبارات نظامًا عالي المخاطر بموجب Annex III, point 3(d) [S1]. تنص هذه النقطة على أن الأنظمة المخصصة لمراقبة السلوك المحظور للطلاب أثناء الاختبارات داخل مؤسسات التعليم والتدريب تندرج ضمن هذه الفئة [S1]. المصادر المتاحة لا تنص صراحةً على أن استخدام هذا النظام مسموح أو محظور في حالة الجامعة [S1]. تتطلب المصادر أن يخضع النظام لاختبارات مستمرة قبل طرحه أو تشغيله، وأن يُختبر وفق مقاييس وعتبات احتمالية محددة مسبقًا [S7][S10]. يجب كذلك فحص البيانات بحثًا عن التحيزات التي قد تؤدي إلى تمييز محظور بموجب قانون الاتحاد الأوروبي [S5]، وضمان مقاومة النظام لمحاولات التلاعب بالاستخدام أو المخرجات [S3]. ويجب أن تتضمن تعليمات الاستخدام معلومات عن حدود الأداء ودقته وكيفية تفسير مخرجاته [S9].",
+    "answer": "لا تحظر المصادر المقدمة هذا الاستخدام صراحةً، بل تصنّف أنظمة الذكاء الاصطناعي المخصصة لمراقبة الطلاب وكشف السلوك المحظور أثناء الاختبارات في مؤسسات التعليم بأنها أنظمة عالية المخاطر [S1]. وتخضع هذه الأنظمة لمتطلبات الاختبار قبل طرحها في السوق أو تشغيلها، وينبغي أن يتم الاختبار وفق مقاييس محددة مسبقاً وعتبات احتمالية مناسبة للغرض المقصود [S7][S10]. ويجب فحص بيانات التدريب والاختبار لتحديد التحيزات المحتملة التي قد تؤدي إلى تمييز محظور بموجب قانون الاتحاد [S5]. ويجب أن يكون النظام مقاوماً لمحاولات التلاعب من أطراف غير مصرح لها، مع حلول تقنية للأمن السيبراني مناسبة للمخاطر [S3]. ويجب أن تتضمن تعليمات الاستخدام الغرض المقصود والدقة والمخاطر المحتملة وقابلية تفسير المخرجات [S9]. ولا تتضمن المصادر المقدمة قائمة كاملة بجميع الالتزامات التي تنطبق على الجامعة بصفتها الجهة المستخدمة [S1].",
     "cited": [
       "anxIII-3-d",
       "art15-p5",
@@ -1914,10 +1987,18 @@
       "art46-p1",
       "art50-p1",
       "art99-p7-a",
-      "art77-p3"
+      "art77-p3",
+      "art5-p1-a",
+      "art5-p1-b",
+      "art5-p1-ba",
+      "art5-p1-bb",
+      "art5-p1-e",
+      "art5-p1-f",
+      "art5-p1-g",
+      "art5-p1-h"
     ],
     "refused": false,
-    "answer": "على الأرجح لا، إذ تحظر Article 5(1)(c) وضع أنظمة الذكاء الاصطناعي في السوق أو تشغيلها أو استخدامها لتقييم الأشخاص الطبيعيين أو الفئات بناءً على سلوكهم الاجتماعي أو خصائصهم الشخصية المعروفة أو المستنتجة أو المتوقعة خلال فترة زمنية معينة [S1]. يشمل هذا الحظر الحالات التي يؤدي فيها التقييم إلى معاملة ضارة أو غير مواتية في سياقات اجتماعية غير مرتبطة بالسياق الذي جُمعت فيه البيانات الأصلية [S1]. ويشمل أيضًا الحالات التي تكون فيها المعاملة الضارة غير مبررة أو غير متناسبة مع السلوك الاجتماعي أو مع خطورته [S1]. لا تتناول المصادر المقدمة تفاصيل تطبيق المدينة المحددة أو أي استثناءات قد تنطبق عليه [S1]. ويمكن لأي شخص لديه أسباب للاعتقاد بوقوع مخالفة لأحكام هذه اللائحة تقديم شكوى إلى سلطة مراقبة السوق المختصة [S4].",
+    "answer": "الحكم يعتمد على الشروط، فالممارسة محظورة عندما يُستخدم نظام ذكاء اصطناعي لتقييم الأشخاص أو مجموعاتهم بناءً على سلوكهم الاجتماعي أو خصائصهم الشخصية، ويؤدي التقييم إلى نتيجة محددة [S1]. تنص Article 5(1)(c) على الحظر إذا أدى التقييم الاجتماعي إلى معاملة ضارة أو غير مواتية في سياقات اجتماعية غير مرتبطة بالسياق الذي جُمعت فيه البيانات [S1]. كما يُحظر إذا كانت المعاملة الضارة أو غير المواتية غير مبررة أو غير متناسبة مع السلوك الاجتماعي أو خطورته [S1]. أي أن الحظر مشروط بأحد هذين الأثرين أو كليهما، وليس شاملاً لكل تقييم [S1]. ويحق لأي شخص لديه أسباب للاعتقاد بوجود مخالفة أن يقدم شكوى إلى سلطة مراقبة السوق المختصة [S4]. لا تتضمن المصادر تفاصيل عن النظام الذي تنوي المدينة تطبيقه، لذلك يتوقف التقييم النهائي على وقائعه وآثاره [S1].",
     "cited": [
       "art5-p1-c",
       "art85"
@@ -2202,14 +2283,23 @@
       "art79-p8",
       "art1-p2-b",
       "art100-p2",
-      "art75c-p8",
-      "art111-p2"
+      "art111-p2",
+      "art26-p10",
+      "art5-p1-a",
+      "art5-p1-b",
+      "art5-p1-bb",
+      "art5-p1-c",
+      "art5-p1-d",
+      "art5-p1-e",
+      "art5-p1-f",
+      "art5-p1-g"
     ],
     "refused": false,
-    "answer": "تُطبَّق محظورات ممارسات الذكاء الاصطناعي المنصوص عليها في Chapter II، ومنها المادة 5، اعتبارا من 2 فبراير 2025 [S4]. ويستثنى من ذلك Article 5(1)، الفقرة الأولى، النقطتان (ba) و(bb)، وArticle 5(1a) وArticle 5(1b)، إذ تُطبَّق من 2 ديسمبر 2026 [S4]. ومن أمثلة ذلك الحظر المتعلق بإنشاء أو تعديل صور أو مقاطع فيديو أو صوت واقعية لشخص محدد يظهر في أجزائه الحميمة أو في أنشطة جنسية صريحة دون موافقته الصريحة [S2][S4].",
+    "answer": "تُطبَّق محظورات ممارسات الذكاء الاصطناعي عمومًا اعتبارًا من 2 فبراير 2025، إذ يُطبَّق الفصلان الأول والثاني من ذلك التاريخ وفق Article 113(a) [S4]. ويُستثنى من ذلك Article 5(1), first subparagraph, points (ba) and (bb)، وكذلك Article 5(1a) وArticle 5(1b)، فهذه تُطبَّق اعتبارًا من 2 ديسمبر 2026 [S4]. وتتعلق Article 5(1)(ba) بتوليد أو معالجة صور أو مقاطع أو صوت واقعية لشخص محدد دون موافقته الصريحة [S2]، بينما تتعلق Article 5(1)(bb) بتوليد أو معالجة مواد وفق Article 2، points (c) and (e), of Directive 2011/93/EU ما لم ينطبق دفاع «دون حق» وفق القانون الوطني [S13].",
     "cited": [
       "art5-p1-ba",
-      "art113-a"
+      "art113-a",
+      "art5-p1-bb"
     ],
     "retrieved": true,
     "correct": true,
@@ -2342,7 +2432,10 @@
       "art36-p9-b",
       "art44-p2",
       "art79-p8",
-      "art47-p1"
+      "art47-p1",
+      "art18-p1-a",
+      "art18-p1-b",
+      "art18-p1-e"
     ],
     "refused": true,
     "answer": "نص قانون الذكاء الاصطناعي المتوفر لا يجيب عن هذا السؤال.",
@@ -2582,7 +2675,12 @@
       "art75c-b",
       "art101-p1-c",
       "art80-p7",
-      "anxX-i3"
+      "art99-p4-a",
+      "art99-p4-b",
+      "art99-p4-c",
+      "art99-p4-da",
+      "art99-p4-e",
+      "art99-p4-g"
     ],
     "refused": true,
     "answer": "نص قانون الذكاء الاصطناعي المتوفر لا يجيب عن هذا السؤال.",
