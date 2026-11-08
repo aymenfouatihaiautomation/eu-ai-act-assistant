@@ -1,5 +1,6 @@
 [
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -26,6 +27,7 @@
     "rank_in_50": 2
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -52,6 +54,7 @@
     "rank_in_50": 7
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -78,6 +81,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -104,6 +108,7 @@
     "rank_in_50": 3
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -130,6 +135,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -156,6 +162,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -182,6 +189,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -209,6 +217,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -228,13 +237,14 @@
       "en-anxIII-6-d",
       "en-art15-p5",
       "en-anxIII-8-b",
-      "en-art27-p5"
+      "en-art23-p2"
     ],
     "top_cosine": 0.797,
     "hit": true,
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -261,6 +271,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -290,6 +301,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -316,6 +328,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -342,6 +355,7 @@
     "rank_in_50": 14
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -368,6 +382,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -394,6 +409,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -420,6 +436,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -444,6 +461,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -468,6 +486,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -492,6 +511,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -516,6 +536,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -540,6 +561,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -564,6 +586,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -588,6 +611,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -612,6 +636,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -635,6 +660,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "en",
@@ -659,6 +685,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -685,6 +712,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -711,6 +739,7 @@
     "rank_in_50": 16
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -737,6 +766,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -763,6 +793,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -789,6 +820,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -815,6 +847,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -841,6 +874,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -868,6 +902,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -894,6 +929,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -920,6 +956,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -949,6 +986,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -975,6 +1013,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -1001,6 +1040,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -1027,6 +1067,7 @@
     "rank_in_50": 5
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -1053,6 +1094,7 @@
     "rank_in_50": 10
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -1079,6 +1121,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -1103,6 +1146,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -1127,6 +1171,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -1151,6 +1196,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -1175,6 +1221,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -1199,6 +1246,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -1223,6 +1271,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -1247,6 +1296,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -1271,6 +1321,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -1293,6 +1344,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "fr",
@@ -1317,6 +1369,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1343,6 +1396,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1369,6 +1423,7 @@
     "rank_in_50": 3
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1395,6 +1450,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1421,6 +1477,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1447,6 +1504,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1472,6 +1530,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1498,6 +1557,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1525,6 +1585,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1538,19 +1599,20 @@
       "en-art3-60",
       "en-art50-p4",
       "en-art5-p1-h",
+      "en-art23-p2",
       "en-art5-p1-ba",
       "en-anxIII-6-d",
       "en-anxIII-6-e",
       "en-art47-p1",
       "en-art40-p1",
-      "en-art101-p1-b",
-      "en-art47-p2"
+      "en-art101-p1-b"
     ],
     "top_cosine": 0.713,
     "hit": true,
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1577,6 +1639,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1606,6 +1669,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1632,6 +1696,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1658,6 +1723,7 @@
     "rank_in_50": 12
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1684,6 +1750,7 @@
     "rank_in_50": 6
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1710,6 +1777,7 @@
     "rank_in_50": 1
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1736,6 +1804,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1760,6 +1829,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1784,6 +1854,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1808,6 +1879,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1832,6 +1904,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1856,6 +1929,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1880,6 +1954,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1904,6 +1979,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1928,6 +2004,7 @@
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",
@@ -1944,14 +2021,14 @@
       "en-art101-p1-b",
       "en-art75c-b",
       "en-art101-p1-c",
-      "en-art80-p7",
-      "en-art113-b"
+      "en-art80-p7"
     ],
     "top_cosine": 0.526,
     "hit": null,
     "rank_in_50": null
   },
   {
+    "extra": 0,
     "model": "bge-m3",
     "strategy": "rewrite_v2",
     "lang": "ar",

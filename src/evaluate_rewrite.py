@@ -25,6 +25,7 @@ import argparse
 import json
 from pathlib import Path
 
+from diversity import expand_siblings
 from embeddings import encode, get_collection, load_model
 from evaluate import (LANGS, POOL, QUESTIONS, coverage, diversify, is_hit, print_report,
                       rank_in_pool, recall)
@@ -77,7 +78,12 @@ def strategy_pool(strategy, pools, n):
     return pools[strategy][n]
 
 
-def list_coverage(args, model, collection, strategies, names):
+def finalize(ids, all_ids):
+    """Les sources finales : celles de diversify(), plus (si --expand) les frères d'une liste coupée."""
+    return ids + expand_siblings(ids, all_ids) if all_ids is not None else ids
+
+
+def list_coverage(args, model, collection, strategies, names, all_ids):
     """Questions qui demandent une LISTE : on mesure combien des fiches attendues sont dans les k sources."""
     if not LIST_QUESTIONS.exists():
         return
@@ -88,9 +94,10 @@ def list_coverage(args, model, collection, strategies, names):
         for n, q in enumerate(items):
             for strategy in strategies:
                 ids, _ = diversify(*strategy_pool(strategy, pools, n), args.k)
-                table[strategy][(q["id"], lang)] = coverage(ids, q["expected"])
+                table[strategy][(q["id"], lang)] = coverage(finalize(ids, all_ids), q["expected"])
 
-    print(f"\n=== COUVERTURE DES LISTES (fiches attendues présentes dans les {args.k} sources) ===")
+    extra_note = " + frères ajoutés" if all_ids is not None else ""
+    print(f"\n=== COUVERTURE DES LISTES (fiches attendues présentes dans les {args.k} sources{extra_note}) ===")
     print(f"  {'stratégie':<11} {'question':<9} " + " ".join(f"{l:>6}" for l in LANGS))
     for strategy in strategies:
         for q in items:
@@ -105,15 +112,19 @@ def main():
     parser.add_argument("-k", type=int, default=10)
     parser.add_argument("--strategies", nargs="+", choices=ALL_STRATEGIES, default=None,
                         help="par défaut : " + " ".join(DEFAULT_STRATEGIES))
+    parser.add_argument("--expand", action="store_true",
+                        help="ajoute les frères d'une liste coupée par diversify() (voir diversity.py)")
     args = parser.parse_args()
     strategies = args.strategies or DEFAULT_STRATEGIES
     names = needed_texts(strategies)
     # Sans --strategies, on garde les noms de fichiers d'origine ; avec, on ajoute le modèle LLM.
     suffix = "" if args.strategies is None else "_" + PROVIDERS[PROVIDER]["model"].split("/")[-1]
+    suffix += "_expand" if args.expand else ""
 
     questions = json.loads(QUESTIONS.read_text(encoding="utf-8"))
     model = load_model(args.model)
     collection = get_collection(args.model)
+    all_ids = collection.get(include=[])["ids"] if args.expand else None   # None = pas d'ajout
     rows = {s: [] for s in strategies}
     examples = []
 
@@ -129,7 +140,10 @@ def main():
             for strategy in strategies:
                 pool_ids, pool_dist = strategy_pool(strategy, pools, n)
                 ids, dist = diversify(pool_ids, pool_dist, args.k)
+                n_base = len(ids)
+                ids = finalize(ids, all_ids)
                 rows[strategy].append({
+                    "extra": len(ids) - n_base,
                     "model": args.model, "strategy": strategy, "lang": lang,
                     "id": q["id"], "type": q["type"], "expected": q["expected"],
                     "query": texts[FUSION_WITH if strategy == "fusion" else strategy][n],
@@ -164,7 +178,17 @@ def main():
         print(f"  {strategy:<10} {en:6.1f}% {fr:6.1f}% {ar:6.1f}% {total:6.1f}% ({n_hits}/{n_answered})  "
               f"{cos_yes:.3f} / {cos_no:.3f}")
 
-    list_coverage(args, model, collection, strategies, names)
+    if args.expand:
+        print("\n=== FICHES AJOUTÉES (frères d'une liste) ===")
+        for strategy in strategies:
+            extras = [r["extra"] for r in rows[strategy]]
+            fired = [e for e in extras if e]
+            print(f"  {strategy:<11} déclenché sur {len(fired)}/{len(extras)} recherches ; "
+                  f"+{sum(fired)} fiches au total, max +{max(extras)}")
+            lost = [r for r in rows[strategy] if r["extra"] and r["hit"] is False]
+            print(f"  {'':<11} (questions ratées malgré l'ajout : {len(lost)})")
+
+    list_coverage(args, model, collection, strategies, names, all_ids)
 
 
 if __name__ == "__main__":
