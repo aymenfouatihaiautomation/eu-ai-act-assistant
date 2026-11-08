@@ -473,5 +473,6 @@
   "rewrite_v2|claude-haiku-5-5|ddfc0984|Nous utilisons un logiciel d'IA pour trier les CV des candidats. Quelles sont nos obligations en tant qu'entreprise utilisatrice ?": "The user asks in French about obligations of a deployer using AI software to screen job applicants' CVs. Rewrite in AI Act terminology: \"deployer\" of a high-risk AI system used for recruitment or selection of natural persons, particularly to filter job applications and evaluate candidates. Only one sentence, no article numbers, no answer.\n\nWhat obligations does a deployer of a high-risk AI system used for recruitment, specifically to filter and sort job applications, have under the EU AI Act?",
   "rewrite_v2|claude-haiku-5-5|ddfc0984|Quelle est la capitale de la France ?": "What is the capital of France?",
   "rewrite_v2|claude-haiku-5-5|ddfc0984|Which AI practices are prohibited under the AI Act?": "Which artificial intelligence practices are prohibited under Regulation (EU) 2024/1689?",
-  "rewrite_v2|claude-haiku-5-5|ddfc0984|ما هي التزامات الشفافية لروبوتات الدردشة؟": "What transparency obligations apply to AI systems intended to interact directly with natural persons, such as chatbots?"
+  "rewrite_v2|claude-haiku-5-5|ddfc0984|ما هي التزامات الشفافية لروبوتات الدردشة؟": "What transparency obligations apply to AI systems intended to interact directly with natural persons, such as chatbots?",
+  "rewrite_v2|claude-haiku-5-5|ddfc0984|Quelles pratiques d'IA sont interdites par l'AI Act ?": "Which artificial intelligence practices are prohibited under the AI Act?"
 }
