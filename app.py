@@ -1,9 +1,10 @@
 """T8.1 — Interface web de l'assistant AI Act (Gradio).
 
 3 onglets :
-  1. Ask the AI Act     → question (EN/FR/AR) → réponse sourcée + texte exact de la loi
-  2. Is it high-risk?   → l'arbre de risk.py, sous forme de questionnaire
-  3. Key dates          → le tableau vérifié de dates.py, à une date choisie
+  1. Ask                → question (EN/FR/AR) → réponse sourcée + texte exact de la loi
+  2. My risk level      → l'arbre de risk.py, sous forme de questionnaire
+  3. Deadlines          → le tableau vérifié de dates.py, à une date choisie
+(noms courts : avec des noms plus longs, Gradio cache les onglets 2 et 3 derrière « … » sur téléphone)
 
 Ce fichier est À LA RACINE du projet (pas dans src/) : c'est là que Hugging Face
 Spaces cherche app.py au moment de la mise en ligne (T8.2).
@@ -160,7 +161,7 @@ def check_risk(prohibited, annex_i, third_party, area, profiling, exception):
         lines.append("⚠ The provider must **document** this assessment before placing the system on the market (Art. 6(4)).")
     if answers["annex_iii_area"]:
         lines.append("⚠ Some Annex III points contain their own exclusions (e.g. point 5: AI used to detect financial fraud). "
-                     "Check the exact wording of the point in the **Ask** tab.")
+                     "Check the exact wording of the point in the **1. Ask** tab.")
     lines.append("ℹ Whatever the verdict, transparency obligations (Art. 50) may apply, e.g. to chatbots or AI-generated content.")
     lines.append("\n*This is an orientation tool, not legal advice.*")
     return "\n\n".join(lines)
@@ -188,8 +189,18 @@ def show_dates(day):
 with gr.Blocks(title="EU AI Act Assistant") as demo:
     gr.Markdown("# EU AI Act Assistant\nAnswers cite the exact article. When the text is silent, the assistant says so. "
                 "English · Français · العربية")
+    # Pour un visiteur qui ne connaît pas l'AI Act : les 4 niveaux de risque + à quoi sert chaque onglet.
+    gr.Markdown(
+        "**New to the AI Act?** It sorts AI systems into four risk levels: "
+        "⛔ **Prohibited** (e.g. social scoring) · 🔴 **High-risk** (e.g. CV screening) · "
+        "🔵 **Transparency** (e.g. a chatbot must say it is an AI) · "
+        "🟢 **Minimal** (e.g. spam filters, no specific rules).  \n"
+        "**1. Ask**: ask a question, get an answer citing the exact article. "
+        "**2. My risk level**: answer a few questions to classify your own system. "
+        "**3. Deadlines**: see which rules already apply."
+    )
 
-    with gr.Tab("Ask the AI Act"):
+    with gr.Tab("1. Ask"):
         question = gr.Textbox(label="Your question (EN / FR / AR)", lines=3, max_length=1000)
         ask_btn = gr.Button("Ask", variant="primary")
         gr.Examples(EXAMPLES, inputs=question)
@@ -199,7 +210,8 @@ with gr.Blocks(title="EU AI Act Assistant") as demo:
         ask_btn.click(ask, inputs=question, outputs=[answer_md, verify_md])
         question.submit(ask, inputs=question, outputs=[answer_md, verify_md])
 
-    with gr.Tab("Is it high-risk?"):
+    with gr.Tab("2. My risk level"):
+        gr.Markdown("Answer 5 questions to find your risk level (Articles 5 and 6).")
         q1 = gr.Radio([YES, NO], value=NO, label="1. Does the system perform a practice prohibited by Art. 5 (e.g. social scoring, manipulation)?")
         q2a = gr.Radio([YES, NO], value=NO, label="2a. Is it a safety component of a product covered by Annex I (machinery, medical devices, toys...) or that product itself?")
         q2b = gr.Radio([YES, NO], value=NO, visible=False, label="2b. Must that product undergo a third-party conformity assessment?")
@@ -216,7 +228,8 @@ with gr.Blocks(title="EU AI Act Assistant") as demo:
         q4.change(lambda p, a: gr.update(visible=a != NONE and p == NO), [q4, q3], q5)
         risk_btn.click(check_risk, [q1, q2a, q2b, q3, q4, q5], risk_md)
 
-    with gr.Tab("Key dates"):
+    with gr.Tab("3. Deadlines"):
+        gr.Markdown("Every date the AI Act applies, checked against the legal text.")
         day = gr.Textbox(value=date.today().isoformat(), label="Date (YYYY-MM-DD)")
         dates_btn = gr.Button("Show", variant="primary")
         dates_md = gr.Markdown(show_dates(date.today().isoformat()))
