@@ -47,6 +47,7 @@ def warm_up():
 ARABIC = re.compile(r"[؀-ۿ]")
 FRENCH_WORDS = {"le", "la", "les", "des", "de", "du", "au", "aux", "est", "une", "un", "pour", "nous",
                 "notre", "nos", "vous", "votre", "je", "il", "elle", "que", "qui", "quelle", "quel",
+                "quelles", "quels",   # 08/11 : « Quelles pratiques d'IA sont interdites ? » était vu comme anglais
                 "quand", "depuis", "dans", "avec", "sont", "pouvons", "devons", "puis", "peut", "doit",
                 "comment", "pourquoi", "combien", "faut", "sur", "par", "ou", "et", "si", "ce", "cette"}
 FRENCH_ACCENTS = re.compile(r"[éèêëàâçîïôûùœ]")
