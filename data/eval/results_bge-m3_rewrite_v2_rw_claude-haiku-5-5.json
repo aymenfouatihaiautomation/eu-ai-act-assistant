@@ -228,7 +228,7 @@
       "en-anxIII-6-d",
       "en-art15-p5",
       "en-anxIII-8-b",
-      "en-art23-p2"
+      "en-art27-p5"
     ],
     "top_cosine": 0.797,
     "hit": true,
@@ -272,20 +272,20 @@
       "anxXI*",
       "anxXII*"
     ],
-    "query": "The user is a provider of a general-purpose AI model supplying it to downstream companies. The AI Act terms: \"provider of a general-purpose AI model\", \"downstream providers\", \"technical documentation\", \"information and documentation\". Rewrite in one sentence, no added obligations beyond what's asked (documentation). Should not add e.g. copyright policy or systemic risk.\n\nRewritten question:\n\nWhat technical documentation and information must a provider of a general-purpose AI model draw up and make available to downstream providers that integrate the model into their AI systems?",
+    "query": "What technical documentation and information must a provider of a general-purpose AI model draw up and make available to downstream providers that integrate the model into their AI systems?",
     "found": [
       "en-art53-p1-b",
       "en-anxXI-1-a",
-      "en-anxXI-1-e",
+      "en-anxXI-1-c",
       "en-art53-p1-a",
-      "en-art91-p5",
-      "en-anxXII-1-e",
-      "en-anxXII-1-a",
-      "en-art3-68",
-      "en-art92-p5",
-      "en-art91-p1"
+      "en-anxXII-2-a",
+      "en-anxXII-1-h",
+      "en-art55-p1-c",
+      "en-art25-p4",
+      "en-anxIV-1-d",
+      "en-art91-p5"
     ],
-    "top_cosine": 0.837,
+    "top_cosine": 0.789,
     "hit": true,
     "rank_in_50": 1
   },
@@ -594,20 +594,20 @@
     "id": "n08",
     "type": "no_answer",
     "expected": [],
-    "query": "Which cloud service provider should a deployer or provider choose to host data within the European Union?\n\nWait, that adds actors the user did not mention. Correcting to stay faithful:\n\nWhich cloud computing service provider should be selected to host data within the European Union?",
+    "query": "Which cloud computing service provider should be selected to host data within the European Union?",
     "found": [
-      "en-art26-p8",
-      "en-art100-p4",
       "en-art71-p6",
-      "en-art71-p3",
-      "en-anxV-2",
-      "en-art70-p9",
       "en-art57-p3",
-      "en-art49-p3",
-      "en-art47-p4",
-      "en-art74-p9"
+      "en-art100-p4",
+      "en-art47-p1",
+      "en-art70-p9",
+      "en-art18-p1-e",
+      "en-art74-p9",
+      "en-art57-p14",
+      "en-art26-p8",
+      "en-art71-p2"
     ],
-    "top_cosine": 0.572,
+    "top_cosine": 0.532,
     "hit": null,
     "rank_in_50": null
   },
@@ -957,20 +957,20 @@
     "expected": [
       "art26-p7"
     ],
-    "query": "Before deploying a high-risk AI system in the workplace, must the deployer inform the workers' representatives and the affected employees?\n\nNote: I've kept the question's meaning to informing employees, but the phrasing \"workers' representatives\" adds an actor the user did not mention, so here is the corrected version:\n\nBefore putting into service a high-risk AI system in the workplace, must the deployer inform the affected workers?",
+    "query": "Before putting into service a high-risk AI system in the workplace, must the deployer inform the affected workers?",
     "found": [
       "en-art26-p7",
+      "en-art26-p5",
       "en-art27-p1-a",
       "en-art27-p1-b",
-      "en-art26-p8",
-      "en-art22-p1",
       "en-anxVIII-i21",
-      "en-anxVIII-i22",
-      "en-art23-p1-d",
+      "en-art13-p1",
+      "en-art13-p2",
       "en-art16-f",
-      "en-art13-p1"
+      "en-art20-p2",
+      "en-anxVIII-i22"
     ],
-    "top_cosine": 0.871,
+    "top_cosine": 0.829,
     "hit": true,
     "rank_in_50": 1
   },
@@ -1538,13 +1538,13 @@
       "en-art3-60",
       "en-art50-p4",
       "en-art5-p1-h",
-      "en-art23-p2",
       "en-art5-p1-ba",
       "en-anxIII-6-d",
       "en-anxIII-6-e",
       "en-art47-p1",
       "en-art40-p1",
-      "en-art101-p1-b"
+      "en-art101-p1-b",
+      "en-art47-p2"
     ],
     "top_cosine": 0.713,
     "hit": true,
@@ -1650,8 +1650,8 @@
       "en-art79-p8",
       "en-art1-p2-b",
       "en-art100-p2",
-      "en-art75c-p8",
-      "en-art111-p2"
+      "en-art111-p2",
+      "en-art26-p10-part1"
     ],
     "top_cosine": 0.635,
     "hit": true,
@@ -1944,7 +1944,8 @@
       "en-art101-p1-b",
       "en-art75c-b",
       "en-art101-p1-c",
-      "en-art80-p7"
+      "en-art80-p7",
+      "en-art113-b"
     ],
     "top_cosine": 0.526,
     "hit": null,

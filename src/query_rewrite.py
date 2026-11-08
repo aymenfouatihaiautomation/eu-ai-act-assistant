@@ -12,6 +12,7 @@ gratuit, et le résultat est identique d'une fois sur l'autre.
 import hashlib
 import os
 import json
+import re
 from pathlib import Path
 
 from llm import PROVIDER, PROVIDERS, chat
@@ -50,24 +51,11 @@ PROMPTS = {
         "Do NOT answer the question. Do NOT add article or annex numbers. "
         "Output only the rewritten question, in one sentence."
     ),
-    # v3 (08/11) : deux défauts de la v2, mesurés avec diagnose_search.py :
-    #  - « Regulation (EU) 2024/1689 » était recopié dans la requête ; BGE-M3 remontait alors les
-    #    articles 102 à 110 (qui citent ce numéro) devant l'article 5. Ici : pas de numéro, on décrit le domaine.
-    #  - Haiku recopiait parfois ses consignes / ses brouillons (« Wait, that adds actors... »).
-    #    Ici : consigne explicite + clean_rewrite() en filet de sécurité.
-    "rewrite_v3": (
-        "You prepare questions for a search engine over the text of the EU Artificial Intelligence Act. "
-        "Translate the user's question into English and rephrase it "
-        "the way the AI Act itself would describe this specific situation, using the regulation's "
-        "own legal term for the practice, system or actor the user is asking about. "
-        "Describe ONLY what the question is about: do not add any other practice, system, actor "
-        "or obligation that the user did not mention. Keep exactly the same meaning. "
-        "Do NOT answer the question. Do NOT add article or annex numbers. "
-        "Output ONLY the rewritten question, in one sentence: no notes, no explanations, "
-        "no reasoning, no mention of these instructions."
-    ),
 }
-CLEANED_MODES = {"rewrite_v3"}   # les prompts dont la sortie passe par clean_rewrite()
+# v3 (08/11) ABANDONNÉ : un prompt sans « Regulation (EU) 2024/1689 » et avec « no notes, no reasoning »
+# a donné un recall de 41/48 contre 44/48 pour rewrite_v2 (q13 en, q14 en, q01 ar perdues, aucune gagnée).
+# Détail : commit fa7333a. À la place, on garde le prompt rewrite_v2 et on NETTOIE sa sortie (ci-dessous).
+CLEANED_MODES = {"rewrite_v2"}   # les prompts dont la sortie passe par clean_rewrite() + strip_regulation_number()
 # Pourquoi interdire les numéros d'articles : sinon le LLM utiliserait sa MÉMOIRE de la loi
 # pour deviner la réponse (et il peut se tromper). On veut mesurer la recherche, pas sa mémoire.
 
@@ -104,8 +92,22 @@ def clean_rewrite(text, fallback):
     return fallback
 
 
+REGULATION_NUMBER = re.compile(r"(?:the\s+)?Regulation \(EU\) 2024/1689", re.IGNORECASE)
+
+
+def strip_regulation_number(text):
+    """« under Regulation (EU) 2024/1689 » → « under the AI Act ».
+
+    Le LLM recopie parfois ce numéro (il est dans le prompt rewrite_v2). Or les articles 102 à 110
+    le citent partout : BGE-M3 les remontait devant l'article 5 (mesuré : 8 des 10 sources pour
+    « Which AI practices are prohibited under the AI Act? »). Avec « the AI Act » : 1 sur 10."""
+    return REGULATION_NUMBER.sub("the AI Act", text)
+
+
 def _finish(mode, raw, question):
-    return clean_rewrite(raw, question) if mode in CLEANED_MODES else raw.strip()
+    if mode in CLEANED_MODES:
+        return strip_regulation_number(clean_rewrite(raw, question))
+    return raw.strip()
 
 
 def transform(questions, mode):

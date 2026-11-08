@@ -4,7 +4,7 @@
 
 Les 4 textes « fuite » sont de vraies réponses de Haiku (rewrite_v2, data/eval/llm_cache.json).
 """
-from query_rewrite import PROMPTS, clean_rewrite
+from query_rewrite import CLEANED_MODES, PROMPTS, _finish, clean_rewrite, strip_regulation_number
 
 FALLBACK = "QUESTION D'ORIGINE"
 
@@ -53,10 +53,23 @@ tests = [
      lambda: clean_rewrite("  \n ", FALLBACK) == FALLBACK),
     ("point d'interrogation arabe reconnu",
      lambda: clean_rewrite("Note.\n\nما هي الممارسات المحظورة؟", FALLBACK) == "ما هي الممارسات المحظورة؟"),
-    ("rewrite_v3 ne contient plus le numéro du règlement",
-     lambda: "2024/1689" not in PROMPTS["rewrite_v3"] and "Regulation (EU)" not in PROMPTS["rewrite_v3"]),
     ("rewrite_v2 est resté identique (son cache reste valable)",
      lambda: "Regulation (EU) 2024/1689" in PROMPTS["rewrite_v2"]),
+    ("rewrite_v3 abandonné : plus dans PROMPTS",
+     lambda: "rewrite_v3" not in PROMPTS and "rewrite_v2" in CLEANED_MODES),
+    ("numéro du règlement : remplacé par « the AI Act »",
+     lambda: strip_regulation_number("Which practices are prohibited under Regulation (EU) 2024/1689?")
+     == "Which practices are prohibited under the AI Act?"),
+    ("numéro du règlement : « the Regulation (EU) ... » sans doublon",
+     lambda: strip_regulation_number("Does the Regulation (EU) 2024/1689 apply?") == "Does the AI Act apply?"),
+    ("numéro absent : texte inchangé",
+     lambda: strip_regulation_number("When do the prohibitions of this Regulation apply?")
+     == "When do the prohibitions of this Regulation apply?"),
+    ("nettoyage complet (fuite + numéro) via _finish",
+     lambda: _finish("rewrite_v2", "Draft.\n\nWhat is banned under Regulation (EU) 2024/1689?", FALLBACK)
+     == "What is banned under the AI Act?"),
+    ("autres modes (translate, rewrite) : non touchés",
+     lambda: _finish("translate", "  Line one.\nLine two  ", FALLBACK) == "Line one.\nLine two"),
 ]
 
 passed = 0
