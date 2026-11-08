@@ -50,7 +50,24 @@ PROMPTS = {
         "Do NOT answer the question. Do NOT add article or annex numbers. "
         "Output only the rewritten question, in one sentence."
     ),
+    # v3 (08/11) : deux défauts de la v2, mesurés avec diagnose_search.py :
+    #  - « Regulation (EU) 2024/1689 » était recopié dans la requête ; BGE-M3 remontait alors les
+    #    articles 102 à 110 (qui citent ce numéro) devant l'article 5. Ici : pas de numéro, on décrit le domaine.
+    #  - Haiku recopiait parfois ses consignes / ses brouillons (« Wait, that adds actors... »).
+    #    Ici : consigne explicite + clean_rewrite() en filet de sécurité.
+    "rewrite_v3": (
+        "You prepare questions for a search engine over the text of the EU Artificial Intelligence Act. "
+        "Translate the user's question into English and rephrase it "
+        "the way the AI Act itself would describe this specific situation, using the regulation's "
+        "own legal term for the practice, system or actor the user is asking about. "
+        "Describe ONLY what the question is about: do not add any other practice, system, actor "
+        "or obligation that the user did not mention. Keep exactly the same meaning. "
+        "Do NOT answer the question. Do NOT add article or annex numbers. "
+        "Output ONLY the rewritten question, in one sentence: no notes, no explanations, "
+        "no reasoning, no mention of these instructions."
+    ),
 }
+CLEANED_MODES = {"rewrite_v3"}   # les prompts dont la sortie passe par clean_rewrite()
 # Pourquoi interdire les numéros d'articles : sinon le LLM utiliserait sa MÉMOIRE de la loi
 # pour deviner la réponse (et il peut se tromper). On veut mesurer la recherche, pas sa mémoire.
 
@@ -66,10 +83,36 @@ def _save_cache(cache):
     CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def clean_rewrite(text, fallback):
+    """Filet de sécurité : ne garde que la question réécrite.
+
+    Haiku écrit parfois un brouillon avant la vraie question (« Wait, that adds actors... »,
+    « Note: I've kept... », « Rewritten question: »). Constat sur les 84 réponses de rewrite_v2 :
+    dans les 4 cas, la vraie question est la DERNIÈRE ligne et elle finit par « ? ».
+      - une seule ligne                      → on la garde telle quelle
+      - plusieurs lignes                     → la dernière qui finit par « ? » (ou « ؟ »)
+      - plusieurs lignes, aucune question    → `fallback` (la question de l'utilisateur)
+    """
+    lines = [line.strip() for line in text.strip().splitlines() if line.strip()]
+    if not lines:
+        return fallback
+    if len(lines) == 1:
+        return lines[0]
+    for line in reversed(lines):
+        if line.endswith(("?", "؟")):
+            return line
+    return fallback
+
+
+def _finish(mode, raw, question):
+    return clean_rewrite(raw, question) if mode in CLEANED_MODES else raw.strip()
+
+
 def transform(questions, mode):
-    """Transforme une liste de questions ("translate" ou "rewrite"), en utilisant le cache."""
+    """Transforme une liste de questions (voir PROMPTS), en utilisant le cache.
+    Le cache garde la réponse BRUTE du LLM ; le nettoyage (clean_rewrite) se fait à la lecture."""
     if not USE_CACHE:
-        return [chat(PROMPTS[mode], q, max_tokens=1000).strip() for q in questions]
+        return [_finish(mode, chat(PROMPTS[mode], q, max_tokens=1000), q) for q in questions]
     cache = _load_cache()
     model = PROVIDERS[PROVIDER]["model"]
     results = []
@@ -82,5 +125,5 @@ def transform(questions, mode):
             print(f"   {mode} {i}/{len(questions)}...", end="\r")
             cache[key] = chat(PROMPTS[mode], question, max_tokens=1000).strip()
             _save_cache(cache)                 # on enregistre après CHAQUE appel : une coupure
-        results.append(cache[key])             # au 70e appel ne fait pas perdre les 69 premiers
+        results.append(_finish(mode, cache[key], question))   # au 70e appel ne fait pas perdre les 69 premiers
     return results
