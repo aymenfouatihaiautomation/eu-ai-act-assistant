@@ -27,7 +27,7 @@ from pathlib import Path
 
 from diversity import expand_siblings
 from embeddings import encode, get_collection, load_model
-from evaluate import (LANGS, POOL, QUESTIONS, coverage, diversify, is_hit, print_report,
+from evaluate import (LANGS, POOL, QUESTIONS, coverage, diversify, group_coverage, is_hit, print_report,
                       rank_in_pool, recall)
 from llm import PROVIDER, PROVIDERS
 from query_rewrite import PROMPTS, transform
@@ -83,26 +83,37 @@ def finalize(ids, all_ids):
     return ids + expand_siblings(ids, all_ids) if all_ids is not None else ids
 
 
-def list_coverage(args, model, collection, strategies, names, all_ids):
-    """Questions qui demandent une LISTE : on mesure combien des fiches attendues sont dans les k sources."""
-    if not LIST_QUESTIONS.exists():
+def list_score(found_ids, q):
+    """(trouvés, total) pour une question « liste » : par domaine si "expected_groups" existe, sinon par fiche."""
+    if q.get("expected_groups"):
+        groups = q["expected_groups"]
+        return round(group_coverage(found_ids, groups) * len(groups)), len(groups)
+    return round(coverage(found_ids, q["expected"]) * len(q["expected"])), len(q["expected"])
+
+
+def list_coverage(args, model, collection, strategies, names, all_ids, items=None):
+    """Questions qui demandent une LISTE : on mesure combien des fiches attendues sont dans les k sources.
+    items=None → data/eval/list_questions.json (comportement par défaut)."""
+    if items is None:
+        if not LIST_QUESTIONS.exists():
+            return
+        items = json.loads(LIST_QUESTIONS.read_text(encoding="utf-8"))
+    if not items:
         return
-    items = json.loads(LIST_QUESTIONS.read_text(encoding="utf-8"))
     table = {s: {} for s in strategies}
     for lang in LANGS:
         _, pools = build_pools(collection, model, args.model, [q[f"question_{lang}"] for q in items], names)
         for n, q in enumerate(items):
             for strategy in strategies:
                 ids, _ = diversify(*strategy_pool(strategy, pools, n), args.k)
-                table[strategy][(q["id"], lang)] = coverage(finalize(ids, all_ids), q["expected"])
+                table[strategy][(q["id"], lang)] = list_score(finalize(ids, all_ids), q)
 
     extra_note = " + frères ajoutés" if all_ids is not None else ""
     print(f"\n=== COUVERTURE DES LISTES (fiches attendues présentes dans les {args.k} sources{extra_note}) ===")
     print(f"  {'stratégie':<11} {'question':<9} " + " ".join(f"{l:>6}" for l in LANGS))
     for strategy in strategies:
         for q in items:
-            cells = [f"{round(table[strategy][(q['id'], l)] * len(q['expected']))}/{len(q['expected'])}"
-                     for l in LANGS]
+            cells = ["{}/{}".format(*table[strategy][(q["id"], l)]) for l in LANGS]
             print(f"  {strategy:<11} {q['id']:<9} " + " ".join(f"{c:>6}" for c in cells))
 
 
@@ -114,14 +125,21 @@ def main():
                         help="par défaut : " + " ".join(DEFAULT_STRATEGIES))
     parser.add_argument("--expand", action="store_true",
                         help="ajoute les frères d'une liste coupée par diversify() (voir diversity.py)")
+    parser.add_argument("--questions", default=None,
+                        help="autre fichier de questions (ex. data/eval/heldout_questions.json) ; "
+                             "ses questions de type « list » remplacent list_questions.json")
     args = parser.parse_args()
     strategies = args.strategies or DEFAULT_STRATEGIES
     names = needed_texts(strategies)
     # Sans --strategies, on garde les noms de fichiers d'origine ; avec, on ajoute le modèle LLM.
     suffix = "" if args.strategies is None else "_" + PROVIDERS[PROVIDER]["model"].split("/")[-1]
     suffix += "_expand" if args.expand else ""
+    # --questions data/eval/heldout_questions.json → suffixe "_heldout" : les résultats de référence ne sont pas écrasés.
+    questions_file = Path(args.questions) if args.questions else QUESTIONS
+    if args.questions:
+        suffix += "_" + questions_file.stem.replace("_questions", "")
 
-    questions = json.loads(QUESTIONS.read_text(encoding="utf-8"))
+    questions = json.loads(questions_file.read_text(encoding="utf-8"))
     model = load_model(args.model)
     collection = get_collection(args.model)
     all_ids = collection.get(include=[])["ids"] if args.expand else None   # None = pas d'ajout
@@ -188,7 +206,8 @@ def main():
             lost = [r for r in rows[strategy] if r["extra"] and r["hit"] is False]
             print(f"  {'':<11} (questions ratées malgré l'ajout : {len(lost)})")
 
-    list_coverage(args, model, collection, strategies, names, all_ids)
+    list_items = [q for q in questions if q["type"] == "list"] if args.questions else None
+    list_coverage(args, model, collection, strategies, names, all_ids, list_items)
 
 
 if __name__ == "__main__":

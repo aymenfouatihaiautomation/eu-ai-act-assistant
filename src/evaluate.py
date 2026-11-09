@@ -116,6 +116,18 @@ def coverage(found_ids, expected):
     return sum(e in found_legal for e in expected) / len(expected)
 
 
+def group_coverage(found_ids, groups):
+    """Part des GROUPES (ex. les 8 domaines de l'annexe III) dont au moins une fiche est présente.
+    Une fiche appartient au groupe "anxIII-4" si elle s'appelle "anxIII-4" ou commence par "anxIII-4-".
+        group_coverage(["en-anxIII-4-a", "en-anxIII-2"], ["anxIII-2", "anxIII-4", "anxIII-5"]) → 0.667
+    Sert aux questions « liste » dont la réponse est une liste de domaines, pas de fiches précises."""
+    if not groups:
+        return 0.0
+    found_legal = {legal_id(i) for i in found_ids}
+    covered = [g for g in groups if any(l == g or l.startswith(g + "-") for l in found_legal)]
+    return len(covered) / len(groups)
+
+
 def evaluate_model(name, questions, k):
     """Renvoie {"naive": [lignes], "diverse": [lignes]}."""
     print(f"\n=== {name} : chargement du modèle ===")

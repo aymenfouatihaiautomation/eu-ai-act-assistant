@@ -4,7 +4,7 @@
 
 Chaque ligne affiche ✅ ou ❌. Quand tout est ✅, lance la vraie évaluation.
 """
-from evaluate import coverage, is_hit, legal_id, recall
+from evaluate import coverage, group_coverage, is_hit, legal_id, recall
 
 tests = [
     ("legal_id : langue retirée",          lambda: legal_id("en-art5-p1-f") == "art5-p1-f"),
@@ -21,6 +21,13 @@ tests = [
     ("coverage : 2 attendus sur 3",        lambda: abs(coverage(["en-art5-p1-a", "fr-art5-p1-b"], ["art5-p1-a", "art5-p1-b", "art5-p1-c"]) - 2 / 3) < 1e-9),
     ("coverage : une fiche en 2 langues compte 1 fois", lambda: coverage(["en-art5-p1-a", "fr-art5-p1-a"], ["art5-p1-a", "art5-p1-b"]) == 0.5),
     ("coverage : rien attendu",            lambda: coverage(["en-art5-p1-a"], []) == 0.0),
+    ("group_coverage : 2 domaines sur 3 (point et domaine sans point)",
+     lambda: abs(group_coverage(["en-anxIII-4-a", "fr-anxIII-2"], ["anxIII-2", "anxIII-4", "anxIII-5"]) - 2 / 3) < 1e-9),
+    ("group_coverage : 2 points du même domaine comptent 1 fois",
+     lambda: group_coverage(["en-anxIII-6-d", "en-anxIII-6-e"], ["anxIII-6", "anxIII-7"]) == 0.5),
+    ("group_coverage : « anxIII-1 » n'attrape pas « anxIII-10 »",
+     lambda: group_coverage(["en-anxIII-10-a"], ["anxIII-1"]) == 0.0),
+    ("group_coverage : aucun groupe",      lambda: group_coverage(["en-anxIII-1-a"], []) == 0.0),
 ]
 
 passed = 0

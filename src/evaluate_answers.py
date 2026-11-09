@@ -40,6 +40,8 @@ def matches(legal, expected):
         return legal == base or legal.startswith(base + "-")
     return any(one(e) for e in expected)
 PROMPT = "v2"   # remplacé par l'option --prompt
+QUESTIONS_FILE = QUESTIONS   # remplacé par l'option --questions
+SUFFIX = ""                  # "_heldout" avec --questions data/eval/heldout_questions.json
 
 
 def cached_chat(user_message, system):
@@ -61,7 +63,7 @@ def untagged_sentences(text):
 
 
 def run():
-    questions = json.loads(QUESTIONS.read_text(encoding="utf-8"))
+    questions = json.loads(QUESTIONS_FILE.read_text(encoding="utf-8"))
     rows = []
     total = len(questions) * len(LANGS)
     n = 0
@@ -96,7 +98,7 @@ def run():
 
 def out_file():
     model = PROVIDERS[PROVIDER]["model"].split("/")[-1]
-    return Path(f"data/eval/results_answers_{model}_{PROMPT}.json")
+    return Path(f"data/eval/results_answers_{model}_{PROMPT}{SUFFIX}.json")
 
 
 def pct(part, whole):
@@ -151,5 +153,11 @@ def report(rows):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--prompt", default="v2", choices=sorted(PROMPTS))
-    PROMPT = parser.parse_args().prompt
+    parser.add_argument("--questions", default=None,
+                        help="autre fichier de questions (ex. data/eval/heldout_questions.json)")
+    args = parser.parse_args()
+    PROMPT = args.prompt
+    if args.questions:   # résultats séparés (suffixe "_heldout") : la référence n'est pas écrasée
+        QUESTIONS_FILE = Path(args.questions)
+        SUFFIX = "_" + QUESTIONS_FILE.stem.replace("_questions", "")
     report(run())
