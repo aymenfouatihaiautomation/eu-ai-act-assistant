@@ -1,0 +1,17 @@
+# Test final (held-out) — écrit le 09/11/2026 — à évaluer UNE SEULE FOIS, sans modifier le code ensuite.
+# Format : type | question (FR)
+situation | Notre centre d'appels veut analyser la voix des clients pour savoir s'ils sont en colère. Est-ce autorisé ?
+situation | Un hôpital utilise une IA pour décider quels patients des urgences doivent être pris en charge en premier. Quel est le niveau de risque ?
+situation | Notre compagnie d'assurance veut fixer le prix des assurances santé avec un modèle d'IA. Quelles règles s'appliquent ?
+situation | La police peut-elle utiliser la reconnaissance faciale en direct dans la rue pour retrouver un enfant disparu ?
+situation | Notre agence crée des publicités avec des visages humains entièrement générés par IA. Devons-nous le signaler au public ?
+obligation | Pendant combien de temps l'utilisateur d'un système d'IA à haut risque doit-il conserver les journaux générés automatiquement ?
+obligation | Nos salariés utilisent des outils d'IA tous les jours. L'entreprise est-elle obligée de les former ?
+obligation | Une entreprise qui génère des images avec l'IA doit-elle les marquer d'une façon ou d'une autre ?
+definition | Qu'est-ce qu'un modèle d'IA à usage général selon le règlement ?
+definition | Qu'entend-on par système de reconnaissance des émotions ?
+date | À partir de quand les modèles d'IA à usage général déjà sur le marché avant août 2025 doivent-ils être en conformité ?
+date | À partir de quand les obligations s'appliquent-elles à une IA qui sert de composant de sécurité dans une machine ou un dispositif médical ?
+liste | Quels sont tous les domaines dans lesquels un système d'IA est considéré comme à haut risque ?
+hors_sujet | Combien de temps peut-on conserver les données personnelles des candidats après un recrutement ?
+hors_sujet | Notre IA a causé un dommage à un client : qui est responsable civilement, l'éditeur du logiciel ou nous ?
