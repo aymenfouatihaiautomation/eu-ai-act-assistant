@@ -27,6 +27,7 @@ Lancement, depuis la racine du projet :
     python src/dates.py 2027-01-15 → ce qui s'applique (ou pas encore) à cette date
 """
 import json
+import re
 import sys
 from datetime import date
 from pathlib import Path
@@ -159,6 +160,44 @@ DATES = [
         "evidence": {"en": "31 December 2030", "fr": "31 décembre 2030"},
     },
 ]
+
+
+# ---------------------------------------------------------------- Pour l'onglet Ask (10/11)
+# Problème : « À partir de quand… ? » cherche le SUJET (ex. images intimes), jamais l'article 113
+# qui porte la date. Solution : pour une question de date, on ajoute aux sources les fiches de
+# loi que ce tableau désigne (DATES[*]["chunk"]) — des fiches déjà prouvées par check().
+
+# Question de date = la question RÉÉCRITE (toujours en anglais) commence par « When… », ou demande
+# « from what date », « begin to apply »… « when » au milieu d'une phrase ne compte pas : il relie
+# souvent deux propositions (« … a prohibited practice when carried out by a city? »).
+DATE_QUESTION = re.compile(
+    r"^\s*(when|since when|from when|as of when|until when|by when)\b"
+    r"|\b(from|as of|by|on) (what|which) date\b"
+    r"|\bwhat (is the )?date\b"
+    r"|\b(start|begin)s? to apply\b"
+    r"|\bapplicable from\b",
+    re.IGNORECASE,
+)
+DATE_CHUNKS = sorted({e["chunk"] for e in DATES})   # art111-p1…p4, art113-a…d
+
+
+def is_date_question(text):
+    """Vrai si la question (réécrite, en anglais) demande une date."""
+    return bool(DATE_QUESTION.search(text or ""))
+
+
+def _legal(chunk_id):
+    """'en-art113-a' → 'art113-a' ; 'en-art43-p3-part2' → 'art43-p3' (comme evaluate.legal_id)."""
+    return re.sub(r"-part\d+$", "", chunk_id.split("-", 1)[1])
+
+
+def date_source_ids(kept_ids, all_ids):
+    """Les fiches du tableau à AJOUTER aux sources : en anglais (retrieve.search les convertit ensuite
+    dans la langue de l'utilisateur), sans celles déjà gardées, dans l'ordre du texte."""
+    already = {_legal(i) for i in kept_ids}
+    wanted = set(DATE_CHUNKS) - already
+    return sorted((i for i in all_ids if i.startswith("en-") and _legal(i) in wanted),
+                  key=lambda i: (_legal(i), i))
 
 
 def load_chunks():

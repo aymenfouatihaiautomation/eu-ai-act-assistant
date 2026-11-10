@@ -25,6 +25,7 @@ import argparse
 import json
 from pathlib import Path
 
+from dates import date_source_ids, is_date_question
 from diversity import expand_siblings
 from embeddings import encode, get_collection, load_model
 from evaluate import (LANGS, POOL, QUESTIONS, coverage, diversify, group_coverage, is_hit, print_report,
@@ -128,12 +129,15 @@ def main():
     parser.add_argument("--questions", default=None,
                         help="autre fichier de questions (ex. data/eval/heldout_questions.json) ; "
                              "ses questions de type « list » remplacent list_questions.json")
+    parser.add_argument("--dates", action="store_true",
+                        help="question de date → ajoute les fiches des art. 111 et 113 du tableau vérifié (voir dates.py)")
     args = parser.parse_args()
     strategies = args.strategies or DEFAULT_STRATEGIES
     names = needed_texts(strategies)
     # Sans --strategies, on garde les noms de fichiers d'origine ; avec, on ajoute le modèle LLM.
     suffix = "" if args.strategies is None else "_" + PROVIDERS[PROVIDER]["model"].split("/")[-1]
     suffix += "_expand" if args.expand else ""
+    suffix += "_dates" if args.dates else ""
     # --questions data/eval/heldout_questions.json → suffixe "_heldout" : les résultats de référence ne sont pas écrasés.
     questions_file = Path(args.questions) if args.questions else QUESTIONS
     if args.questions:
@@ -143,6 +147,7 @@ def main():
     model = load_model(args.model)
     collection = get_collection(args.model)
     all_ids = collection.get(include=[])["ids"] if args.expand else None   # None = pas d'ajout
+    index_ids = collection.get(include=[])["ids"] if args.dates else None
     rows = {s: [] for s in strategies}
     examples = []
 
@@ -160,16 +165,24 @@ def main():
                 ids, dist = diversify(pool_ids, pool_dist, args.k)
                 n_base = len(ids)
                 ids = finalize(ids, all_ids)
-                rows[strategy].append({
-                    "extra": len(ids) - n_base,
+                n_expanded = len(ids)
+                query = texts[FUSION_WITH if strategy == "fusion" else strategy][n]
+                # --dates : même étape que retrieve.search(), APRÈS les frères (les 10 places ne changent pas)
+                if args.dates and is_date_question(query):
+                    ids = ids + date_source_ids(ids, index_ids)
+                row = {
+                    "extra": n_expanded - n_base,
                     "model": args.model, "strategy": strategy, "lang": lang,
                     "id": q["id"], "type": q["type"], "expected": q["expected"],
-                    "query": texts[FUSION_WITH if strategy == "fusion" else strategy][n],
+                    "query": query,
                     "found": ids,
                     "top_cosine": round(1 - dist[0], 3),
                     "hit": is_hit(ids, q["expected"]) if q["expected"] else None,
                     "rank_in_50": rank_in_pool(pool_ids, q["expected"]) if q["expected"] else None,
-                })
+                }
+                if args.dates:   # champ ajouté seulement avec --dates : le fichier par défaut garde son format
+                    row["date_extra"] = len(ids) - n_expanded
+                rows[strategy].append(row)
 
     if examples:
         print("\n=== Exemples : q02 (employés stressés) et q06 (base de visages) ===")
@@ -205,6 +218,17 @@ def main():
                   f"+{sum(fired)} fiches au total, max +{max(extras)}")
             lost = [r for r in rows[strategy] if r["extra"] and r["hit"] is False]
             print(f"  {'':<11} (questions ratées malgré l'ajout : {len(lost)})")
+
+    if args.dates:
+        print("\n=== FICHES DE DATES AJOUTÉES (tableau vérifié de dates.py) ===")
+        for strategy in strategies:
+            fired = [r for r in rows[strategy] if r["date_extra"]]
+            print(f"  {strategy:<11} déclenché sur {len(fired)}/{len(rows[strategy])} recherches ; "
+                  f"+{sum(r['date_extra'] for r in fired)} fiches au total")
+            names_fired = [f"{r['id']}[{r['lang']}]" for r in fired]
+            no_answer = [f"{r['id']}[{r['lang']}]" for r in fired if r["hit"] is None]
+            print(f"  {'':<11} questions : {' '.join(names_fired) or 'aucune'}")
+            print(f"  {'':<11} dont questions sans réponse : {' '.join(no_answer) or 'aucune'}")
 
     list_items = [q for q in questions if q["type"] == "list"] if args.questions else None
     list_coverage(args, model, collection, strategies, names, all_ids, list_items)
