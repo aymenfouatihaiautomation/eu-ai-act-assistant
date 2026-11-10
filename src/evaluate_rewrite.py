@@ -85,11 +85,14 @@ def finalize(ids, all_ids):
 
 
 def list_score(found_ids, q):
-    """(trouvés, total) pour une question « liste » : par domaine si "expected_groups" existe, sinon par fiche."""
+    """Couverture d'une question « liste », à afficher : « 8/10 » (fiches attendues trouvées),
+    suivi de « (3/3 dom.) » si la question a aussi des "expected_groups" (ex. domaines de l'annexe III)."""
+    n = len(q["expected"])
+    text = f"{round(coverage(found_ids, q['expected']) * n)}/{n}"
     if q.get("expected_groups"):
         groups = q["expected_groups"]
-        return round(group_coverage(found_ids, groups) * len(groups)), len(groups)
-    return round(coverage(found_ids, q["expected"]) * len(q["expected"])), len(q["expected"])
+        text += f" ({round(group_coverage(found_ids, groups) * len(groups))}/{len(groups)} dom.)"
+    return text
 
 
 def list_coverage(args, model, collection, strategies, names, all_ids, items=None):
@@ -111,11 +114,11 @@ def list_coverage(args, model, collection, strategies, names, all_ids, items=Non
 
     extra_note = " + frères ajoutés" if all_ids is not None else ""
     print(f"\n=== COUVERTURE DES LISTES (fiches attendues présentes dans les {args.k} sources{extra_note}) ===")
-    print(f"  {'stratégie':<11} {'question':<9} " + " ".join(f"{l:>6}" for l in LANGS))
+    print(f"  {'stratégie':<11} {'question':<9} " + " ".join(f"{l:>16}" for l in LANGS))
     for strategy in strategies:
         for q in items:
-            cells = ["{}/{}".format(*table[strategy][(q["id"], l)]) for l in LANGS]
-            print(f"  {strategy:<11} {q['id']:<9} " + " ".join(f"{c:>6}" for c in cells))
+            cells = [table[strategy][(q["id"], l)] for l in LANGS]
+            print(f"  {strategy:<11} {q['id']:<9} " + " ".join(f"{c:>16}" for c in cells))
 
 
 def main():

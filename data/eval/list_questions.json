@@ -3,11 +3,43 @@
     "id": "l01",
     "type": "list",
     "expected": [
-      "art5-p1-a", "art5-p1-b", "art5-p1-ba", "art5-p1-bb", "art5-p1-c",
-      "art5-p1-d", "art5-p1-e", "art5-p1-f", "art5-p1-g", "art5-p1-h"
+      "art5-p1-a",
+      "art5-p1-b",
+      "art5-p1-ba",
+      "art5-p1-bb",
+      "art5-p1-c",
+      "art5-p1-d",
+      "art5-p1-e",
+      "art5-p1-f",
+      "art5-p1-g",
+      "art5-p1-h"
     ],
     "question_en": "Which AI practices are prohibited under the AI Act?",
     "question_fr": "Quelles pratiques d'IA sont interdites par l'AI Act ?",
     "question_ar": "ما هي ممارسات الذكاء الاصطناعي المحظورة بموجب قانون الذكاء الاصطناعي؟"
+  },
+  {
+    "id": "l02",
+    "type": "list",
+    "expected": [
+      "anxIII-3-a",
+      "anxIII-3-b",
+      "anxIII-3-c",
+      "anxIII-3-d",
+      "anxIII-4-a",
+      "anxIII-4-b",
+      "anxIII-5-a",
+      "anxIII-5-b",
+      "anxIII-5-c",
+      "anxIII-5-d"
+    ],
+    "expected_groups": [
+      "anxIII-3",
+      "anxIII-4",
+      "anxIII-5"
+    ],
+    "question_en": "In education, employment and access to essential services, which uses of AI are classified as high-risk?",
+    "question_fr": "Dans l'éducation, l'emploi et l'accès aux services essentiels, quels usages de l'IA sont classés à haut risque ?",
+    "question_ar": "في مجالات التعليم والتوظيف والحصول على الخدمات الأساسية، ما استخدامات الذكاء الاصطناعي المصنفة عالية المخاطر؟"
   }
 ]
