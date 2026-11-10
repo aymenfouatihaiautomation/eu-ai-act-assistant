@@ -9,6 +9,7 @@ Utilisé par answer.py (et plus tard par l'interface web).
 import re
 import threading
 
+from dates import date_source_ids, is_date_question
 from diversity import expand_siblings
 from embeddings import encode, get_collection, load_model
 from evaluate import POOL, diversify, legal_id
@@ -91,6 +92,10 @@ def search(question):
     # autres points APRÈS les 10 fiches. Elles passent ensuite par le même traitement que les autres
     # (version dans la langue de l'utilisateur, libellé de citation).
     ids = ids + expand_siblings(ids, _all_ids)
+    # Question de date (« When… ? », « From what date… ? ») : la recherche trouve le SUJET, pas l'article
+    # qui porte la date. On ajoute les fiches des art. 111 et 113 désignées par le tableau vérifié de dates.py.
+    if is_date_question(rewritten):
+        ids = ids + date_source_ids(ids, _all_ids)
 
     # L'utilisateur francophone lit la version FRANÇAISE officielle de la fiche ;
     # l'arabe n'existe pas au Journal officiel : on donne l'anglais.

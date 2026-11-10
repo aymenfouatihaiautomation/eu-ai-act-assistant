@@ -468,10 +468,15 @@
       "art5-p1-d",
       "art5-p1-e",
       "art5-p1-f",
-      "art5-p1-g"
+      "art5-p1-g",
+      "art111-p1",
+      "art111-p3",
+      "art111-p4",
+      "art113-c",
+      "art113-d"
     ],
     "refused": false,
-    "answer": "The bans on prohibited AI practices in Article 5 apply from 2 February 2025 under Article 113(a) [S5]. Article 5(1), first subparagraph, points (ba) and (bb), and Article 5(1a) and (1b) are an exception and apply from 2 December 2026 [S5]. Point (ba) covers AI systems that generate or manipulate intimate or sexually explicit images of an identifiable person without their consent [S1]. Point (bb) covers AI systems that generate or manipulate material within the meaning of Directive 2011/93/EU, except where a 'without right' defence applies under national law [S13].",
+    "answer": "The bans on prohibited AI practices generally apply from 2 February 2025 [S5]. Under Article 113(a), Chapters I and II apply from that date, except Article 5(1), first subparagraph, points (ba) and (bb), and Article 5(1a) and (1b) [S5]. Those excepted provisions apply from 2 December 2026 [S5]. Article 5(1)(ba) covers realistic intimate or sexually explicit imagery of identifiable persons created without their consent [S1]. Article 5(1)(bb) covers material or performances within the meaning of Directive 2011/93/EU, except where a 'without right' defence applies under national law [S13].",
     "cited": [
       "art5-p1-ba",
       "art113-a",
@@ -504,12 +509,18 @@
       "art80-p2",
       "art42-p3",
       "art25-p1-b",
-      "art1-p2-c"
+      "art1-p2-c",
+      "art111-p1",
+      "art111-p3",
+      "art111-p4",
+      "art113-a",
+      "art113-d"
     ],
     "refused": false,
-    "answer": "Under Article 113(c), Chapter III Sections 1, 2 and 3 apply to AI systems classified as high-risk under Article 6(2) and Annex III from 2 December 2027 [S1]. Article 113(c) sets 2 August 2028 for systems under Article 6(1) and Annex I [S1].",
+    "answer": "Under Article 113(c)(i), the high-risk obligations for AI systems classified under Article 6(2) and Annex III apply from 2 December 2027 [S1]. Chapter III, Sections 1, 2 and 3 apply from that date to these systems, with the exception of Article 6(5) [S1]. Under Article 111(2), systems already placed on the market before that date fall under the Regulation only if they are subject to significant changes in their designs, while high-risk AI systems intended for use by public authorities must comply by 2 August 2030 [S2].",
     "cited": [
-      "art113-c"
+      "art113-c",
+      "art111-p2"
     ],
     "retrieved": true,
     "correct": true,
@@ -581,13 +592,24 @@
       "art5-p1-d",
       "art5-p1-e",
       "art5-p1-f",
-      "art5-p1-g"
+      "art5-p1-g",
+      "art111-p1",
+      "art111-p2",
+      "art111-p3",
+      "art111-p4",
+      "art113-a",
+      "art113-b",
+      "art113-c",
+      "art113-d"
     ],
-    "refused": true,
-    "answer": "The text of the AI Act provided does not answer this question.",
-    "cited": [],
-    "retrieved": false,
-    "correct": false,
+    "refused": false,
+    "answer": "The prohibition applies from 2 December 2026 [S23]. Article 5(1)(ba) prohibits placing on the market, putting into service or using an AI system that generates or manipulates realistic images, videos, audio or similar material of an identifiable natural person's intimate parts, or of that person engaged in sexually explicit activities, without that person's freely-given, specific, informed, unambiguous and explicit consent [S1]. Article 113(a) states that Article 5(1) points (ba) and (bb) apply from 2 December 2026, while the other provisions in Chapters I and II apply from 2 February 2025 [S23].",
+    "cited": [
+      "art5-p1-ba",
+      "art113-a"
+    ],
+    "retrieved": true,
+    "correct": true,
     "invalid_tags": [],
     "phantom_refs": [],
     "mismatched": [],
@@ -644,7 +666,7 @@
       "anxIII-6-d",
       "art62-p1-a",
       "anxIII-6-e",
-      "art50-p1"
+      "art111-p1"
     ],
     "refused": true,
     "answer": "The text of the AI Act provided does not answer this question.",
@@ -856,10 +878,9 @@
       "art100-p3",
       "art75c-p7",
       "art75c-p5-e",
-      "anxX-i3",
       "anxI-text3",
       "art101-p1-a",
-      "anxX-i2",
+      "art101-p1-b",
       "art99-p4-a",
       "art99-p4-b",
       "art99-p4-c",
@@ -1376,13 +1397,15 @@
       "art2-p8",
       "art111-p1",
       "art113-c",
-      "art113-d"
+      "art113-d",
+      "art111-p3",
+      "art111-p4"
     ],
     "refused": false,
-    "answer": "Les interdictions de pratiques en matière d'IA s'appliquent depuis le 2 février 2025 [S1][S3]. Cette date concerne les chapitres I et II du règlement, qui traitent des pratiques interdites [S1]. Toutefois, l'article 5, paragraphe 1, premier alinéa, points b bis) et b ter), ainsi que l'article 5, paragraphes 1 bis et 1 ter, ne s'appliquent qu'à partir du 2 décembre 2026 [S1].",
+    "answer": "Les interdictions de pratiques d'IA s'appliquent depuis le 2 février 2025 [S1]. Cette date vaut pour les chapitres I et II, à l'exception de l'article 5, paragraphe 1, premier alinéa, points b bis) et b ter), et de l'article 5, paragraphes 1 bis et 1 ter, qui s'appliquent à partir du 2 décembre 2026 [S1]. Le point b ter) interdit notamment la mise sur le marché, la mise en service ou l'utilisation d'un système d'IA qui génère ou manipule du matériel ou un spectacle au sens de la directive 2011/93/UE, sauf défense « sans droit » en droit national [S5].",
     "cited": [
       "art113-a",
-      "art1-p2-b"
+      "art5-p1-bb"
     ],
     "retrieved": true,
     "correct": true,
@@ -1411,12 +1434,17 @@
       "anxIII-7-b",
       "art26-p11",
       "art6-p3",
-      "art25-p3-a"
+      "art25-p3-a",
+      "art111-p1",
+      "art111-p3",
+      "art111-p4",
+      "art113-a",
+      "art113-b",
+      "art113-d"
     ],
     "refused": false,
-    "answer": "Les obligations des systèmes à haut risque de l'annexe III s'appliquent à partir du 2 décembre 2027 [S5]. Cette date vaut pour les systèmes classés à haut risque en vertu de l'article 6, paragraphe 2, et de l'annexe III [S5]. Le règlement est applicable en général à partir du 2 août 2026, mais le chapitre III, sections 1, 2 et 3, ne s'applique à ces systèmes qu'à compter du 2 décembre 2027 [S5]. Les systèmes déjà mis sur le marché ou mis en service avant cette date ne sont soumis au règlement que s'ils subissent d'importantes modifications de leur conception à compter de cette date [S4]. Les systèmes destinés à être utilisés par des autorités publiques doivent se conformer au plus tard le 2 août 2030 [S4].",
+    "answer": "Les obligations relatives aux systèmes d'IA à haut risque de l'annexe III s'appliquent à partir du 2 décembre 2027 [S5]. Cette date vaut pour les systèmes classés à haut risque en vertu de l'article 6, paragraphe 2, et de l'annexe III [S5]. Le règlement est applicable en général à partir du 2 août 2026, mais le chapitre III, sections 1, 2 et 3, ne s'applique à ces systèmes qu'à partir du 2 décembre 2027 [S5].",
     "cited": [
-      "art111-p2",
       "art113-c"
     ],
     "retrieved": true,
@@ -1496,15 +1524,24 @@
       "art5-p1-d",
       "art5-p1-e",
       "art5-p1-f",
-      "art5-p1-g"
+      "art5-p1-g",
+      "art111-p1",
+      "art111-p2",
+      "art111-p3",
+      "art111-p4",
+      "art113-a",
+      "art113-b",
+      "art113-c",
+      "art113-d"
     ],
     "refused": false,
-    "answer": "L'Article 5(1)(ba) interdit la mise sur le marché, la mise en service ou l'utilisation d'un système d'IA qui génère ou manipule des images réalistes représentant les parties intimes d'une personne identifiable, ou une personne identifiable se livrant à des activités sexuellement explicites, sans son consentement libre, spécifique, éclairé, univoque et explicite [S1]. Les sources fournies ne précisent cependant pas la date à partir de laquelle cette interdiction s'applique [S1].",
+    "answer": "Cette interdiction s'applique à partir du 2 décembre 2026, car l'article 5, paragraphe 1, points b bis) et b ter), fait exception à la date d'application de février 2025 et entre en application à cette date ultérieure [S23]. Elle vise la mise sur le marché, la mise en service ou l'utilisation d'un système d'IA qui génère ou manipule des images ou vidéos réalistes représentant les parties intimes d'une personne identifiable, ou une personne identifiable se livrant à des activités sexuellement explicites, sans son consentement libre, spécifique, éclairé, univoque et explicite [S1]. Ce point correspond à l'Article 5(1)(ba) [S1].",
     "cited": [
-      "art5-p1-ba"
+      "art5-p1-ba",
+      "art113-a"
     ],
-    "retrieved": false,
-    "correct": false,
+    "retrieved": true,
+    "correct": true,
     "invalid_tags": [],
     "phantom_refs": [],
     "mismatched": [],
@@ -2293,10 +2330,15 @@
       "art5-p1-d",
       "art5-p1-e",
       "art5-p1-f",
-      "art5-p1-g"
+      "art5-p1-g",
+      "art111-p1",
+      "art111-p3",
+      "art111-p4",
+      "art113-c",
+      "art113-d"
     ],
     "refused": false,
-    "answer": "تُطبَّق الفصول الأول والثاني، ومنها محظورات ممارسات الذكاء الاصطناعي، اعتباراً من 2 فبراير 2025 وفقاً للمادة 113(a) [S4]. ويستثني ذلك المادة 5(1) الفقرة الأولى النقطتين (ba) و(bb)، والمادة 5(1a) و5(1b)، فتُطبَّق هذه على الأرجح اعتباراً من 2 ديسمبر 2026 [S4]. وتشمل النقطة (ba) إنشاء أو معالجة صور أو مقاطع مصورة أو صوتية واقعية لأشخاص محددين دون موافقتهم الصريحة [S2]، أما النقطة (bb) فتتعلق بإنشاء أو معالجة مواد أو أداءات واردة في المادة 2(c) و(e) من التوجيه 2011/93/EU [S13].",
+    "answer": "تُطبَّق الفصول الأول والثاني، ومنها الممارسات المحظورة في الذكاء الاصطناعي، اعتباراً من 2 فبراير 2025 [S4]. ويُستثنى من ذلك Article 5(1)(ba) وArticle 5(1)(bb) وكذلك Article 5(1a) وArticle 5(1b)، فتُطبَّق اعتباراً من 2 ديسمبر 2026 [S4][S2][S13].",
     "cited": [
       "art5-p1-ba",
       "art113-a",
@@ -2329,10 +2371,16 @@
       "art6-p3",
       "art80-p2",
       "art6-p4",
-      "art25-p3-a"
+      "art25-p3-a",
+      "art111-p1",
+      "art111-p3",
+      "art111-p4",
+      "art113-a",
+      "art113-b",
+      "art113-d"
     ],
     "refused": false,
-    "answer": "تبدأ الالتزامات الخاصة بأنظمة الذكاء الاصطناعي عالية المخاطر المصنفة وفقاً للمادة 6(2) والملحق الثالث (Annex III) في 2 ديسمبر 2027 [S5]. أما التطبيق العام للوائح فيبدأ في 2 أغسطس 2026، لكن الفصل الثالث المتعلق بالأنظمة عالية المخاطر لا يُطبَّق على الملحق الثالث إلا من التاريخ المذكور [S5]. بالنسبة للأنظمة التي طُرحت في السوق أو أُدخلت في الخدمة قبل تاريخ تطبيق الفصل الثالث، تسري اللائحة عليها فقط إذا خضعت لتغييرات جوهرية في تصميمها بعد ذلك التاريخ [S3]. وبالنسبة للأنظمة المستخدمة من قبل السلطات العامة، يجب اتخاذ الخطوات اللازمة للامتثال بحلول 2 أغسطس 2030 [S3].",
+    "answer": "تبدأ التزامات أنظمة الذكاء الاصطناعي عالية المخاطر المصنفة وفقًا للمادة Article 6(2) والملحق Annex III في 2 ديسمبر 2027 بموجب Article 113(c)(i) [S5]. ينطبق ذلك على الأقسام 1 و2 و3 من الفصل الثالث، باستثناء Article 6(5)، بينما تطبق اللائحة عمومًا من 2 أغسطس 2026 [S5]. أما الأنظمة التي طُرحت في السوق أو أُدخلت الخدمة قبل تاريخ التطبيق فلا تخضع لأحكام اللائحة إلا إذا خضعت لتغييرات جوهرية في تصميمها بعد ذلك التاريخ [S3]. ومع ذلك، يتعين على مزودي ومستخدمي أنظمة الذكاء الاصطناعي عالية المخاطر المخصصة لاستخدام السلطات العامة اتخاذ الخطوات اللازمة للامتثال بحلول 2 أغسطس 2030 [S3].",
     "cited": [
       "art111-p2",
       "art113-c"
@@ -2398,23 +2446,27 @@
       "art113-b",
       "art26-p10",
       "art113-c",
-      "art14-p5"
+      "art14-p5",
+      "art111-p1",
+      "art111-p2",
+      "art111-p3",
+      "art111-p4",
+      "art113-a",
+      "art113-d"
     ],
     "refused": false,
-    "answer": "{\"refused\": false, \"answer\": \"لا تحدد المصادر المقدَّمة تاريخًا محددًا لبدء سريان الحظر الوارد في المادة 5(1)(ba) [S1][S7]. تحظر هذه المادة وضع على السوق أو تشغيل أو استخدام نظام ذكاء اصطناعي ينتج أو يعدّل صورًا أو مقاطع فيديو واقعية لأجزاء حميمة لشخص طبيعي معرَّ",
+    "answer": "يُحظر استخدام نظام الذكاء الاصطناعي لإنشاء صور حميمة مزيفة لشخص حقيقي اعتبارًا من 2 ديسمبر 2026 [S1][S15]. تحظر Article 5(1)(ba) طرح مثل هذا النظام في السوق أو وضعه في الخدمة أو استخدامه، إذا كان ينتج صورًا أو مقاطع واقعية لأجزاء حميمة من شخص قابل للتحديد أو لشخص قابل للتحديد يشارك في أنشطة جنسية صريحة، دون موافقته الحرة والمحددة والمستنيرة والواضحة والصريحة [S1]. ينص Article 113(a) على أن الفصلين I وII يُطبَّقان من 2 فبراير 2025، مع استثناء Article 5(1) من الفقرة الأولى، النقطتان (ba) و(bb)، فتُطبَّقان من 2 ديسمبر 2026 [S15].",
     "cited": [
       "art5-p1-ba",
-      "art113-b"
+      "art113-a"
     ],
-    "retrieved": false,
-    "correct": false,
+    "retrieved": true,
+    "correct": true,
     "invalid_tags": [],
     "phantom_refs": [],
     "mismatched": [],
-    "untagged": [
-      "تحظر هذه المادة وضع على السوق أو تشغيل أو استخدام نظام ذكاء اصطناعي ينتج أو يعدّل صورًا أو مقاطع فيديو واقعية لأجزاء حميمة لشخص طبيعي معرَّ"
-    ],
-    "format_error": true
+    "untagged": [],
+    "format_error": false
   },
   {
     "id": "n01",
@@ -2676,7 +2728,6 @@
       "art75c-b",
       "art101-p1-c",
       "art80-p7",
-      "anxX-i3",
       "art99-p4-a",
       "art99-p4-b",
       "art99-p4-c",

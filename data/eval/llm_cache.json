@@ -603,5 +603,6 @@
   "rewrite_v2|claude-haiku-5-5|ddfc0984|اعتبارًا من متى تنطبق الالتزامات على ذكاء اصطناعي يُستخدم كمكوّن أمان في آلة أو جهاز طبي؟": "When do the obligations apply to an AI system that serves as a safety component of machinery or a medical device, as a product covered by Union harmonisation legislation?",
   "rewrite_v2|claude-haiku-5-5|ddfc0984|ما هي جميع المجالات التي يُعتبر فيها نظام الذكاء الاصطناعي عالي المخاطر؟": "What are all the areas in which an AI system is classified as high-risk?",
   "rewrite_v2|claude-haiku-5-5|ddfc0984|ما المدة التي يمكننا خلالها الاحتفاظ بالبيانات الشخصية للمرشحين بعد عملية التوظيف؟": "How long may a provider or deployer of a high-risk AI system used for recruitment or selection of candidates retain the personal data of job applicants after the recruitment process has concluded?",
-  "rewrite_v2|claude-haiku-5-5|ddfc0984|تسبّب نظام الذكاء الاصطناعي لدينا في ضرر لأحد العملاء: من المسؤول مدنيًا، ناشر البرنامج أم نحن؟": "Under the Regulation, who bears civil liability when an AI system causes harm to a customer, as between the provider of the AI system and its deployer?"
+  "rewrite_v2|claude-haiku-5-5|ddfc0984|تسبّب نظام الذكاء الاصطناعي لدينا في ضرر لأحد العملاء: من المسؤول مدنيًا، ناشر البرنامج أم نحن؟": "Under the Regulation, who bears civil liability when an AI system causes harm to a customer, as between the provider of the AI system and its deployer?",
+  "rewrite_v2|claude-haiku-5-5|ddfc0984|When was the GDPR adopted?": "When was Regulation (EU) 2016/679 (the General Data Protection Regulation) adopted?"
 }
