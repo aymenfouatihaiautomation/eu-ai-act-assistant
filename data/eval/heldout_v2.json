@@ -1,0 +1,180 @@
+[
+  {
+    "id": "v01",
+    "persona": "Éditeur de jeux",
+    "type": "scenario",
+    "question_en": "A mobile gaming app wants to use subliminal techniques to push players to spend much more, without them realising it. Is this allowed?",
+    "question_fr": "Une application de jeux mobiles veut utiliser des techniques subliminales pour pousser les joueurs à dépenser beaucoup plus, sans qu'ils s'en rendent compte. Est-ce permis ?",
+    "question_ar": "يريد تطبيق ألعاب للهواتف المحمولة استخدام تقنيات خفية (لاواعية) لدفع اللاعبين إلى إنفاق مبالغ أكبر بكثير دون أن يشعروا بذلك. هل هذا مسموح؟",
+    "expected": [
+      "art5-p1-a"
+    ]
+  },
+  {
+    "id": "v02",
+    "persona": "Fabricant de jouets",
+    "type": "scenario",
+    "question_en": "A toy manufacturer wants to sell a voice toy that encourages children to take on dangerous challenges. Does the regulation allow it?",
+    "question_fr": "Un fabricant de jouets veut vendre un jouet vocal qui encourage les enfants à relever des défis dangereux. Le règlement l'autorise-t-il ?",
+    "question_ar": "تريد شركة مصنِّعة للُّعب بيع لعبة ناطقة تشجّع الأطفال على خوض تحدّيات خطرة. هل يسمح التنظيم بذلك؟",
+    "expected": [
+      "art5-p1-b"
+    ]
+  },
+  {
+    "id": "v03",
+    "persona": "Service des eaux",
+    "type": "scenario",
+    "question_en": "A drinking water distribution company wants to use AI as a safety component to run its network. Is it a high-risk system?",
+    "question_fr": "Une société de distribution d'eau potable veut utiliser une IA comme composant de sécurité pour piloter son réseau. Est-ce un système à haut risque ?",
+    "question_ar": "تريد شركة لتوزيع مياه الشرب استخدام الذكاء الاصطناعي كمكوّن أمان لإدارة شبكتها. هل هو نظام عالي المخاطر؟",
+    "expected": [
+      "anxIII-2"
+    ]
+  },
+  {
+    "id": "v04",
+    "persona": "Responsable conformité",
+    "type": "obligation",
+    "question_en": "We use a high-risk AI system to sort case files. What must the employee who oversees its decisions be able to do?",
+    "question_fr": "Nous utilisons une IA à haut risque pour trier des dossiers. Que doit pouvoir faire l'employé qui supervise ses décisions ?",
+    "question_ar": "نستخدم نظام ذكاء اصطناعي عالي المخاطر لفرز الملفات. ما الذي يجب أن يكون الموظف الذي يشرف على قراراته قادرًا على فعله؟",
+    "expected": [
+      "art14-p4-a",
+      "art14-p4-b",
+      "art14-p4-c",
+      "art14-p4-d",
+      "art14-p4-e"
+    ]
+  },
+  {
+    "id": "v05",
+    "persona": "Université",
+    "type": "scenario",
+    "question_en": "A public university wants to use AI to decide which applicants are admitted. Must it carry out a particular assessment before using it?",
+    "question_fr": "Une université publique veut utiliser une IA pour décider quels candidats sont admis. Doit-elle faire une évaluation particulière avant de l'utiliser ?",
+    "question_ar": "تريد جامعة عامة استخدام الذكاء الاصطناعي لتحديد المرشحين الذين يُقبلون. هل يجب عليها إجراء تقييم خاص قبل استخدامه؟",
+    "expected": [
+      "art27-p1-a",
+      "art27-p1-b",
+      "art27-p1-c",
+      "art27-p1-d",
+      "art27-p1-e",
+      "art27-p1-f"
+    ]
+  },
+  {
+    "id": "v06",
+    "persona": "Fournisseur",
+    "type": "obligation",
+    "question_en": "What must a provider do when its high-risk system causes a serious incident?",
+    "question_fr": "Que doit faire un fournisseur quand son système à haut risque cause un incident grave ?",
+    "question_ar": "ماذا يجب على المزوّد أن يفعل عندما يتسبب نظامه عالي المخاطر في حادث خطير؟",
+    "expected": [
+      "art73-p1"
+    ]
+  },
+  {
+    "id": "v07",
+    "persona": "Fournisseur de modèle",
+    "type": "definition",
+    "question_en": "Above what computing power is a general-purpose AI model presumed to present a systemic risk?",
+    "question_fr": "À partir de quelle puissance de calcul un modèle d'IA à usage général est-il présumé présenter un risque systémique ?",
+    "question_ar": "ابتداءً من أي قدرة حسابية يُفترض أن يشكّل نموذج الذكاء الاصطناعي للأغراض العامة خطرًا نظاميًا؟",
+    "expected": [
+      "art51-p2"
+    ]
+  },
+  {
+    "id": "v08",
+    "persona": "Industriel de défense",
+    "type": "scope",
+    "question_en": "Does the regulation apply to an AI system used solely for military purposes?",
+    "question_fr": "Le règlement s'applique-t-il à un système d'IA utilisé uniquement à des fins militaires ?",
+    "question_ar": "هل ينطبق التنظيم على نظام ذكاء اصطناعي يُستخدم لأغراض عسكرية فقط؟",
+    "expected": [
+      "art2-p3"
+    ]
+  },
+  {
+    "id": "v09",
+    "persona": "Particulier",
+    "type": "droits",
+    "question_en": "My social assistance application was refused because of an AI system. Do I have the right to obtain an explanation of that decision?",
+    "question_fr": "Ma demande d'aide sociale a été refusée à cause d'un système d'IA. Ai-je le droit d'obtenir une explication de cette décision ?",
+    "question_ar": "رُفض طلبي للحصول على مساعدة اجتماعية بسبب نظام ذكاء اصطناعي. هل لي الحق في الحصول على تفسير لهذا القرار؟",
+    "expected": [
+      "art86-p1"
+    ]
+  },
+  {
+    "id": "v10",
+    "persona": "Industriel",
+    "type": "obligation",
+    "question_en": "Must our high-risk AI system bear the CE marking?",
+    "question_fr": "Notre système d'IA à haut risque doit-il porter le marquage CE ?",
+    "question_ar": "هل يجب أن يحمل نظامنا للذكاء الاصطناعي عالي المخاطر علامة CE؟",
+    "expected": [
+      "art16-h",
+      "art48-p3"
+    ]
+  },
+  {
+    "id": "v11",
+    "persona": "PME",
+    "type": "no_answer",
+    "question_en": "What does the NIS2 directive provide for a company that suffers a cyberattack?",
+    "question_fr": "Que prévoit la directive NIS2 pour une entreprise qui subit une cyberattaque ?",
+    "question_ar": "ماذا ينص عليه التوجيه الأوروبي NIS2 بالنسبة لشركة تتعرض لهجوم سيبراني؟",
+    "expected": []
+  },
+  {
+    "id": "v12",
+    "persona": "Industriel",
+    "type": "no_answer",
+    "question_en": "What does the Data Act say about sharing data from connected devices?",
+    "question_fr": "Que dit le Data Act sur le partage des données des objets connectés ?",
+    "question_ar": "ماذا يقول قانون البيانات (Data Act) عن مشاركة بيانات الأجهزة المتصلة؟",
+    "expected": []
+  },
+  {
+    "id": "v13",
+    "persona": "Banque",
+    "type": "no_answer",
+    "question_en": "What obligations does the DORA regulation impose on banks for IT resilience?",
+    "question_fr": "Quelles obligations le règlement DORA impose-t-il aux banques pour la résilience informatique ?",
+    "question_ar": "ما الالتزامات التي تفرضها لائحة DORA على البنوك فيما يخص المرونة التشغيلية الرقمية؟",
+    "expected": []
+  },
+  {
+    "id": "v14",
+    "persona": "Particulier",
+    "type": "no_answer",
+    "question_en": "How do you make crêpe batter without lumps?",
+    "question_fr": "Comment faire une pâte à crêpes sans grumeaux ?",
+    "question_ar": "كيف أحضّر عجينة الكريب دون تكتلات؟",
+    "expected": []
+  },
+  {
+    "id": "v15",
+    "persona": "Startup",
+    "type": "date",
+    "question_en": "Our startup provides a general-purpose AI model. Since when do we have to comply with our obligations?",
+    "question_fr": "Notre startup fournit un modèle d'IA à usage général. Depuis quand devons-nous respecter nos obligations ?",
+    "question_ar": "تقدّم شركتنا الناشئة نموذج ذكاء اصطناعي للأغراض العامة. منذ متى يجب علينا الالتزام بواجباتنا؟",
+    "expected": [
+      "art113-b"
+    ]
+  },
+  {
+    "id": "v16",
+    "persona": "Tribunal",
+    "type": "scenario",
+    "question_en": "A court wants to use AI to help judges analyse the facts and the law. Is it a high-risk system?",
+    "question_fr": "Un tribunal veut utiliser une IA pour aider les juges à analyser les faits et la loi. Est-ce un système à haut risque ?",
+    "question_ar": "تريد محكمة استخدام الذكاء الاصطناعي لمساعدة القضاة في تحليل الوقائع والقانون. هل هو نظام عالي المخاطر؟",
+    "expected": [
+      "anxIII-8-a"
+    ]
+  }
+]
