@@ -73,4 +73,9 @@ Fini quand : le dépôt public est propre, le README est clair et donne le lien 
 
 ## Résultats
 (à remplir pendant les phases)
-- Phase 1 — taille de l'image : … ; RAM max : … ; /health 200 après : … s ; poids chargés : …
+- Phase 1 (mesuré le 12/11/2026) :
+  - taille de l'image : 2,65 Go (`docker images g1-api`) ; build ≈ 470 s.
+  - RAM : 765 MiB au démarrage (/health = 200), 802 / 812 / 814 MiB pendant les 3 appels /ask, 816 MiB à la fin (échantillons `docker stats --no-stream`, pas un pic continu ; limite Docker Desktop 7,7 Go).
+  - /health = 200 après : 40 s dans le conteneur ; 87 s en local sans Docker (hors ligne, .venv).
+  - poids chargés : `pytorch_model.bin` (snapshot 5617a9f6 = refs/main), hors ligne, aucun accès au Hub.
+  - /ask juste avec citations (15, 12, 12 sources, 0 référence fantôme), hors sujet refusé, `.env` absent de l'image (`ls -a /app` : api.py, data, requirements-api.txt, src).
