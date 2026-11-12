@@ -1,0 +1,18 @@
+# Dependencies to run the HTTP API (api.py): the engine + FastAPI.
+# Exact versions read with pip freeze in .venv on 2026-11-11. Gradio is not needed here.
+# Run from the project root:  uvicorn api:app --host 127.0.0.1 --port 8000
+# Tests need pytest and httpx too (not listed: install them separately for development).
+
+# Engine (same versions as requirements.txt)
+anthropic==2.4.0
+chromadb==1.5.9
+python-dotenv==1.2.4
+sentence-transformers==6.2.0
+torch==2.15.0
+transformers==5.22.1
+
+# API
+fastapi==0.162.0
+uvicorn==0.54.0
+starlette==1.10.0
+pydantic==2.14.2
