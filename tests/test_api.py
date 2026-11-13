@@ -58,6 +58,12 @@ def fake_result(question, refused=False):
             "invalid_tags": [], "phantom_refs": [], "mismatched": [], "disclaimer": "not legal advice"}
 
 
+@pytest.fixture(autouse=True)
+def behind_proxy(monkeypatch):
+    """Tests simulate visitors with x-forwarded-for, as behind Caddy."""
+    monkeypatch.setenv("BEHIND_PROXY", "1")
+
+
 def ready_client(**env_unused):
     """A started app whose loading is over. Use as: with ready_client() as client."""
     app = api.create_app()
@@ -175,6 +181,56 @@ def test_ask_per_visitor_limit(calls):
         other = client.post("/ask", json={"question": "hi"}, headers={"x-forwarded-for": "2.2.2.2, 9.9.9.9"})
         assert other.status_code == 200
     assert len(calls.ask) == 11   # the refused one never reached the engine
+
+
+def test_ip_from_proxy_header(calls, monkeypatch):
+    """Behind the proxy: last entry (added by Caddy); forged leading entries are ignored."""
+    monkeypatch.setenv("LIMIT_PER_VISITOR", "1")
+    with ready_client() as client:
+        ok = lambda h: client.post("/ask", json={"question": "hi"}, headers=h).status_code
+        assert ok({"x-forwarded-for": "5.5.5.5"}) == 200
+        assert ok({"x-forwarded-for": "5.5.5.5"}) == 429
+        # forged first entry changes nothing: still visitor 5.5.5.5
+        assert ok({"x-forwarded-for": "6.6.6.6, 5.5.5.5"}) == 429
+        # a different real (last) address is a different visitor
+        assert ok({"x-forwarded-for": "5.5.5.5, 7.7.7.7"}) == 200
+
+
+def test_ip_without_header_uses_client_host(calls, monkeypatch):
+    monkeypatch.setenv("LIMIT_PER_VISITOR", "1")
+    with api_client_no_header() as client:
+        assert client.post("/ask", json={"question": "hi"}).status_code == 200
+        assert client.post("/ask", json={"question": "hi"}).status_code == 429
+
+
+def test_ip_header_ignored_without_proxy(calls, monkeypatch):
+    """API exposed directly (no BEHIND_PROXY): a forged header must not bypass the limit."""
+    monkeypatch.delenv("BEHIND_PROXY")
+    monkeypatch.setenv("LIMIT_PER_VISITOR", "1")
+    with api_client_no_header() as client:
+        assert client.post("/ask", json={"question": "hi"}, headers={"x-forwarded-for": "8.8.8.1"}).status_code == 200
+        assert client.post("/ask", json={"question": "hi"}, headers={"x-forwarded-for": "8.8.8.2"}).status_code == 429
+
+
+def api_client_no_header():
+    """A client without the default x-forwarded-for header, loading already finished."""
+    app = api.create_app()
+    client = TestClient(app)
+    ctx = ready_wait(app, client)
+    return ctx
+
+
+class ready_wait:
+    def __init__(self, app, client):
+        self.app, self.client = app, client
+
+    def __enter__(self):
+        self.client.__enter__()
+        assert self.app.state.loaded.wait(5)
+        return self.client
+
+    def __exit__(self, *a):
+        self.client.__exit__(*a)
 
 
 def test_ask_global_limit(calls, monkeypatch):

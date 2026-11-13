@@ -69,10 +69,16 @@ class RiskAnswers(BaseModel):
 
 
 def visitor_ip(request: Request):
-    """First address of x-forwarded-for (the server sits behind a proxy), like app.py."""
-    forwarded = request.headers.get("x-forwarded-for", "")
-    ip = forwarded.split(",")[0].strip()
-    return ip or (request.client.host if request.client else "unknown")
+    """IP used for the per-visitor limit.
+
+    Only behind our own proxy (BEHIND_PROXY=1, Caddy): the LAST x-forwarded-for entry, the one Caddy
+    appended (the first ones come from the visitor and can be forged). Without the proxy the header
+    is ignored, so nobody can fake an IP by sending it."""
+    if os.getenv("BEHIND_PROXY") == "1":
+        last = request.headers.get("x-forwarded-for", "").split(",")[-1].strip()
+        if last:
+            return last
+    return request.client.host if request.client else "unknown"
 
 
 def create_app():
