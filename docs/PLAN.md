@@ -84,3 +84,10 @@ Fini quand : le dépôt public est propre, le README est clair et donne le lien 
   - /health = 200 après : 40 s dans le conteneur ; 87 s en local sans Docker (hors ligne, .venv).
   - poids chargés : `pytorch_model.bin` (snapshot 5617a9f6 = refs/main), hors ligne, aucun accès au Hub.
   - /ask juste avec citations (15, 12, 12 sources, 0 référence fantôme), hors sujet refusé, `.env` absent de l'image (`ls -a /app` : api.py, data, requirements-api.txt, src).
+- Phase 2 (mesuré le 13/11/2026, image reconstruite `g1-api`, 37 tests verts) :
+  - /health = 200 après 48 s dans le conteneur. /risk, /deadlines OK ; hors sujet refusé (EN et FR) ; `.env` absent de l'image (`ls -a /app` : api.py, data, requirements-api.txt, src).
+  - Art. 5(1), lettre attendue citée (6 scénarios, EN / FR / AR) : EN 5/6, FR 3/6, AR 4/6 (12/18). Échecs : h04 (art5-p1-h) 0/3 (cite art5-p2 : cas connu, v1.5) ; q02 FR ; v02 FR et AR (réponse refusée). l01 (liste, 10 lettres) : EN 10/10 ; FR et AR 0/10 (`format_error` = true, aucune source renvoyée). 0 balise invalide, 0 référence fantôme. Constat seulement, `src/` non touché.
+  - Mesures VPS (a) RAM : plus haut relevé `docker stats` (toutes les 2 s, de `docker run` jusqu'à /health = 200 puis 3 /ask) = 819,8 MiB ; `/sys/fs/cgroup/memory.peak` = 2 079 449 088 octets (≈ 1,94 Gio, inclut le cache disque des fichiers du modèle, donc surestime la RAM utilisée). Limite Docker Desktop : 7,7 Gio.
+  - (b) taille à envoyer : `docker save g1-api | wc -c` = 579 247 104 octets (≈ 553 Mio) ; `| gzip | wc -c` = 576 073 871 octets (≈ 549 Mio) : gzip ne gagne presque rien (couches déjà compressées). Aucun fichier écrit.
+  - (c) durée d'un /ask dans le conteneur : 39,4 s (1re question, à froid), puis 4,6 s et 5,5 s ; sur les 21 questions de la batterie : 4,5 à 22,5 s.
+  - Limites : la batterie a tourné avec LIMIT_PER_VISITOR=200 (conteneur relancé) ; les mesures de RAM et de durée viennent du 1er conteneur (limite par défaut). Espace libre C: : 6,4 Go avant, 4,2 Go après (jamais sous 3 Go).
