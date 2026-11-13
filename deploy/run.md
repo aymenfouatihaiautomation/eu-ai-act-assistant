@@ -85,7 +85,7 @@ sudo chmod 600 /srv/g1/.env
 ```
 
 ## 5. Lancer le conteneur (port 8000 sur 127.0.0.1 seulement)
-Commande des phases 1 et 2 (PLAN.md l.37) : `docker run --rm -p 8000:8000 --env-file .env -v E:\hf-cache\hub:/hf-cache/hub:ro g1-api`. Aucune autre variable ni montage n'y figure : `HF_HOME=/hf-cache`, `HF_HUB_OFFLINE=1`, `TRANSFORMERS_OFFLINE=1` sont dans le Dockerfile (`ENV`), et `REWRITE_CACHE=0` / `LLM_PROVIDER=anthropic` dans son `ENTRYPOINT` (non surchargeables par `--env-file`). Variables du `.env` : voir `deploy/env.example`. Seuls changements en prod : `-d --name g1 --restart unless-stopped` à la place de `--rm`, `-p 127.0.0.1:8000:8000` à la place de `-p 8000:8000`, et le montage vient de `/srv/g1/hf-cache/hub`. Un point manque dans PLAN.md : l'usage de `BEHIND_PROXY=1` via `.env` en phase 1/2 (ajouté en phase 2, tâche 1) — **à confirmer**.
+Commande des phases 1 et 2 (PLAN.md l.37) : `docker run --rm -p 8000:8000 --env-file .env -v E:\hf-cache\hub:/hf-cache/hub:ro g1-api`. Aucune autre variable ni montage n'y figure : `HF_HOME=/hf-cache`, `HF_HUB_OFFLINE=1`, `TRANSFORMERS_OFFLINE=1` sont dans le Dockerfile (`ENV`), et `REWRITE_CACHE=0` / `LLM_PROVIDER=anthropic` dans son `ENTRYPOINT` (non surchargeables par `--env-file`). Variables du `.env` : voir `deploy/env.example`. Seuls changements en prod : `-d --name g1 --restart unless-stopped` à la place de `--rm`, `-p 127.0.0.1:8000:8000` à la place de `-p 8000:8000`, et le montage vient de `/srv/g1/hf-cache/hub`. `BEHIND_PROXY=1` (ajouté en phase 2, tâche 1) arrive par `--env-file`, via `deploy/env.example` (l.14) ; il doit valoir exactement `1` (`api.py:77`).
 ```bash
 sudo docker run -d --name g1 --restart unless-stopped \
   -p 127.0.0.1:8000:8000 \
