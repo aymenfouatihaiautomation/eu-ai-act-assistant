@@ -7,3 +7,6 @@ __pycache__/
 
 # Fichiers lourds ou régénérables
 data/index/
+
+# Local LLM answer cache (regenerable, not published)
+data/eval/answer_cache.json
