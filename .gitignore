@@ -10,3 +10,4 @@ data/index/
 
 # Local LLM answer cache (regenerable, not published)
 data/eval/answer_cache.json
+docs/PLAN.md

@@ -60,7 +60,7 @@ scp g1-api.tar <user>@<IP>:/home/<user>/
 # serveur :
 sudo docker load -i /home/<user>/g1-api.tar
 ```
-**Modèle BGE-M3 — option A (recommandée) : téléchargement sur le serveur**, version figée `5617a9f61b028005a4858fdac845db406aefb181` (= `5617a9f6`, `refs/main` d'après PLAN.md l.85, confirmé sur ce PC dans `E:\hf-cache\hub\models--BAAI--bge-m3\snapshots\`), dans `/srv/g1/hf-cache/hub` (chemin choisi par moi, pas imposé) :
+**Modèle BGE-M3 — option A (recommandée) : téléchargement sur le serveur**, version figée `5617a9f61b028005a4858fdac845db406aefb181` (= `5617a9f6`, `refs/main` d'après les mesures de la phase 1, confirmé sur ce PC dans `E:\hf-cache\hub\models--BAAI--bge-m3\snapshots\`), dans `/srv/g1/hf-cache/hub` (chemin choisi par moi, pas imposé) :
 ```bash
 sudo mkdir -p /srv/g1/hf-cache/hub
 pip install -U "huggingface_hub[cli]"     # non vérifié
@@ -70,7 +70,7 @@ sudo chmod -R a+rX /srv/g1/hf-cache         # non vérifié : le conteneur tourn
 ```
 Ce téléchargement prend le dépôt entier (peut inclure des fichiers inutiles à l'API, donc volumineux) : taille **à confirmer**. Résultat attendu : `/srv/g1/hf-cache/hub/models--BAAI--bge-m3/snapshots/5617a9f6…/`. Aucun jeton HF n'est nécessaire a priori (**non vérifié** : modèle public, à confirmer).
 
-**Option B : envoi depuis le PC**, uniquement le dossier de BGE-M3 (jamais `E:\hf-cache` entier, qui contient le jeton HF — PLAN.md l.29) :
+**Option B : envoi depuis le PC**, uniquement le dossier de BGE-M3 (jamais le cache HF entier (il peut contenir un jeton)) :
 ```bash
 ssh <user>@<IP> "sudo mkdir -p /srv/g1/hf-cache/hub && sudo chown <user> /srv/g1/hf-cache/hub"
 scp -r /e/hf-cache/hub/models--BAAI--bge-m3 <user>@<IP>:/srv/g1/hf-cache/hub/    # non vérifié
@@ -85,7 +85,7 @@ sudo chmod 600 /srv/g1/.env
 ```
 
 ## 5. Lancer le conteneur (port 8000 sur 127.0.0.1 seulement)
-Commande des phases 1 et 2 (PLAN.md l.37) : `docker run --rm -p 8000:8000 --env-file .env -v E:\hf-cache\hub:/hf-cache/hub:ro g1-api`. Aucune autre variable ni montage n'y figure : `HF_HOME=/hf-cache`, `HF_HUB_OFFLINE=1`, `TRANSFORMERS_OFFLINE=1` sont dans le Dockerfile (`ENV`), et `REWRITE_CACHE=0` / `LLM_PROVIDER=anthropic` dans son `ENTRYPOINT` (non surchargeables par `--env-file`). Variables du `.env` : voir `deploy/env.example`. Seuls changements en prod : `-d --name g1 --restart unless-stopped` à la place de `--rm`, `-p 127.0.0.1:8000:8000` à la place de `-p 8000:8000`, et le montage vient de `/srv/g1/hf-cache/hub`. `BEHIND_PROXY=1` (ajouté en phase 2, tâche 1) arrive par `--env-file`, via `deploy/env.example` (l.14) ; il doit valoir exactement `1` (`api.py:77`).
+Commande des phases 1 et 2 de test local : `docker run --rm -p 8000:8000 --env-file .env -v E:\hf-cache\hub:/hf-cache/hub:ro g1-api`. Aucune autre variable ni montage n'y figure : `HF_HOME=/hf-cache`, `HF_HUB_OFFLINE=1`, `TRANSFORMERS_OFFLINE=1` sont dans le Dockerfile (`ENV`), et `REWRITE_CACHE=0` / `LLM_PROVIDER=anthropic` dans son `ENTRYPOINT` (non surchargeables par `--env-file`). Variables du `.env` : voir `deploy/env.example`. Seuls changements en prod : `-d --name g1 --restart unless-stopped` à la place de `--rm`, `-p 127.0.0.1:8000:8000` à la place de `-p 8000:8000`, et le montage vient de `/srv/g1/hf-cache/hub`. `BEHIND_PROXY=1` (ajouté en phase 2, tâche 1) arrive par `--env-file`, via `deploy/env.example` (l.14) ; il doit valoir exactement `1` (`api.py:77`).
 ```bash
 sudo docker run -d --name g1 --restart unless-stopped \
   -p 127.0.0.1:8000:8000 \
