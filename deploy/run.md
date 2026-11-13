@@ -23,6 +23,10 @@ Fais `allow 22` AVANT `enable`, sinon tu te coupes l'accès SSH.
 
 ## 2. SSH par clé seulement
 Éditer `/etc/ssh/sshd_config` : `PasswordAuthentication no` — **non vérifié** (je n'ai pas lu la doc OpenSSH/Ubuntu pour cette étape). Vérifier d'abord qu'une connexion par clé fonctionne dans un second terminal, puis recharger SSH (nom du service, `ssh` ou `sshd` : **non vérifié**).
+Vérification après le changement (**non vérifié**, commande à confirmer sur le serveur ; attendu : `passwordauthentication no`) :
+```bash
+sudo sshd -T | grep passwordauthentication
+```
 
 ## 3. Docker (vérifié, https://docs.docker.com/engine/install/ubuntu/)
 ```bash
@@ -56,7 +60,22 @@ scp g1-api.tar <user>@<IP>:/home/<user>/
 # serveur :
 sudo docker load -i /home/<user>/g1-api.tar
 ```
-Modèle BGE-M3 : copier le dossier `E:\hf-cache\hub` vers le serveur (ex. `scp -r`), vers `/srv/g1/hf-cache/hub` (chemin choisi par moi, pas imposé).
+**Modèle BGE-M3 — option A (recommandée) : téléchargement sur le serveur**, version figée `5617a9f61b028005a4858fdac845db406aefb181` (= `5617a9f6`, `refs/main` d'après PLAN.md l.85, confirmé sur ce PC dans `E:\hf-cache\hub\models--BAAI--bge-m3\snapshots\`), dans `/srv/g1/hf-cache/hub` (chemin choisi par moi, pas imposé) :
+```bash
+sudo mkdir -p /srv/g1/hf-cache/hub
+pip install -U "huggingface_hub[cli]"     # non vérifié
+hf download BAAI/bge-m3 --revision 5617a9f61b028005a4858fdac845db406aefb181 \
+  --cache-dir /srv/g1/hf-cache/hub          # NON VÉRIFIÉ : syntaxe non testée ici, ni dans la doc Hugging Face lue
+sudo chmod -R a+rX /srv/g1/hf-cache         # non vérifié : le conteneur tourne en utilisateur 1000 avec un montage :ro
+```
+Ce téléchargement prend le dépôt entier (peut inclure des fichiers inutiles à l'API, donc volumineux) : taille **à confirmer**. Résultat attendu : `/srv/g1/hf-cache/hub/models--BAAI--bge-m3/snapshots/5617a9f6…/`. Aucun jeton HF n'est nécessaire a priori (**non vérifié** : modèle public, à confirmer).
+
+**Option B : envoi depuis le PC**, uniquement le dossier de BGE-M3 (jamais `E:\hf-cache` entier, qui contient le jeton HF — PLAN.md l.29) :
+```bash
+ssh <user>@<IP> "sudo mkdir -p /srv/g1/hf-cache/hub && sudo chown <user> /srv/g1/hf-cache/hub"
+scp -r /e/hf-cache/hub/models--BAAI--bge-m3 <user>@<IP>:/srv/g1/hf-cache/hub/    # non vérifié
+```
+(`scp -r` copie aussi le snapshot `9a0624b8…` s'il est présent ; le dossier contient des liens symboliques `snapshots/` → `blobs/` que `scp -r` peut dupliquer en fichiers : **à confirmer**, sinon utiliser `rsync -a`, non vérifié.)
 
 Fichier `.env` sur le serveur seulement (jamais dans git) — variables listées dans `deploy/env.example` :
 ```bash
@@ -66,7 +85,7 @@ sudo chmod 600 /srv/g1/.env
 ```
 
 ## 5. Lancer le conteneur (port 8000 sur 127.0.0.1 seulement)
-Le montage et les variables (ex. variable pointant le cache HF) sont à reprendre de la commande `docker run` de la phase 1/2 : **non vérifié ici**, à confirmer dans PLAN.md avant de lancer.
+Commande des phases 1 et 2 (PLAN.md l.37) : `docker run --rm -p 8000:8000 --env-file .env -v E:\hf-cache\hub:/hf-cache/hub:ro g1-api`. Aucune autre variable ni montage n'y figure : `HF_HOME=/hf-cache`, `HF_HUB_OFFLINE=1`, `TRANSFORMERS_OFFLINE=1` sont dans le Dockerfile (`ENV`), et `REWRITE_CACHE=0` / `LLM_PROVIDER=anthropic` dans son `ENTRYPOINT` (non surchargeables par `--env-file`). Variables du `.env` : voir `deploy/env.example`. Seuls changements en prod : `-d --name g1 --restart unless-stopped` à la place de `--rm`, `-p 127.0.0.1:8000:8000` à la place de `-p 8000:8000`, et le montage vient de `/srv/g1/hf-cache/hub`. Un point manque dans PLAN.md : l'usage de `BEHIND_PROXY=1` via `.env` en phase 1/2 (ajouté en phase 2, tâche 1) — **à confirmer**.
 ```bash
 sudo docker run -d --name g1 --restart unless-stopped \
   -p 127.0.0.1:8000:8000 \
@@ -92,6 +111,7 @@ Le paquet démarre Caddy comme service systemd `caddy` (vérifié). Fichier de c
 Copier `deploy/Caddyfile` (depuis le PC : `scp deploy/Caddyfile <user>@<IP>:/tmp/`), puis :
 ```bash
 sudo cp /tmp/Caddyfile /etc/caddy/Caddyfile
+caddy validate --config /etc/caddy/Caddyfile   # non vérifié : à lancer AVANT le reload ; ne recharger que s'il n'y a pas d'erreur
 sudo systemctl reload caddy      # vérifié
 systemctl status caddy           # vérifié
 journalctl -u caddy --no-pager | less +G   # vérifié (logs)
