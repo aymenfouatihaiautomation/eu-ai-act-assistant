@@ -49,7 +49,12 @@ Fini quand : /ask répond juste dans le conteneur, la question hors sujet est re
 ## Phase 2 — Préparer la prod, en local
 1. Lecture de l'IP du visiteur derrière Caddy. api.py doit prendre la dernière adresse de X-Forwarded-For (celle ajoutée par Caddy), pas la première, qu'un visiteur peut falsifier. Ajouter des tests : sans en-tête, avec en-tête, avec en-tête falsifié. Les limites LIMIT_PER_VISITOR (défaut 10) et LIMIT_PER_DAY (défaut 300) doivent toujours fonctionner. Commit.
 2. Créer deploy/env.example : liste des variables du serveur (ANTHROPIC_API_KEY vide, CORS_ORIGINS, LIMIT_PER_VISITOR, LIMIT_PER_DAY, MAX_QUESTION_CHARS, MAX_CONCURRENT), sans aucune valeur secrète. Commit.
-3. Rebuild de l'image, puis les mêmes tests que la tâche 4 de la phase 1.
+3. Rebuild de l'image, puis les mêmes tests que la tâche 4 de la phase 1. Tester aussi /ask en français et en arabe, et les questions « pratiques interdites » art. 5(1) déjà présentes dans data/eval (aucune question créée) : q02, q05, q06, h04, v01, v02 + la question de liste l01 (6 scénarios + l01, car il n'existe pas 10 questions distinctes). Noter combien citent la bonne lettre (l01 : combien des 10 lettres).
+4. Mesures pour choisir le VPS :
+   - (a) pic de RAM : `docker stats` toutes les 2 s depuis `docker run` jusqu'à /health = 200, puis pendant 3 /ask ; et `/sys/fs/cgroup/memory.peak` via `docker exec` si le fichier existe ;
+   - (b) taille à envoyer, sans écrire de fichier : `docker save g1-api | wc -c`, puis `docker save g1-api | gzip | wc -c` ;
+   - (c) durée d'un /ask dans le conteneur.
+   Noter ces chiffres dans « Résultats », puis commit.
 
 Fini quand : les tests passent, y compris les nouveaux tests d'IP, et l'image reconstruite répond juste.
 
