@@ -22,6 +22,8 @@ risk-level questionnaire (Articles 5 and 6) and a table of application dates.
 
 **Live demo:** https://huggingface.co/spaces/Aymenfou2003/eu-ai-act-assistant
 
+**HTTP API:** https://api.aymenahmedfouatih.com (**coming soon**, not online yet). Endpoints: `GET /health`, `POST /ask`, `POST /risk`, `GET /deadlines`. See [Run the HTTP API](#run-the-http-api).
+
 ## How it works
 
 The app has three tabs.
@@ -143,7 +145,8 @@ Retrieval alone (expected provision in the sources sent to the model): 47/48 on 
   model: the rule that keeps at most 2 chunks per article had already kept two other Article 5
   provisions, and list completion did not trigger because those two were not points of the same paragraph.
   The assistant then answered from other provisions (English) or refused (French). In Arabic the chunk was
-  ranked 1st and cited.
+  ranked 1st and cited. The same "2 per article" rule explains question h04 of held-out v1 (Article 5(1)(h),
+  cited as Article 5(2) instead). Both cases (h04, v02) are the known target of the next version (v1.5).
 - **Dates.** For a date question, the verified Article 111 and 113 chunks are added to the sources. The
   detector of date questions was tuned on the tuning set, and the citation check does not verify dates.
 - **Output format.** 2/48 answers were invalid JSON (both in Arabic) and 2/35 answers contain a sentence
@@ -192,7 +195,7 @@ python app.py                     # then open http://127.0.0.1:7860
 The chunks are already in `data/processed/chunks.json`; run `python src/chunk_ai_act.py` only if the
 source text in `data/raw/` changes.
 
-**Reproduce the evaluation** (LLM answers are cached in `data/eval/`, so reruns reuse them):
+**Reproduce the evaluation** (LLM answers are cached locally in `data/eval/`, so reruns reuse them; the answer cache `answer_cache.json` is not published, so a first run calls the LLM and needs your API key):
 
 ```bash
 python src/evaluate_rewrite.py --strategies rewrite_v2 --expand --dates
@@ -202,6 +205,21 @@ python src/evaluate_answers.py --prompt v3 --questions data/eval/heldout_v2.json
 
 Unit tests: `python src/test_evaluate.py`, `test_diversity.py`, `test_dates.py`, `test_query_rewrite.py`,
 `test_retrieve.py`, `test_risk.py` (all in `src/`).
+
+## Run the HTTP API
+
+`api.py` exposes the same engine over HTTP (FastAPI), with per-visitor and per-day limits. After building
+`data/index/` (see above):
+
+```bash
+pip install -r requirements-api.txt
+uvicorn api:app --host 127.0.0.1 --port 8000
+curl http://127.0.0.1:8000/health
+```
+
+For deployment, the `Dockerfile` builds the image (the index is copied in, so build it first), and
+`deploy/` holds `env.example`, the `Caddyfile` (HTTPS reverse proxy) and `run.md` (server setup steps).
+Set `BEHIND_PROXY=1` only behind the proxy; otherwise `X-Forwarded-For` is ignored.
 
 ## Disclaimer
 
