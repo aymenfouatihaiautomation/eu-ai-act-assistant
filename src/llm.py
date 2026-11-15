@@ -87,6 +87,11 @@ def chat(system, user, provider=PROVIDER, max_tokens=1500, retries=6):
                 # La réponse peut contenir plusieurs blocs (réflexion, texte...) : on garde le texte.
                 answer = "".join(block.text for block in response.content
                                  if getattr(block, "type", "") == "text")
+                if not answer.strip() and response.stop_reason == "max_tokens":
+                    # Budget épuisé avant toute réponse : pas d'exception (ça finirait en
+                    # HTTP 500). On renvoie "" : parse_json le classe en format_error, et
+                    # l'utilisateur voit le message « Erreur technique » habituel.
+                    return ""
                 if not answer.strip():
                     # v6 (03/11) : on écrit POURQUOI la réponse est vide (stop_reason) et ce
                     # qu'elle contenait (types de blocs) : sans ça, impossible de diagnostiquer.
