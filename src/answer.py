@@ -161,7 +161,7 @@ def ask_llm(system, user_message, tries=2):
     (02/11 : 1 JSON invalide sur 78 en évaluation → en production, ce serait
     une réponse cassée affichée au client.)"""
     for _ in range(tries):
-        result = parse_json(chat(system, user_message, max_tokens=2000))
+        result = parse_json(chat(system, user_message, max_tokens=4000))
         if not result.get("format_error"):
             break
     return result
